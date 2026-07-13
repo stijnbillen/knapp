@@ -4,6 +4,8 @@ import { VitePWA } from 'vite-plugin-pwa'
 
 // https://vite.dev/config/
 export default defineConfig({
+  // Site draait op https://<gebruiker>.github.io/knapp/
+  base: '/knapp/',
   plugins: [
     react(),
     VitePWA({

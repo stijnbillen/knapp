@@ -1,6 +1,8 @@
 import type { ComponentType } from 'react'
 import type { BlockId, Profile } from './profiles'
-import { DummyModule } from '../modules/oefenen/dummy/DummyModule'
+import { TellenModule } from '../modules/oefenen/tellen/TellenModule'
+import { LettersModule } from '../modules/oefenen/letters/LettersModule'
+import { DoolhofModule } from '../modules/oefenen/doolhof/DoolhofModule'
 
 // Centraal register van alle oefenmodules en spelletjes.
 // Nieuwe module toevoegen = component schrijven + hier registreren.
@@ -22,12 +24,28 @@ export interface ModuleDef {
 
 export const MODULES: ModuleDef[] = [
   {
-    id: 'dummy',
-    title: 'Tik de ster',
-    icon: '⭐',
+    id: 'tellen',
+    title: 'Tellen',
+    icon: '🔢',
     kind: 'oefenen',
     block: '5',
-    component: DummyModule,
+    component: TellenModule,
+  },
+  {
+    id: 'letters',
+    title: 'Letters',
+    icon: '🔤',
+    kind: 'oefenen',
+    block: '5',
+    component: LettersModule,
+  },
+  {
+    id: 'doolhof',
+    title: 'Doolhof',
+    icon: '🐰',
+    kind: 'oefenen',
+    block: '5',
+    component: DoolhofModule,
   },
 ]
 

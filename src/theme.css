@@ -1,0 +1,421 @@
+/* Basisthema: één consistente, kindvriendelijke stijl voor de hele app.
+   Elk profiel kleurt enkel --accent in. */
+
+:root {
+  --accent: #3b7fd6;
+  --accent-soft: color-mix(in srgb, var(--accent) 15%, white);
+  --bg: #f6f4ee;
+  --surface: #ffffff;
+  --text: #33322e;
+  --text-soft: #6f6d66;
+  --good: #3d9e50;
+  --good-soft: #e3f4e7;
+  --bad: #e8862e;
+  --bad-soft: #fdeedd;
+  --radius: 18px;
+  --radius-small: 12px;
+  --shadow: 0 2px 8px rgba(60, 55, 40, 0.1);
+  --tap: 48px; /* minimaal raakvlak */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  font-size: 18px;
+  line-height: 1.4;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation; /* geen dubbeltik-zoom op knoppen */
+}
+
+#root {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+input {
+  font: inherit;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+/* ---------- Lay-out ---------- */
+
+.screen {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 12px 16px calc(16px + env(safe-area-inset-bottom));
+}
+
+.screen--wide {
+  max-width: 900px;
+}
+
+.screen-title {
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 16px 0;
+}
+
+/* ---------- Knoppen ---------- */
+
+.big-button {
+  min-height: var(--tap);
+  min-width: var(--tap);
+  padding: 12px 20px;
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  font-size: 1.15rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: transform 0.08s ease;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.big-button:active {
+  transform: scale(0.96);
+}
+
+.big-button--accent {
+  background: var(--accent);
+  color: white;
+}
+
+.big-button--soft {
+  background: var(--accent-soft);
+}
+
+.big-button--ghost {
+  background: transparent;
+  box-shadow: none;
+  color: var(--text-soft);
+}
+
+/* ---------- Kop met terugknop en sterren ---------- */
+
+.back-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: var(--tap);
+  margin-bottom: 8px;
+}
+
+.back-header__title {
+  flex: 1;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.star-count {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-weight: 700;
+  background: var(--surface);
+  border-radius: 999px;
+  padding: 6px 12px;
+  box-shadow: var(--shadow);
+}
+
+/* ---------- Kaarten (profielen, modules) ---------- */
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 14px;
+}
+
+.card {
+  background: var(--surface);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 18px 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  min-height: 120px;
+  transition: transform 0.08s ease;
+  text-align: center;
+}
+
+.card:active {
+  transform: scale(0.96);
+}
+
+.card--accent-border {
+  border-top: 6px solid var(--card-accent, var(--accent));
+}
+
+.card__emoji {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.card__label {
+  font-weight: 700;
+}
+
+.card__sub {
+  color: var(--text-soft);
+  font-size: 0.85rem;
+}
+
+/* ---------- Avatar ---------- */
+
+.avatar-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--accent-soft);
+  border: 3px solid var(--accent);
+  font-size: 1.6rem;
+  flex-shrink: 0;
+}
+
+/* ---------- Feedbackpaneel ---------- */
+
+.feedback-panel {
+  border-radius: var(--radius);
+  padding: 16px;
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  text-align: center;
+  animation: feedback-in 0.25s ease;
+}
+
+.feedback-panel--good {
+  background: var(--good-soft);
+}
+
+.feedback-panel--bad {
+  background: var(--bad-soft);
+}
+
+.feedback-panel__emoji {
+  font-size: 2.2rem;
+}
+
+@keyframes feedback-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ---------- Steranimatie ---------- */
+
+.star-burst {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  z-index: 100;
+}
+
+.star-burst__star {
+  font-size: 5rem;
+  animation: star-pop 0.9s ease forwards;
+}
+
+@keyframes star-pop {
+  0% {
+    transform: scale(0.2) rotate(-30deg);
+    opacity: 0;
+  }
+  30% {
+    transform: scale(1.4) rotate(10deg);
+    opacity: 1;
+  }
+  60% {
+    transform: scale(1) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1) translateY(-60px);
+    opacity: 0;
+  }
+}
+
+/* ---------- Schud-animatie voor foute keuzes ---------- */
+
+.shake {
+  animation: shake 0.4s ease;
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-6px);
+  }
+  50% {
+    transform: translateX(6px);
+  }
+  75% {
+    transform: translateX(-4px);
+  }
+}
+
+/* ---------- Formulieren (profielbewerking) ---------- */
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+
+.form-field label {
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.form-field input[type='text'] {
+  min-height: var(--tap);
+  border-radius: var(--radius-small);
+  border: 2px solid #ddd8cc;
+  padding: 8px 12px;
+  background: var(--surface);
+}
+
+.form-field input[type='text']:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.picker-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.picker-option {
+  width: var(--tap);
+  height: var(--tap);
+  border-radius: var(--radius-small);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  font-size: 1.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid transparent;
+}
+
+.picker-option--selected {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+}
+
+.toggle-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: var(--tap);
+  background: var(--surface);
+  border-radius: var(--radius-small);
+  box-shadow: var(--shadow);
+  padding: 8px 14px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+/* Eenvoudige schakelaar */
+.switch {
+  position: relative;
+  width: 56px;
+  height: 32px;
+  border-radius: 999px;
+  background: #ddd8cc;
+  transition: background 0.15s ease;
+  flex-shrink: 0;
+}
+
+.switch--on {
+  background: var(--accent);
+}
+
+.switch::after {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: white;
+  transition: left 0.15s ease;
+}
+
+.switch--on::after {
+  left: 28px;
+}
+
+/* ---------- Secties in hoofdmenu ---------- */
+
+.menu-section {
+  margin-bottom: 24px;
+}
+
+.menu-section h2 {
+  font-size: 1.1rem;
+  color: var(--text-soft);
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}

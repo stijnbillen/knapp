@@ -1,14 +1,14 @@
 import { useState } from 'react'
 import type { ModuleProps } from '../../../core/registry'
 import { recordAnswer } from '../../../core/progress'
-import { playCorrect, playWrong } from '../../../core/audio'
+import { playClick, playCorrect, playWrong } from '../../../core/audio'
 import { BackHeader } from '../../../ui/BackHeader'
 import { StarCount } from '../../../ui/StarCount'
 import { StarBurst } from '../../../ui/StarBurst'
 import { FeedbackPanel } from '../../../ui/FeedbackPanel'
 import { BigButton } from '../../../ui/BigButton'
 import type { Operation, TableProblem } from './tables'
-import { generateOptions, generateProblem } from './tables'
+import { generateProblem } from './tables'
 
 const MODULE_ID = 'tafels'
 const ALL_TABLES = Array.from({ length: 10 }, (_, i) => i + 1)
@@ -19,21 +19,12 @@ const OPERATIONS: { id: Operation; label: string }[] = [
   { id: 'mix', label: '🔀 Mix' },
 ]
 
-interface Round {
-  problem: TableProblem
-  options: number[]
-}
-
-function newRound(tables: number[], operation: Operation): Round {
-  const problem = generateProblem(tables, operation)
-  return { problem, options: generateOptions(problem.answer) }
-}
-
 export function TafelsModule({ profile, onExit }: ModuleProps) {
   const [phase, setPhase] = useState<'settings' | 'quiz'>('settings')
   const [operation, setOperation] = useState<Operation>('maal')
   const [tables, setTables] = useState<number[]>(ALL_TABLES)
-  const [round, setRound] = useState<Round | null>(null)
+  const [problem, setProblem] = useState<TableProblem | null>(null)
+  const [buffer, setBuffer] = useState('')
   const [feedback, setFeedback] = useState<'good' | 'bad' | null>(null)
   const [starTrigger, setStarTrigger] = useState(0)
 
@@ -46,14 +37,26 @@ export function TafelsModule({ profile, onExit }: ModuleProps) {
   }
 
   function start() {
-    setRound(newRound(tables, operation))
+    setProblem(generateProblem(tables, operation))
+    setBuffer('')
     setFeedback(null)
     setPhase('quiz')
   }
 
-  function answer(value: number) {
-    if (feedback || !round) return
-    const isCorrect = value === round.problem.answer
+  function pressDigit(d: string) {
+    if (feedback) return
+    playClick()
+    setBuffer((b) => (b.length < 3 ? b + d : b))
+  }
+
+  function backspace() {
+    if (feedback) return
+    setBuffer((b) => b.slice(0, -1))
+  }
+
+  function confirm() {
+    if (feedback || !problem || buffer.length === 0) return
+    const isCorrect = parseInt(buffer, 10) === problem.answer
     recordAnswer(profile.id, MODULE_ID, isCorrect)
     if (isCorrect) {
       playCorrect()
@@ -67,8 +70,9 @@ export function TafelsModule({ profile, onExit }: ModuleProps) {
 
   function next() {
     if (feedback === 'good') {
-      setRound(newRound(tables, operation))
+      setProblem(generateProblem(tables, operation))
     }
+    setBuffer('')
     setFeedback(null)
   }
 
@@ -130,24 +134,42 @@ export function TafelsModule({ profile, onExit }: ModuleProps) {
         }
       />
 
-      {round && (
+      {problem && (
         <>
-          <p style={{ textAlign: 'center', fontSize: '2rem', fontWeight: 700, margin: '24px 0' }}>
-            {round.problem.question}
+          <p style={{ textAlign: 'center', fontSize: '2rem', fontWeight: 700, margin: '24px 0 8px' }}>
+            {problem.question.replace('?', buffer || '▢')}
           </p>
 
           {!feedback && (
-            <div style={{ display: 'flex', justifyContent: 'center', gap: 14, flexWrap: 'wrap' }}>
-              {round.options.map((option) => (
-                <BigButton
-                  key={option}
-                  variant="soft"
-                  style={{ fontSize: '1.4rem', minWidth: 72 }}
-                  onClick={() => answer(option)}
-                >
-                  {option}
+            <div
+              style={{
+                display: 'grid',
+                gridTemplateColumns: 'repeat(3, 72px)',
+                gap: 8,
+                justifyContent: 'center',
+                marginTop: 8,
+              }}
+            >
+              {['1', '2', '3', '4', '5', '6', '7', '8', '9'].map((d) => (
+                <BigButton key={d} variant="soft" style={{ fontSize: '1.5rem' }} onClick={() => pressDigit(d)}>
+                  {d}
                 </BigButton>
               ))}
+              <BigButton variant="ghost" style={{ fontSize: '1.3rem' }} onClick={backspace} aria-label="Wissen">
+                ⌫
+              </BigButton>
+              <BigButton variant="soft" style={{ fontSize: '1.5rem' }} onClick={() => pressDigit('0')}>
+                0
+              </BigButton>
+              <BigButton
+                variant="accent"
+                style={{ fontSize: '1.3rem' }}
+                onClick={confirm}
+                disabled={buffer.length === 0}
+                aria-label="Bevestigen"
+              >
+                ✔
+              </BigButton>
             </div>
           )}
 

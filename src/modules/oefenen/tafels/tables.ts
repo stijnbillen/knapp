@@ -11,10 +11,6 @@ function randomInt(min: number, max: number): number {
   return min + Math.floor(Math.random() * (max - min + 1))
 }
 
-function shuffle<T>(list: T[]): T[] {
-  return [...list].sort(() => Math.random() - 0.5)
-}
-
 export function generateProblem(tables: number[], operation: Operation): TableProblem {
   const table = tables[randomInt(0, tables.length - 1)]
   const factor = randomInt(1, 10)
@@ -25,13 +21,4 @@ export function generateProblem(tables: number[], operation: Operation): TablePr
   }
   const dividend = table * factor
   return { question: `${dividend} : ${table} = ?`, answer: factor }
-}
-
-export function generateOptions(answer: number): number[] {
-  const options = new Set<number>([answer])
-  while (options.size < 4) {
-    const distractor = answer + randomInt(-5, 5)
-    if (distractor >= 0 && distractor !== answer) options.add(distractor)
-  }
-  return shuffle([...options])
 }

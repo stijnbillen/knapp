@@ -1,10 +1,12 @@
 import type { ComponentType } from 'react'
 import type { BlockId, Profile } from './profiles'
 import { TellenModule } from '../modules/oefenen/tellen/TellenModule'
+import { OptellenModule } from '../modules/oefenen/optellen/OptellenModule'
 import { LettersModule } from '../modules/oefenen/letters/LettersModule'
 import { DoolhofModule } from '../modules/oefenen/doolhof/DoolhofModule'
 import { SpellingModule } from '../modules/oefenen/spelling/SpellingModule'
 import { StaartdelingModule } from '../modules/oefenen/staartdeling/StaartdelingModule'
+import { TafelsModule } from '../modules/oefenen/tafels/TafelsModule'
 import { BubbelsModule } from '../modules/spelen/bubbels/BubbelsModule'
 import { PongModule } from '../modules/spelen/pong/PongModule'
 import { OthelloModule } from '../modules/spelen/othello/OthelloModule'
@@ -54,6 +56,22 @@ export const MODULES: ModuleDef[] = [
     component: DoolhofModule,
   },
   {
+    id: 'optellen',
+    title: 'Optellen',
+    icon: '➕',
+    kind: 'oefenen',
+    block: '5',
+    component: OptellenModule,
+  },
+  {
+    id: 'tafels',
+    title: 'Tafels',
+    icon: '✖️',
+    kind: 'oefenen',
+    block: '9',
+    component: TafelsModule,
+  },
+  {
     id: 'spelling',
     title: 'Spelling',
     icon: '📝',
@@ -79,9 +97,9 @@ export function getModule(id: string): ModuleDef | undefined {
   return MODULES.find((m) => m.id === id)
 }
 
-/** Oefenmodules die zichtbaar zijn voor dit profiel (op basis van blokken). */
-export function exercisesFor(profile: Profile): ModuleDef[] {
-  return MODULES.filter((m) => m.kind === 'oefenen' && m.block && profile.blocks.includes(m.block))
+/** Oefenmodules van één blok die zichtbaar zijn voor dit profiel. */
+export function exercisesForBlock(profile: Profile, block: BlockId): ModuleDef[] {
+  return MODULES.filter((m) => m.kind === 'oefenen' && m.block === block && profile.blocks.includes(block))
 }
 
 export function games(): ModuleDef[] {

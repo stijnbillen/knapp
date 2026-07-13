@@ -5,6 +5,10 @@ import { LettersModule } from '../modules/oefenen/letters/LettersModule'
 import { DoolhofModule } from '../modules/oefenen/doolhof/DoolhofModule'
 import { SpellingModule } from '../modules/oefenen/spelling/SpellingModule'
 import { StaartdelingModule } from '../modules/oefenen/staartdeling/StaartdelingModule'
+import { BubbelsModule } from '../modules/spelen/bubbels/BubbelsModule'
+import { PongModule } from '../modules/spelen/pong/PongModule'
+import { OthelloModule } from '../modules/spelen/othello/OthelloModule'
+import { TetrisModule } from '../modules/spelen/tetris/TetrisModule'
 
 // Centraal register van alle oefenmodules en spelletjes.
 // Nieuwe module toevoegen = component schrijven + hier registreren.
@@ -65,6 +69,10 @@ export const MODULES: ModuleDef[] = [
     block: '9',
     component: StaartdelingModule,
   },
+  { id: 'bubbels', title: 'Bubbels', icon: '🫧', kind: 'spelen', component: BubbelsModule },
+  { id: 'pong', title: 'Pong', icon: '🏓', kind: 'spelen', component: PongModule },
+  { id: 'othello', title: 'Othello', icon: '⚫', kind: 'spelen', component: OthelloModule },
+  { id: 'tetris', title: 'Tetris', icon: '🧱', kind: 'spelen', component: TetrisModule },
 ]
 
 export function getModule(id: string): ModuleDef | undefined {

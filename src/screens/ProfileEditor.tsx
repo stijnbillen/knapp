@@ -17,7 +17,7 @@ export function ProfileEditor({ profile, onSave, onDelete, onCancel }: ProfileEd
   const [avatar, setAvatar] = useState(profile?.avatar ?? AVATARS[0])
   const [color, setColor] = useState(profile?.color ?? 'blauw')
   const [blocks, setBlocks] = useState<BlockId[]>(profile?.blocks ?? [])
-  const [isAdult, setIsAdult] = useState(profile?.isAdult ?? false)
+  const [games, setGames] = useState(profile?.games ?? true)
   const [confirmDelete, setConfirmDelete] = useState(false)
 
   function toggleBlock(id: BlockId) {
@@ -29,7 +29,7 @@ export function ProfileEditor({ profile, onSave, onDelete, onCancel }: ProfileEd
   function save() {
     const trimmed = name.trim()
     if (!trimmed) return
-    onSave({ name: trimmed, avatar, color, blocks, isAdult })
+    onSave({ name: trimmed, avatar, color, blocks, games })
   }
 
   return (
@@ -87,9 +87,9 @@ export function ProfileEditor({ profile, onSave, onDelete, onCancel }: ProfileEd
             <span className={`switch ${blocks.includes(block.id) ? 'switch--on' : ''}`} />
           </button>
         ))}
-        <button className="toggle-row" onClick={() => setIsAdult((v) => !v)}>
-          <span>Volwassen profiel</span>
-          <span className={`switch ${isAdult ? 'switch--on' : ''}`} />
+        <button className="toggle-row" onClick={() => setGames((v) => !v)}>
+          <span>Spelletjes</span>
+          <span className={`switch ${games ? 'switch--on' : ''}`} />
         </button>
       </div>
 

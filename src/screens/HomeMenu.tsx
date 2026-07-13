@@ -54,14 +54,12 @@ export function HomeMenu({ profile, onOpenModule, onSwitchProfile, onOpenSetting
         </section>
       )}
 
-      <section className="menu-section">
-        <h2>🎮 Spelen</h2>
-        {gameList.length > 0 ? (
+      {profile.games && (
+        <section className="menu-section">
+          <h2>🎮 Spelen</h2>
           <ModuleCards modules={gameList} onOpen={onOpenModule} />
-        ) : (
-          <p style={{ color: 'var(--text-soft)' }}>De spelletjes komen er binnenkort aan! 🚧</p>
-        )}
-      </section>
+        </section>
+      )}
     </div>
   )
 }

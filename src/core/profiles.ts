@@ -15,7 +15,8 @@ export interface Profile {
   avatar: string // emoji
   color: string // sleutel uit COLOR_PALETTE
   blocks: BlockId[]
-  isAdult: boolean
+  /** Sectie "Spelen" tonen voor dit profiel. */
+  games: boolean
 }
 
 export const AVATARS = [
@@ -38,16 +39,19 @@ const KEY = 'profiles'
 
 function seedProfiles(): Profile[] {
   return [
-    { id: newId(), name: 'Kind 5', avatar: '🐸', color: 'groen', blocks: ['5'], isAdult: false },
-    { id: newId(), name: 'Kind 9', avatar: '🦊', color: 'oranje', blocks: ['9'], isAdult: false },
-    { id: newId(), name: 'Mama', avatar: '🌸', color: 'roze', blocks: [], isAdult: true },
-    { id: newId(), name: 'Papa', avatar: '🐼', color: 'blauw', blocks: [], isAdult: true },
+    { id: newId(), name: 'Kind 5', avatar: '🐸', color: 'groen', blocks: ['5'], games: true },
+    { id: newId(), name: 'Kind 9', avatar: '🦊', color: 'oranje', blocks: ['9'], games: true },
+    { id: newId(), name: 'Mama', avatar: '🌸', color: 'roze', blocks: [], games: true },
+    { id: newId(), name: 'Papa', avatar: '🐼', color: 'blauw', blocks: [], games: true },
   ]
 }
 
 export function loadProfiles(): Profile[] {
   const existing = store.get<Profile[] | null>(KEY, null)
-  if (existing && existing.length > 0) return existing
+  if (existing && existing.length > 0) {
+    // Migratie: oudere profielen hadden `isAdult` in plaats van `games`
+    return existing.map((p) => ({ ...p, games: p.games ?? true }))
+  }
   const seeded = seedProfiles()
   store.set(KEY, seeded)
   return seeded

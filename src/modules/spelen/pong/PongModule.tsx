@@ -243,12 +243,14 @@ export function PongModule({ profile, onExit }: ModuleProps) {
       )}
 
       {phase === 'playing' && (
-        <canvas
-          ref={canvasRef}
-          onPointerMove={handlePointer}
-          onPointerDown={handlePointer}
-          style={{ flex: 1, width: '100%', touchAction: 'none', display: 'block' }}
-        />
+        <div style={{ flex: 1, display: 'flex', background: '#1d2a3a', padding: '0 18px' }}>
+          <canvas
+            ref={canvasRef}
+            onPointerMove={handlePointer}
+            onPointerDown={handlePointer}
+            style={{ flex: 1, width: '100%', touchAction: 'none', display: 'block' }}
+          />
+        </div>
       )}
 
       {phase === 'done' && (

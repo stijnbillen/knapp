@@ -22,6 +22,10 @@ export function Settings({ onBack }: { onBack: () => void }) {
       <p style={{ color: 'var(--text-soft)', fontSize: '0.9rem' }}>
         Profielen kan je bewerken op het scherm “Wie speelt er?” via het potloodje.
       </p>
+      <p style={{ color: 'var(--text-soft)', fontSize: '0.9rem' }}>
+        💡 Tip: open deze app in Chrome op je tablet of gsm en kies “Toevoegen aan startscherm”.
+        Daarna werkt ze ook zonder internet.
+      </p>
     </div>
   )
 }

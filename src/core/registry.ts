@@ -3,6 +3,8 @@ import type { BlockId, Profile } from './profiles'
 import { TellenModule } from '../modules/oefenen/tellen/TellenModule'
 import { LettersModule } from '../modules/oefenen/letters/LettersModule'
 import { DoolhofModule } from '../modules/oefenen/doolhof/DoolhofModule'
+import { SpellingModule } from '../modules/oefenen/spelling/SpellingModule'
+import { StaartdelingModule } from '../modules/oefenen/staartdeling/StaartdelingModule'
 
 // Centraal register van alle oefenmodules en spelletjes.
 // Nieuwe module toevoegen = component schrijven + hier registreren.
@@ -46,6 +48,22 @@ export const MODULES: ModuleDef[] = [
     kind: 'oefenen',
     block: '5',
     component: DoolhofModule,
+  },
+  {
+    id: 'spelling',
+    title: 'Spelling',
+    icon: '📝',
+    kind: 'oefenen',
+    block: '9',
+    component: SpellingModule,
+  },
+  {
+    id: 'staartdeling',
+    title: 'Staartdelingen',
+    icon: '➗',
+    kind: 'oefenen',
+    block: '9',
+    component: StaartdelingModule,
   },
 ]
 

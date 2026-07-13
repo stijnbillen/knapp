@@ -12,6 +12,7 @@ import { PongModule } from '../modules/spelen/pong/PongModule'
 import { OthelloModule } from '../modules/spelen/othello/OthelloModule'
 import { TetrisModule } from '../modules/spelen/tetris/TetrisModule'
 import { GalaxiaModule } from '../modules/spelen/galaxia/GalaxiaModule'
+import { VerschillenModule } from '../modules/spelen/verschillen/VerschillenModule'
 
 // Centraal register van alle oefenmodules en spelletjes.
 // Nieuwe module toevoegen = component schrijven + hier registreren.
@@ -93,6 +94,13 @@ export const MODULES: ModuleDef[] = [
   { id: 'othello', title: 'Othello', icon: '⚫', kind: 'spelen', component: OthelloModule },
   { id: 'tetris', title: 'Tetris', icon: '🧱', kind: 'spelen', component: TetrisModule },
   { id: 'galaxia', title: 'Galaxia', icon: '🚀', kind: 'spelen', component: GalaxiaModule },
+  {
+    id: 'verschillen',
+    title: 'Verschillen',
+    icon: '🔍',
+    kind: 'spelen',
+    component: VerschillenModule,
+  },
 ]
 
 export function getModule(id: string): ModuleDef | undefined {

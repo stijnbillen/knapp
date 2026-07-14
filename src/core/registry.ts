@@ -17,6 +17,7 @@ import { MetenWegenModule } from '../modules/oefenen/metenwegen/MetenWegenModule
 import { GetallenlijnModule } from '../modules/oefenen/getallenlijn/GetallenlijnModule'
 import { LandenModule } from '../modules/oefenen/landen/LandenModule'
 import { EngelsModule } from '../modules/oefenen/engels/EngelsModule'
+import { SpaansModule } from '../modules/oefenen/spaans/SpaansModule'
 import { BubbelsModule } from '../modules/spelen/bubbels/BubbelsModule'
 import { PongModule } from '../modules/spelen/pong/PongModule'
 import { OthelloModule } from '../modules/spelen/othello/OthelloModule'
@@ -183,6 +184,14 @@ export const MODULES: ModuleDef[] = [
     kind: 'oefenen',
     block: '9',
     component: EngelsModule,
+  },
+  {
+    id: 'spaans',
+    title: 'Eerste les Spaans',
+    icon: '🇪🇸',
+    kind: 'oefenen',
+    block: '9',
+    component: SpaansModule,
   },
   { id: 'bubbels', title: 'Bubbels', icon: '🫧', kind: 'spelen', component: BubbelsModule },
   { id: 'pong', title: 'Pong', icon: '🏓', kind: 'spelen', component: PongModule },

@@ -17,14 +17,44 @@ export function AftrekkenModule({ profile, onExit }: ModuleProps) {
   const [level, setLevel] = useState(() => getModuleProgress(profile.id, MODULE_ID).level)
   const [problem, setProblem] = useState<SubtractionProblem>(() => generateProblem(level))
   const [colIndex, setColIndex] = useState(0) // 0 = rechtse kolom
+  const [marked, setMarked] = useState<Set<number>>(new Set()) // kolommen waar het kind zelf leende
   const [attempts, setAttempts] = useState(0)
   const [hint, setHint] = useState<string | null>(null)
   const [starTrigger, setStarTrigger] = useState(0)
 
   const done = colIndex >= problem.digits
 
+  function registerMistake(message: string) {
+    playWrong()
+    setAttempts((a) => a + 1)
+    setHint(message)
+  }
+
+  const digitAt = (n: number, col: number) => Math.floor(n / 10 ** col) % 10
+  const topOf = (col: number) => digitAt(problem.a, col) - (col > 0 && problem.borrows[col - 1] ? 1 : 0)
+
+  function pressLenen() {
+    if (done || marked.has(colIndex)) return
+    if (problem.borrows[colIndex]) {
+      playClick()
+      setHint(null)
+      setMarked((m) => new Set(m).add(colIndex))
+    } else {
+      registerMistake(
+        `Kijk nog eens: ${topOf(colIndex)} − ${digitAt(problem.b, colIndex)} lukt hier gewoon, je hoeft niet te lenen.`,
+      )
+    }
+  }
+
   function pressDigit(d: number) {
     if (done) return
+    // Het kind beslist zelf over lenen: bij een leenkolom moet eerst 🖐 Lenen
+    if (problem.borrows[colIndex] && !marked.has(colIndex)) {
+      registerMistake(
+        `Stop even! Kan ${topOf(colIndex)} − ${digitAt(problem.b, colIndex)} zomaar? Zo niet: tik eerst op 🖐 Lenen.`,
+      )
+      return
+    }
     if (d === problem.expected[colIndex]) {
       playClick()
       setHint(null)
@@ -51,13 +81,13 @@ export function AftrekkenModule({ profile, onExit }: ModuleProps) {
   function nextProblem() {
     setProblem(generateProblem(level))
     setColIndex(0)
+    setMarked(new Set())
     setAttempts(0)
     setHint(null)
   }
 
   // Cijfers per rij, links → rechts (kolom digits-1 … 0)
   const cols = Array.from({ length: problem.digits }, (_, i) => problem.digits - 1 - i)
-  const digitAt = (n: number, col: number) => Math.floor(n / 10 ** col) % 10
 
   function cellStyle(extra: React.CSSProperties = {}): React.CSSProperties {
     return {
@@ -97,8 +127,8 @@ export function AftrekkenModule({ profile, onExit }: ModuleProps) {
             {cols.map((col) => (
               <span key={col} style={cellStyle()}>
                 {digitAt(problem.a, col)}
-                {/* Kolom rechts hiervan heeft geleend: toon “-1” als geheugensteun */}
-                {col > 0 && problem.borrows[col - 1] && colIndex >= col - 1 && (
+                {/* Alleen tonen als het kind zelf leende in de kolom rechts hiervan */}
+                {col > 0 && marked.has(col - 1) && (
                   <span
                     style={{
                       position: 'absolute',
@@ -164,6 +194,18 @@ export function AftrekkenModule({ profile, onExit }: ModuleProps) {
               💡 {hint}
             </p>
           )}
+
+          {/* Leen-knop: het kind beslist zelf of er geleend moet worden */}
+          <div style={{ display: 'flex', justifyContent: 'center', marginTop: 8 }}>
+            <BigButton
+              variant={marked.has(colIndex) ? 'accent' : 'soft'}
+              style={{ minWidth: 200 }}
+              onClick={pressLenen}
+              disabled={marked.has(colIndex)}
+            >
+              🖐 Lenen bij de buur
+            </BigButton>
+          </div>
 
           {/* Numeriek toetsenblok */}
           <div

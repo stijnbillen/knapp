@@ -13,6 +13,7 @@ import { OthelloModule } from '../modules/spelen/othello/OthelloModule'
 import { TetrisModule } from '../modules/spelen/tetris/TetrisModule'
 import { GalaxiaModule } from '../modules/spelen/galaxia/GalaxiaModule'
 import { VerschillenModule } from '../modules/spelen/verschillen/VerschillenModule'
+import { SudokuModule } from '../modules/spelen/sudoku/SudokuModule'
 
 // Centraal register van alle oefenmodules en spelletjes.
 // Nieuwe module toevoegen = component schrijven + hier registreren.
@@ -101,6 +102,7 @@ export const MODULES: ModuleDef[] = [
     kind: 'spelen',
     component: VerschillenModule,
   },
+  { id: 'sudoku', title: 'Sudoku', icon: '🧩', kind: 'spelen', component: SudokuModule },
 ]
 
 export function getModule(id: string): ModuleDef | undefined {

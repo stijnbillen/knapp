@@ -16,7 +16,7 @@ interface SpellingEntry {
   fout: string // de foute spellingvariant
   gat: string // weergave met weggelaten stuk, bv. "bo?en"
   zin: string // contextzin met ___
-  regel: 'lang' | 'kort'
+  regel: 'lang' | 'kort' | 'samen'
 }
 
 function randomItem<T>(list: T[]): T {
@@ -28,9 +28,14 @@ function shuffle<T>(list: T[]): T[] {
 }
 
 function ruleExplanation(entry: SpellingEntry): string {
-  return entry.regel === 'lang'
-    ? `Je hoort een lange klank. Bij een open lettergreep schrijf je dan maar één medeklinker: ${entry.woord}.`
-    : `Je hoort een korte klank. Na een korte klank schrijf je een dubbele medeklinker: ${entry.woord}.`
+  switch (entry.regel) {
+    case 'lang':
+      return `Je hoort een lange klank. Bij een open lettergreep schrijf je dan maar één medeklinker: ${entry.woord}.`
+    case 'kort':
+      return `Je hoort een korte klank. Na een korte klank schrijf je een dubbele medeklinker: ${entry.woord}.`
+    case 'samen':
+      return `Dit is een samenstelling van twee woorden. Denk aan de tussenletters: ${entry.woord}.`
+  }
 }
 
 interface Round {

@@ -7,6 +7,7 @@ import { StarCount } from '../../../ui/StarCount'
 import { StarBurst } from '../../../ui/StarBurst'
 import { FeedbackPanel } from '../../../ui/FeedbackPanel'
 import { BigButton } from '../../../ui/BigButton'
+import { NumericKeypad } from '../../../ui/NumericKeypad'
 import type { Operation, TableProblem } from './tables'
 import { generateProblem } from './tables'
 
@@ -149,36 +150,7 @@ export function TafelsModule({ profile, onExit }: ModuleProps) {
           </p>
 
           {!feedback && (
-            <div
-              style={{
-                display: 'grid',
-                gridTemplateColumns: 'repeat(3, 72px)',
-                gap: 8,
-                justifyContent: 'center',
-                marginTop: 8,
-              }}
-            >
-              {['1', '2', '3', '4', '5', '6', '7', '8', '9'].map((d) => (
-                <BigButton key={d} variant="soft" style={{ fontSize: '1.5rem' }} onClick={() => pressDigit(d)}>
-                  {d}
-                </BigButton>
-              ))}
-              <BigButton variant="ghost" style={{ fontSize: '1.3rem' }} onClick={backspace} aria-label="Wissen">
-                ⌫
-              </BigButton>
-              <BigButton variant="soft" style={{ fontSize: '1.5rem' }} onClick={() => pressDigit('0')}>
-                0
-              </BigButton>
-              <BigButton
-                variant="accent"
-                style={{ fontSize: '1.3rem' }}
-                onClick={confirm}
-                disabled={buffer.length === 0}
-                aria-label="Bevestigen"
-              >
-                ✔
-              </BigButton>
-            </div>
+            <NumericKeypad buffer={buffer} onDigit={pressDigit} onBackspace={backspace} onConfirm={confirm} />
           )}
 
           {feedback === 'good' && (

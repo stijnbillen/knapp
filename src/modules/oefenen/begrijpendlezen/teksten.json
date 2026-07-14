@@ -1,0 +1,176 @@
+[
+  {
+    "id": "poesje",
+    "niveau": "makkelijk",
+    "titel": "Het verdwaalde poesje",
+    "tekst": "Anaé en Izée spelen in de tuin. Ze horen een zacht miauwen achter de schutting. Ze kijken en zien een klein grijs poesje. Het poesje is bang en nat van de regen. Izée pakt het poesje voorzichtig op. Anaé rent naar binnen en haalt een handdoek. Samen drogen ze het poesje af en geven het wat melk. Het poesje spint zachtjes. Anaé zegt: \"We moeten kijken of het een baasje heeft.\" Ze lopen de straat door en zien een briefje aan een lantaarnpaal. Er staat een foto van een grijs poesje op met de naam Wolkje. Izée belt het nummer op het briefje. Een blije mevrouw komt het poesje ophalen en bedankt de meisjes met een doos koekjes.",
+    "vragen": [
+      { "vraag": "Waar vinden Anaé en Izée het poesje?", "opties": ["Achter de schutting", "In de keuken", "Op straat", "In de auto"], "antwoord": 0 },
+      { "vraag": "Wat doen ze eerst nadat ze het poesje binnenbrengen?", "opties": ["Ze geven het een naam", "Ze drogen het af met een handdoek", "Ze bellen de dierenarts", "Ze laten het buiten slapen"], "antwoord": 1 },
+      { "vraag": "Hoe vinden ze het baasje van het poesje?", "opties": ["Via een briefje aan een lantaarnpaal", "Via de buren", "Via school", "Ze vinden het baasje niet"], "antwoord": 0 },
+      { "vraag": "Waarmee bedankt de mevrouw de meisjes?", "opties": ["Met geld", "Met een doos koekjes", "Met een nieuw poesje", "Met bloemen"], "antwoord": 1 }
+    ]
+  },
+  {
+    "id": "kuikentjes",
+    "niveau": "makkelijk",
+    "titel": "Een spannende schooldag",
+    "tekst": "Vandaag is het een bijzondere dag op school. De juf vertelt dat er een verrassing komt. Anaé en Izée zitten naast elkaar en fluisteren: wat zou het zijn? Na de pauze komt er een man binnen met een grote doos. In de doos zitten drie kleine kuikentjes! De hele klas mag om de beurt een kuikentje vasthouden. Izée vindt het heel zacht aanvoelen. Anaé lacht omdat een kuikentje op haar hand piept. De juf legt uit hoe kuikens uit een ei kruipen en wat ze eten. Aan het einde van de dag mag de klas kiezen: de kuikens blijven een week op school. Iedereen is superblij en helpt om een warm hok te maken.",
+    "vragen": [
+      { "vraag": "Wat zit er in de doos die de man meebrengt?", "opties": ["Konijnen", "Kuikentjes", "Speelgoed", "Boeken"], "antwoord": 1 },
+      { "vraag": "Wat mag de hele klas doen?", "opties": ["Naar huis gaan", "Een kuikentje vasthouden", "Buiten spelen", "Tekenen"], "antwoord": 1 },
+      { "vraag": "Wat besluit de klas aan het einde van de dag?", "opties": ["De kuikens gaan meteen weg", "De kuikens blijven een week op school", "De kuikens gaan mee naar huis", "Er komen nog meer dieren"], "antwoord": 1 }
+    ]
+  },
+  {
+    "id": "zee",
+    "niveau": "makkelijk",
+    "titel": "Een dag aan zee",
+    "tekst": "Anaé en Izée gaan met de trein naar zee. Zodra ze aankomen, rennen ze meteen naar het strand. Het zand is warm onder hun blote voeten. Ze bouwen samen een grote zandkasteel met een gracht eromheen. Izée haalt emmers water om de gracht te vullen. Anaé versiert het kasteel met schelpen die ze vindt. Later gaan ze pootjebaden in de zee. De golven kietelen aan hun enkels. Ze zien een meeuw die een frietje probeert te stelen van een man op een bankje. De meisjes moeten er hard om lachen. Voor ze naar huis gaan, kopen ze allebei een ijsje met twee bolletjes.",
+    "vragen": [
+      { "vraag": "Waarmee vullen ze de gracht rond het zandkasteel?", "opties": ["Met zeewater dat ze halen", "Met zand", "Met schelpen", "Met limonade"], "antwoord": 0 },
+      { "vraag": "Waarmee versiert Anaé het kasteel?", "opties": ["Met steentjes", "Met schelpen", "Met bloemen", "Met takjes"], "antwoord": 1 },
+      { "vraag": "Wat probeert de meeuw te doen?", "opties": ["Een frietje stelen", "Een ijsje stelen", "In het water zwemmen", "Op het kasteel zitten"], "antwoord": 0 }
+    ]
+  },
+  {
+    "id": "brandweer",
+    "niveau": "makkelijk",
+    "titel": "Stijn de brandweerman",
+    "tekst": "Stijn is brandweerman en werkt in de grote rode brandweerkazerne. Vandaag mogen Anaé en Izée op bezoek komen. Stijn laat de grote brandweerwagen zien met de lange ladder erop. De meisjes mogen zelfs in de cabine zitten en aan de claxon toeteren. Toe-toe-toeee! Stijn vertelt hoe hij zich supersnel moet aankleden als er een melding binnenkomt. Hij trekt zijn laarzen, broek en jas in minder dan een minuut aan. Anaé vindt dat knap. Plots gaat er een alarm af. Stijn moet meteen vertrekken naar een klein brandje in een tuin. De meisjes zwaaien hem uit en zijn trots op hun vriend Stijn.",
+    "vragen": [
+      { "vraag": "Wat mogen Anaé en Izée doen in de brandweerwagen?", "opties": ["Rijden", "Op de claxon toeteren", "Slapen", "De ladder uitschuiven"], "antwoord": 1 },
+      { "vraag": "Hoe snel trekt Stijn zich aan?", "opties": ["In een uur", "In tien minuten", "In minder dan een minuut", "Hij trekt zich niet om"], "antwoord": 2 },
+      { "vraag": "Waar moet Stijn naartoe als het alarm afgaat?", "opties": ["Naar een brandje in een tuin", "Naar huis", "Naar school", "Naar de dierenarts"], "antwoord": 0 }
+    ]
+  },
+  {
+    "id": "verjaardag",
+    "niveau": "makkelijk",
+    "titel": "Het verjaardagsfeest",
+    "tekst": "Vandaag is Izée jarig. Haar mama Delphine en papa Stijn hebben de tuin versierd met ballonnen en slingers. Anaé komt als eerste gast aan met een groot cadeau. Er komen nog veel meer vriendjes en vriendinnetjes. Ze spelen verstoppertje en een spannend spel met een zak vol snoep. Delphine heeft een chocoladetaart gebakken met acht kaarsjes erop. Iedereen zingt een verjaardagslied voor Izée. Ze mag een wens doen en blaast alle kaarsjes in één keer uit. Iedereen klapt en juicht. Na de taart pakt Izée haar cadeautjes uit. Van Anaé krijgt ze een mooi tekenboek met stiften.",
+    "vragen": [
+      { "vraag": "Wie hebben de tuin versierd?", "opties": ["Delphine en Stijn", "De buren", "Izée zelf", "De juf"], "antwoord": 0 },
+      { "vraag": "Hoeveel kaarsjes staan er op de taart?", "opties": ["Vijf", "Zes", "Acht", "Tien"], "antwoord": 2 },
+      { "vraag": "Wat krijgt Izée van Anaé?", "opties": ["Een tekenboek met stiften", "Een bal", "Een spelletje", "Een knuffel"], "antwoord": 0 }
+    ]
+  },
+  {
+    "id": "schattenkaart",
+    "niveau": "makkelijk",
+    "titel": "De schattenkaart",
+    "tekst": "In het bos achter hun huis vinden Anaé en Izée een oud, verkreukeld papier. Het is een schattenkaart! Er staat een kruisje op bij een grote boom met drie takken. De meisjes pakken een schepje en gaan meteen op pad. Ze lopen langs een beekje en over een omgevallen boomstam. Eindelijk vinden ze de boom met drie takken. Onder een steen graven ze een klein kistje op. In het kistje zitten geen echte schatten, maar wel kleurrijke knikkers en een briefje. Op het briefje staat: \"Voor de volgende avonturier!\" De meisjes lachen en besluiten er zelf ook iets in te stoppen voor wie het kistje ooit terugvindt.",
+    "vragen": [
+      { "vraag": "Wat vinden Anaé en Izée in het bos?", "opties": ["Een schattenkaart", "Een fiets", "Een knuffel", "Een boek"], "antwoord": 0 },
+      { "vraag": "Waar staat het kruisje op de kaart?", "opties": ["Bij een beekje", "Bij een boom met drie takken", "Bij een huis", "Bij een berg"], "antwoord": 1 },
+      { "vraag": "Wat zit er in het kistje?", "opties": ["Goud en zilver", "Knikkers en een briefje", "Snoep", "Niets"], "antwoord": 1 }
+    ]
+  },
+  {
+    "id": "sneeuw",
+    "niveau": "makkelijk",
+    "titel": "Sneeuwpret",
+    "tekst": "Het heeft de hele nacht gesneeuwd. Als Anaé wakker wordt, is alles wit. Ze belt meteen Izée op om samen te gaan spelen. Ze trekken dikke jassen, mutsen en wanten aan. Buiten maken ze eerst een grote sneeuwbal die steeds groter wordt als ze hem over de grond rollen. Samen bouwen ze een sneeuwpop met een wortel als neus en twee knopen als ogen. Daarna gooien ze sneeuwballen naar elkaar en gieren het uit van het lachen. Hun handen worden koud, maar dat kan hen niet schelen. Als het bijna donker wordt, gaan ze naar binnen voor warme chocolademelk met slagroom.",
+    "vragen": [
+      { "vraag": "Wat doen Anaé en Izée eerst buiten?", "opties": ["Een sneeuwpop bouwen", "Een grote sneeuwbal rollen", "Sneeuwballen gooien", "Naar binnen gaan"], "antwoord": 1 },
+      { "vraag": "Wat gebruiken ze als neus voor de sneeuwpop?", "opties": ["Een steentje", "Een wortel", "Een tak", "Een knoop"], "antwoord": 1 },
+      { "vraag": "Waarmee warmen ze zich op binnen?", "opties": ["Warme chocolademelk met slagroom", "Thee", "Soep", "Limonade"], "antwoord": 0 }
+    ]
+  },
+  {
+    "id": "draak",
+    "niveau": "moeilijk",
+    "titel": "De draak van de Zilverberg",
+    "tekst": "Al eeuwenlang vertelt men in het koninkrijk het verhaal van de draak die op de Zilverberg woont. Niemand heeft haar ooit gezien, maar boeren beweren dat hun schapen soms spoorloos verdwijnen. Koning Stijn besluit dat het genoeg is geweest en roept twee dappere avonturiers op: Anaé en Izée. De meisjes klimmen drie dagen lang tegen de steile berg op, met een touw, een kaart en een zak vol proviand. Bovenop vinden ze een enorme grot waaruit rook opstijgt. Voorzichtig sluipen ze naar binnen en zien daar de draak Delphine, opgekruld rond een berg gouden munten. Tot hun verbazing huilt de draak zachtjes. Ze vertelt dat ze eenzaam is, want iedereen is te bang om met haar te praten. Anaé en Izée beloven wekelijks op bezoek te komen. Vanaf die dag verdwijnen er geen schapen meer, en wordt de draak de trouwste vriendin van het koninkrijk.",
+    "vragen": [
+      { "vraag": "Wie stuurt Anaé en Izée naar de berg?", "opties": ["Koning Stijn", "Een boer", "Hun juf", "Niemand, ze gaan zelf"], "antwoord": 0 },
+      { "vraag": "Hoe lang klimmen de meisjes tegen de berg op?", "opties": ["Eén dag", "Drie dagen", "Een week", "Een maand"], "antwoord": 1 },
+      { "vraag": "Waarom is de draak Delphine verdrietig?", "opties": ["Ze heeft honger", "Ze is haar munten kwijt", "Ze is eenzaam", "Ze wil naar huis"], "antwoord": 2 },
+      { "vraag": "Wat gebeurt er nadat de meisjes de draak ontmoeten?", "opties": ["Ze verjagen de draak", "Er verdwijnen geen schapen meer", "De koning wordt boos", "De berg stort in"], "antwoord": 1 }
+    ]
+  },
+  {
+    "id": "mars",
+    "niveau": "moeilijk",
+    "titel": "Missie naar de rode planeet",
+    "tekst": "In het jaar 2157 stappen Anaé en Izée als jonge ruimtevaarders aan boord van de raket Sterrenpijl. Hun missie: onderzoeken waarom het contact met het onbemande robotje op Mars plotseling is weggevallen. Na een reis van zeven maanden landen ze veilig op het roestrode oppervlak. Met hun ruimtepak stappen ze voorzichtig naar buiten, terwijl het stof onder hun laarzen opwaait. Ze vinden het robotje vast tussen twee rotsblokken, met een lekke batterij. Izée haalt haar gereedschapskoffer boven en repareert de bedrading, terwijl Anaé foto's maakt van vreemde rode kristallen die ze nog nooit gezien heeft. Net wanneer ze het robotje weer opstarten, begint er een zandstorm op te steken. Ze rennen terug naar de raket en kijken vanuit het raampje toe hoe de storm over de vlakte raast. Terug op aarde krijgen ze een medaille voor hun moed, en het robotje stuurt voortaan elke dag nieuwe foto's van Mars.",
+    "vragen": [
+      { "vraag": "Wat is de missie van Anaé en Izée?", "opties": ["Een nieuwe planeet zoeken", "Uitzoeken waarom het robotje niet meer reageert", "Water zoeken op Mars", "Een raket bouwen"], "antwoord": 1 },
+      { "vraag": "Hoe lang duurt de reis naar Mars?", "opties": ["Zeven dagen", "Zeven weken", "Zeven maanden", "Zeven jaar"], "antwoord": 2 },
+      { "vraag": "Wat is er mis met het robotje?", "opties": ["Het is kapot gevallen", "Het heeft een lekke batterij", "Het is gestolen", "Het staat ondersteboven"], "antwoord": 1 },
+      { "vraag": "Wat gebeurt er net als het robotje weer werkt?", "opties": ["Er begint een zandstorm", "De raket start vanzelf", "Ze vinden water", "Het wordt nacht"], "antwoord": 0 }
+    ]
+  },
+  {
+    "id": "heks",
+    "niveau": "moeilijk",
+    "titel": "De heks van het Fluisterbos",
+    "tekst": "Volgens de dorpelingen woont er diep in het Fluisterbos een heks die kinderen betovert die te dicht bij haar hut komen. Anaé gelooft er niets van, maar Izée is toch een beetje bang als ze samen op pad gaan om paddenstoelen te zoeken voor school. Al snel raken ze de weg kwijt tussen de hoge bomen en zien ze in de verte rook uit een schoorsteen komen. Nieuwsgierig sluipen ze dichterbij en kijken door een kier in de houten deur. Binnen zien ze de heks Delphine, gebogen over een grote pot soep, mopperend dat niemand ooit op bezoek komt. Anaé klopt voorzichtig aan. Delphine schrikt eerst, maar ontdooit al snel als de meisjes vertellen dat ze verdwaald zijn. Ze biedt hen warme soep aan en tekent een kaartje om de weg terug naar het dorp te vinden. Vanaf die dag vertellen Anaé en Izée iedereen dat de heks helemaal niet eng is, maar juist heel aardig en eenzaam.",
+    "vragen": [
+      { "vraag": "Waarom gaan Anaé en Izée het bos in?", "opties": ["Om te wandelen", "Om paddenstoelen te zoeken voor school", "Om de heks te zoeken", "Om hout te sprokkelen"], "antwoord": 1 },
+      { "vraag": "Wie is er een beetje bang volgens het verhaal?", "opties": ["Anaé", "Izée", "Allebei niet", "De heks"], "antwoord": 1 },
+      { "vraag": "Wat doet de heks Delphine als de meisjes verdwaald blijken?", "opties": ["Ze stuurt hen weg", "Ze biedt soep aan en helpt met de weg", "Ze betovert hen", "Ze belt hun ouders"], "antwoord": 1 },
+      { "vraag": "Wat vertellen de meisjes achteraf over de heks?", "opties": ["Dat ze eng is", "Dat ze aardig en eenzaam is", "Dat ze niet bestaat", "Dat ze verhuisd is"], "antwoord": 1 }
+    ]
+  },
+  {
+    "id": "eenhoorn",
+    "niveau": "moeilijk",
+    "titel": "De eenhoorn met de gebroken hoorn",
+    "tekst": "Op een ochtend vinden Anaé en Izée een vreemd spoor van glinsterende hoefafdrukken die het weiland doorkruisen. Ze volgen het spoor tot aan de rand van het bos, waar ze een eenhoorn ontdekken die pijnlijk op drie benen staat. Zijn glanzende hoorn is aan de punt afgebroken en hij kan niet meer galopperen zonder zijn evenwicht te verliezen. De meisjes herkennen hem als Stijn, de eenhoorn waarover in oude verhalen wordt verteld dat hij over de weilanden waakt. Voorzichtig benaderen ze hem en zien dat er een scherpe doorn in zijn poot zit. Izée haalt de doorn er langzaam uit, terwijl Anaé zachtjes tegen Stijn praat om hem gerust te stellen. Zonder de doorn kan de eenhoorn alweer een stukje beter lopen. Nog diezelfde middag brengen ze hem naar een oude wijze uil die weet hoe je een hoorn kan helen met kruiden uit het bos. Na een paar weken groeit de hoorn van Stijn helemaal terug, en voortaan komt hij elke lente een bezoekje brengen aan de twee meisjes die hem geholpen hebben.",
+    "vragen": [
+      { "vraag": "Wat ontdekken Anaé en Izée als ze het spoor volgen?", "opties": ["Een verdwaald konijn", "Een gewonde eenhoorn", "Een oude kaart", "Een verlaten hut"], "antwoord": 1 },
+      { "vraag": "Wat is er precies mis met de eenhoorn Stijn?", "opties": ["Zijn hoorn is gebroken en er zit een doorn in zijn poot", "Hij is ziek", "Hij is zijn weg kwijt", "Hij heeft honger"], "antwoord": 0 },
+      { "vraag": "Wie helpt de hoorn van Stijn helemaal te genezen?", "opties": ["Een dokter", "Een oude wijze uil", "De koning", "Niemand, het geneest vanzelf"], "antwoord": 1 },
+      { "vraag": "Wat doet Stijn nadat hij genezen is?", "opties": ["Hij verdwijnt voorgoed", "Hij komt elke lente op bezoek", "Hij wordt boos op de meisjes", "Hij verhuist naar een ander bos"], "antwoord": 1 }
+    ]
+  },
+  {
+    "id": "vuurtoren",
+    "niveau": "moeilijk",
+    "titel": "Het geheim van de oude vuurtoren",
+    "tekst": "Elke zomer brengen Anaé en Izée hun vakantie door bij de kust, in het huisje van hun grootouders vlak naast een verlaten vuurtoren. De dorpelingen zeggen dat de vuurtoren al twintig jaar niet meer werkt, sinds de oude vuurtorenwachter er plotseling mee stopte en niemand weet waarom. Op een mistige avond zien de meisjes tot hun verbazing toch een zwak licht flikkeren aan de top. Vastberaden om het mysterie op te lossen, sluipen ze de volgende ochtend de wenteltrap op, tree voor tree, tot boven in de lantaarnkamer. Daar vinden ze geen spook, maar een oude man die stiekem nog steeds elke avond de lamp aansteekt omdat hij niet kan verdragen dat schepen zonder licht de gevaarlijke rotsen naderen. Hij vertelt dat hij ontslagen werd toen de vuurtoren officieel gesloten werd, maar dat hij zijn taak nooit heeft kunnen loslaten. Ontroerd door zijn verhaal, overtuigen Anaé en Izée de burgemeester om de vuurtoren opnieuw officieel te openen, met de oude man weer als trotse wachter.",
+    "vragen": [
+      { "vraag": "Waar zien de meisjes een vreemd licht?", "opties": ["In het huisje van hun grootouders", "Aan de top van de vuurtoren", "Op zee", "In het dorp"], "antwoord": 1 },
+      { "vraag": "Wie vinden ze boven in de vuurtoren?", "opties": ["Een spook", "Een oude man", "Niemand", "Een dier"], "antwoord": 1 },
+      { "vraag": "Waarom steekt de oude man stiekem de lamp aan?", "opties": ["Hij wil geld verdienen", "Hij wil niet dat schepen de rotsen naderen zonder licht", "Hij is de nieuwe wachter", "Hij weet niet dat het niet meer mag"], "antwoord": 1 },
+      { "vraag": "Wat gebeurt er aan het einde van het verhaal?", "opties": ["De vuurtoren wordt afgebroken", "De vuurtoren gaat weer officieel open", "De man verhuist", "Niemand gelooft de meisjes"], "antwoord": 1 }
+    ]
+  },
+  {
+    "id": "ruzie",
+    "niveau": "moeilijk",
+    "titel": "Ruzie op het schoolplein",
+    "tekst": "Anaé en Izée zijn al sinds de kleuterklas beste vriendinnen, maar op een dinsdagmiddag krijgen ze voor het eerst echt ruzie. Tijdens de gymles worden ze in verschillende teams ingedeeld voor een estafettewedstrijd, en wanneer Izée per ongeluk het stokje laat vallen, roept Anaé geïrriteerd dat ze nu nooit meer zullen winnen. Izée voelt zich vreselijk en rent tijdens de pauze alleen naar een bankje achteraan het schoolplein. Anaé beseft al snel dat ze te hard heeft gereageerd, maar weet niet goed hoe ze het weer goed moet maken. Ze vraagt raad aan de juf, die voorstelt om gewoon eerlijk te zeggen wat ze voelt. Aarzelend loopt Anaé naar het bankje en verontschuldigt zich: ze was gewoon teleurgesteld over de wedstrijd, maar dat was geen excuus om zo onaardig te doen. Izée is opgelucht en vergeeft haar meteen. Ze besluiten dat een wedstrijd nooit belangrijker mag zijn dan hun vriendschap, en spelen de rest van de pauze weer samen, alsof er niets gebeurd is.",
+    "vragen": [
+      { "vraag": "Waarover krijgen Anaé en Izée ruzie?", "opties": ["Over een speelgoedje", "Over een gevallen stokje tijdens de estafette", "Over huiswerk", "Over een verjaardagsfeestje"], "antwoord": 1 },
+      { "vraag": "Waar gaat Izée naartoe na de ruzie?", "opties": ["Naar de klas", "Naar een bankje achteraan het schoolplein", "Naar huis", "Naar de juf"], "antwoord": 1 },
+      { "vraag": "Wie geeft Anaé de raad om eerlijk te zijn?", "opties": ["Haar mama", "De juf", "Izée zelf", "De directeur"], "antwoord": 1 },
+      { "vraag": "Wat besluiten de meisjes aan het eind?", "opties": ["Nooit meer samen spelen", "Dat een wedstrijd nooit belangrijker is dan hun vriendschap", "Om niet meer te sporten", "Om een nieuwe vriendin te zoeken"], "antwoord": 1 }
+    ]
+  },
+  {
+    "id": "kroon",
+    "niveau": "moeilijk",
+    "titel": "Het kasteel van de verdwenen kroon",
+    "tekst": "In het koninkrijk waar Anaé en Izée wonen, heerst grote paniek: de gouden kroon van koning Stijn is spoorloos verdwenen uit de kasteeltoren, net op de dag van het grote lentefeest. De koning belooft een gulle beloning aan wie de kroon terugvindt, en tientallen ridders doorzoeken tevergeefs elke kamer van het kasteel. Anaé en Izée, die als dienstmeisjes in de keuken werken, besluiten zelf op onderzoek uit te gaan. Ze merken al snel dat de kasteelraaf, die normaal altijd op de vensterbank van de troonzaal zit, sinds die ochtend spoorloos is. Vermoedend dat de vogel iets glinsterends heeft meegenomen, klimmen ze naar het oude duiventorentje boven de stallen, waar raven vaak hun nesten bouwen. Tussen de takken van een verlaten nest vinden ze inderdaad de kroon, glimmend tussen wat veren en twijgjes. Trots overhandigen ze de kroon aan de koning, die versteld staat van hun scherpzinnigheid. Als beloning mogen de meisjes voortaan elk jaar als eregasten het lentefeest bijwonen, in plaats van in de keuken te moeten werken.",
+    "vragen": [
+      { "vraag": "Wat is er verdwenen uit de kasteeltoren?", "opties": ["De gouden kroon van koning Stijn", "Een schilderij", "Een zwaard", "Een boek"], "antwoord": 0 },
+      { "vraag": "Wie doorzoeken eerst tevergeefs het kasteel?", "opties": ["De ridders", "De keukenmeisjes", "De koningin", "De dorpelingen"], "antwoord": 0 },
+      { "vraag": "Waar vinden Anaé en Izée uiteindelijk de kroon?", "opties": ["In de keuken", "In een ravennest bij het duiventorentje", "Onder het bed van de koning", "In de tuin"], "antwoord": 1 },
+      { "vraag": "Wat is hun beloning?", "opties": ["Geld", "Elk jaar als eregasten het lentefeest bijwonen", "Een eigen kasteel", "Niets, ze krijgen geen beloning"], "antwoord": 1 }
+    ]
+  },
+  {
+    "id": "vliegendevissen",
+    "niveau": "moeilijk",
+    "titel": "De wedstrijd van de vliegende vissen",
+    "tekst": "Tijdens hun duik in de koraaltuinen ontdekken Anaé en Izée, die allebei dol zijn op snorkelen, een groep bijzondere vliegende vissen die elk jaar een wedstrijd houden: wie het verst boven het water kan springen, wordt aangesteld als beschermer van het rif voor het komende jaar. Dit jaar is er onenigheid ontstaan, want twee vissen beweren allebei de winnaar te zijn en niemand heeft goed opgelet wie er nu eigenlijk het verst sprong. De vissen vragen de meisjes, die toevallig alles vanuit het water hebben zien gebeuren, om als eerlijke scheidsrechters op te treden. Anaé en Izée denken lang na en besluiten om de wedstrijd gewoon opnieuw te laten verlopen, deze keer met een touw dat ze over het water spannen als duidelijke meetlijn. De ene vis springt verrassend hoog, maar de andere vliegt er met een sierlijke boog net overheen. Iedereen is het er nu over eens wie gewonnen heeft. Als dank voor hun eerlijke hulp mogen de meisjes voortaan als enige mensen vrij door het beschermde rif zwemmen, wanneer ze maar willen.",
+    "vragen": [
+      { "vraag": "Waarover gaat de wedstrijd van de vliegende vissen?", "opties": ["Wie het snelst kan zwemmen", "Wie het verst boven het water kan springen", "Wie de mooiste kleur heeft", "Wie het meeste eet"], "antwoord": 1 },
+      { "vraag": "Waarom vragen de vissen hulp aan Anaé en Izée?", "opties": ["Omdat vissen kunnen praten", "Omdat de meisjes alles hebben zien gebeuren en eerlijk zijn", "Omdat ze het rif willen kopen", "Omdat de vissen niet kunnen tellen"], "antwoord": 1 },
+      { "vraag": "Hoe lossen de meisjes het probleem op?", "opties": ["Ze laten de wedstrijd opnieuw doen met een meetlijn", "Ze kiezen zelf een winnaar zonder wedstrijd", "Ze laten beide vissen winnen", "Ze doen zelf mee aan de wedstrijd"], "antwoord": 0 },
+      { "vraag": "Wat is de beloning voor de meisjes?", "opties": ["Ze krijgen geld", "Ze mogen altijd vrij door het rif zwemmen", "Ze krijgen een vis cadeau", "Niets"], "antwoord": 1 }
+    ]
+  }
+]

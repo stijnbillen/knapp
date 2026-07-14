@@ -12,6 +12,9 @@ import { TafelsModule } from '../modules/oefenen/tafels/TafelsModule'
 import { KlokModule } from '../modules/oefenen/klok/KlokModule'
 import { DicteeModule } from '../modules/oefenen/dictee/DicteeModule'
 import { AftrekkenModule } from '../modules/oefenen/aftrekken/AftrekkenModule'
+import { BegrijpendLezenModule } from '../modules/oefenen/begrijpendlezen/BegrijpendLezenModule'
+import { MetenWegenModule } from '../modules/oefenen/metenwegen/MetenWegenModule'
+import { GetallenlijnModule } from '../modules/oefenen/getallenlijn/GetallenlijnModule'
 import { BubbelsModule } from '../modules/spelen/bubbels/BubbelsModule'
 import { PongModule } from '../modules/spelen/pong/PongModule'
 import { OthelloModule } from '../modules/spelen/othello/OthelloModule'
@@ -137,6 +140,30 @@ export const MODULES: ModuleDef[] = [
     kind: 'oefenen',
     block: '9',
     component: AftrekkenModule,
+  },
+  {
+    id: 'begrijpendlezen',
+    title: 'Begrijpend lezen',
+    icon: '📖',
+    kind: 'oefenen',
+    block: '9',
+    component: BegrijpendLezenModule,
+  },
+  {
+    id: 'metenwegen',
+    title: 'Meten & Wegen',
+    icon: '📏',
+    kind: 'oefenen',
+    block: '9',
+    component: MetenWegenModule,
+  },
+  {
+    id: 'getallenlijn',
+    title: 'Getallenlijn',
+    icon: '🔢',
+    kind: 'oefenen',
+    block: '9',
+    component: GetallenlijnModule,
   },
   { id: 'bubbels', title: 'Bubbels', icon: '🫧', kind: 'spelen', component: BubbelsModule },
   { id: 'pong', title: 'Pong', icon: '🏓', kind: 'spelen', component: PongModule },

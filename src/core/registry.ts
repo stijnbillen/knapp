@@ -26,6 +26,7 @@ import { SudokuModule } from '../modules/spelen/sudoku/SudokuModule'
 import { MemoryModule } from '../modules/spelen/memory/MemoryModule'
 import { CodeKrakerModule } from '../modules/spelen/codekraker/CodeKrakerModule'
 import { SchakenModule } from '../modules/spelen/schaken/SchakenModule'
+import { BubbleShooterModule } from '../modules/spelen/bubbleshooter/BubbleShooterModule'
 
 // Centraal register van alle oefenmodules en spelletjes.
 // Nieuwe module toevoegen = component schrijven + hier registreren.
@@ -196,6 +197,13 @@ export const MODULES: ModuleDef[] = [
     component: CodeKrakerModule,
   },
   { id: 'schaken', title: 'Schaken', icon: '♟️', kind: 'spelen', component: SchakenModule },
+  {
+    id: 'bubbleshooter',
+    title: 'Bubble Shooter',
+    icon: '🎯',
+    kind: 'spelen',
+    component: BubbleShooterModule,
+  },
 ]
 
 export function getModule(id: string): ModuleDef | undefined {

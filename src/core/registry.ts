@@ -3,6 +3,7 @@ import type { BlockId, Profile } from './profiles'
 import { TellenModule } from '../modules/oefenen/tellen/TellenModule'
 import { OptellenModule } from '../modules/oefenen/optellen/OptellenModule'
 import { KijkGoedModule } from '../modules/oefenen/kijkgoed/KijkGoedModule'
+import { PlaatjesSudokuModule } from '../modules/oefenen/plaatjessudoku/PlaatjesSudokuModule'
 import { LettersModule } from '../modules/oefenen/letters/LettersModule'
 import { DoolhofModule } from '../modules/oefenen/doolhof/DoolhofModule'
 import { SpellingModule } from '../modules/oefenen/spelling/SpellingModule'
@@ -79,6 +80,14 @@ export const MODULES: ModuleDef[] = [
     kind: 'oefenen',
     block: '5',
     component: KijkGoedModule,
+  },
+  {
+    id: 'plaatjessudoku',
+    title: 'Sudoku',
+    icon: '🐸',
+    kind: 'oefenen',
+    block: '5',
+    component: PlaatjesSudokuModule,
   },
   {
     id: 'tafels',

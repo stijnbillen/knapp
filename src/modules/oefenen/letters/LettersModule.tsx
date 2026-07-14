@@ -45,23 +45,34 @@ function newRound(level: number): Round {
   return { entry, targetLetter, targetCount }
 }
 
-// Nederlandse klankgroepen van twee letters (lange klinkers en tweeklanken).
-const DIGRAPHS = ['aa', 'ee', 'oo', 'uu', 'ie', 'ei', 'ij', 'ui', 'oe', 'ou', 'au', 'eu']
-
 /**
- * Hoe klinkt deze letter in dit woord? Zit de letter in een klankgroep
- * (aa/oe/ei/…), dan lezen we die hele klank voor; een losse korte klinker
- * krijgt een h erachter zodat de stem "ah" i.p.v. de letternaam "aa" zegt.
- * Medeklinkers houden hun letternaam.
+ * Hoe klinkt deze letter in dit woord? Medeklinkers houden hun letternaam.
+ * Voor klinkers:
+ * - Een dubbele-zelfde-letter (aa/ee/oo/uu) is duidelijk één lange klank:
+ *   die lezen we samen voor. Een tweeklank van twee vérschillende letters
+ *   (bv. "oe" in "boek") klinkt niet als de losse letter, dus die negeren
+ *   we hier bewust — dan valt de functie terug op de regel hieronder.
+ * - Gesloten lettergreep (klinker + medeklinker + einde woord of nóg een
+ *   medeklinker, zoals "les", "kat", "appel") → korte klank: letter + de
+ *   erop volgende medeklinker geeft de stem genoeg context (bv. "es", "at").
+ * - Open lettergreep (klinker + medeklinker + klinker, zoals "ra-ket",
+ *   "au-to") of klinker aan het (lettergreep)einde → lange klank: letter + h.
  */
 function klankFor(letter: string, word: string): string {
+  if (!'aeiou'.includes(letter)) return letter
+
   const idx = word.indexOf(letter)
   const after = word.slice(idx, idx + 2)
   const before = idx > 0 ? word.slice(idx - 1, idx + 1) : ''
-  if (DIGRAPHS.includes(after)) return after
-  if (DIGRAPHS.includes(before)) return before
-  if ('aeiou'.includes(letter)) return `${letter}h`
-  return letter
+  const dubbel = letter + letter
+  if (after === dubbel) return after
+  if (before === dubbel) return before
+
+  const next = word[idx + 1]
+  const afterNext = word[idx + 2]
+  const geslotenLettergreep = next !== undefined && !'aeiou'.includes(next) && (afterNext === undefined || !'aeiou'.includes(afterNext))
+  if (geslotenLettergreep) return after
+  return `${letter}h`
 }
 
 export function LettersModule({ profile, onExit }: ModuleProps) {

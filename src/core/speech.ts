@@ -3,6 +3,16 @@
 // talen (bv. 'en') wordt de eerste stem met die taalprefix gebruikt. Doet
 // niets als de API ontbreekt.
 
+// Voorkeursvolgorde van specifieke taal/regio-varianten per taalcode: sommige
+// toestellen registreren hun stem als "es-ES", andere als "es-MX" of "es-419".
+// We proberen ze op volgorde en vallen pas als laatste terug op eender welke
+// stem die met de taalcode begint.
+const VOICE_VOORKEUR: Record<string, string[]> = {
+  nl: ['nl-be', 'nl-nl'],
+  en: ['en-gb', 'en-us'],
+  es: ['es-es', 'es-419', 'es-mx', 'es-us'],
+}
+
 const cachedVoices: Record<string, SpeechSynthesisVoice | null | undefined> = {}
 
 function pickVoice(lang: string): SpeechSynthesisVoice | null {
@@ -13,13 +23,13 @@ function pickVoice(lang: string): SpeechSynthesisVoice | null {
   }
   const voices = speechSynthesis.getVoices()
   if (voices.length === 0) return null // nog niet geladen; niet cachen
-  const found =
-    lang === 'nl'
-      ? (voices.find((v) => v.lang.toLowerCase().startsWith('nl-be')) ??
-        voices.find((v) => v.lang.toLowerCase().startsWith('nl-nl')) ??
-        voices.find((v) => v.lang.toLowerCase().startsWith('nl')) ??
-        null)
-      : (voices.find((v) => v.lang.toLowerCase().startsWith(lang)) ?? null)
+  const voorkeur = VOICE_VOORKEUR[lang] ?? []
+  let found: SpeechSynthesisVoice | null = null
+  for (const prefix of voorkeur) {
+    found = voices.find((v) => v.lang.toLowerCase().startsWith(prefix)) ?? null
+    if (found) break
+  }
+  if (!found) found = voices.find((v) => v.lang.toLowerCase().startsWith(lang)) ?? null
   cachedVoices[lang] = found
   return found
 }
@@ -35,13 +45,21 @@ export function speechAvailable(): boolean {
   return typeof speechSynthesis !== 'undefined'
 }
 
+/** Volledige BCP-47-code (bv. "es-ES") als fallback wanneer er geen stem gevonden is. */
+function volledigeTaalcode(lang: string): string {
+  const voorkeur = VOICE_VOORKEUR[lang]?.[0]
+  if (!voorkeur) return lang
+  const [taal, regio] = voorkeur.split('-')
+  return regio ? `${taal}-${regio.toUpperCase()}` : taal
+}
+
 export function speak(text: string, lang: string = 'nl'): void {
   if (!speechAvailable()) return
   speechSynthesis.cancel()
   const utterance = new SpeechSynthesisUtterance(text)
   const voice = pickVoice(lang)
   if (voice) utterance.voice = voice
-  utterance.lang = voice?.lang ?? (lang === 'nl' ? 'nl-BE' : lang)
+  utterance.lang = voice?.lang ?? volledigeTaalcode(lang)
   utterance.rate = 0.9 // iets trager voor kinderen
   speechSynthesis.speak(utterance)
 }

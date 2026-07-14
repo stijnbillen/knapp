@@ -2,11 +2,15 @@ import type { ComponentType } from 'react'
 import type { BlockId, Profile } from './profiles'
 import { TellenModule } from '../modules/oefenen/tellen/TellenModule'
 import { OptellenModule } from '../modules/oefenen/optellen/OptellenModule'
+import { KijkGoedModule } from '../modules/oefenen/kijkgoed/KijkGoedModule'
 import { LettersModule } from '../modules/oefenen/letters/LettersModule'
 import { DoolhofModule } from '../modules/oefenen/doolhof/DoolhofModule'
 import { SpellingModule } from '../modules/oefenen/spelling/SpellingModule'
 import { StaartdelingModule } from '../modules/oefenen/staartdeling/StaartdelingModule'
 import { TafelsModule } from '../modules/oefenen/tafels/TafelsModule'
+import { KlokModule } from '../modules/oefenen/klok/KlokModule'
+import { DicteeModule } from '../modules/oefenen/dictee/DicteeModule'
+import { AftrekkenModule } from '../modules/oefenen/aftrekken/AftrekkenModule'
 import { BubbelsModule } from '../modules/spelen/bubbels/BubbelsModule'
 import { PongModule } from '../modules/spelen/pong/PongModule'
 import { OthelloModule } from '../modules/spelen/othello/OthelloModule'
@@ -14,6 +18,8 @@ import { TetrisModule } from '../modules/spelen/tetris/TetrisModule'
 import { GalaxiaModule } from '../modules/spelen/galaxia/GalaxiaModule'
 import { VerschillenModule } from '../modules/spelen/verschillen/VerschillenModule'
 import { SudokuModule } from '../modules/spelen/sudoku/SudokuModule'
+import { MemoryModule } from '../modules/spelen/memory/MemoryModule'
+import { CodeKrakerModule } from '../modules/spelen/codekraker/CodeKrakerModule'
 
 // Centraal register van alle oefenmodules en spelletjes.
 // Nieuwe module toevoegen = component schrijven + hier registreren.
@@ -67,6 +73,14 @@ export const MODULES: ModuleDef[] = [
     component: OptellenModule,
   },
   {
+    id: 'kijkgoed',
+    title: 'Kijk goed!',
+    icon: '👀',
+    kind: 'oefenen',
+    block: '5',
+    component: KijkGoedModule,
+  },
+  {
     id: 'tafels',
     title: 'Tafels',
     icon: '✖️',
@@ -90,6 +104,30 @@ export const MODULES: ModuleDef[] = [
     block: '9',
     component: StaartdelingModule,
   },
+  {
+    id: 'klok',
+    title: 'Klok',
+    icon: '🕒',
+    kind: 'oefenen',
+    block: '9',
+    component: KlokModule,
+  },
+  {
+    id: 'dictee',
+    title: 'Dictee',
+    icon: '🎧',
+    kind: 'oefenen',
+    block: '9',
+    component: DicteeModule,
+  },
+  {
+    id: 'aftrekken',
+    title: 'Aftrekken',
+    icon: '➖',
+    kind: 'oefenen',
+    block: '9',
+    component: AftrekkenModule,
+  },
   { id: 'bubbels', title: 'Bubbels', icon: '🫧', kind: 'spelen', component: BubbelsModule },
   { id: 'pong', title: 'Pong', icon: '🏓', kind: 'spelen', component: PongModule },
   { id: 'othello', title: 'Othello', icon: '⚫', kind: 'spelen', component: OthelloModule },
@@ -103,6 +141,14 @@ export const MODULES: ModuleDef[] = [
     component: VerschillenModule,
   },
   { id: 'sudoku', title: 'Sudoku', icon: '🧩', kind: 'spelen', component: SudokuModule },
+  { id: 'memory', title: 'Memory', icon: '🎴', kind: 'spelen', component: MemoryModule },
+  {
+    id: 'codekraker',
+    title: 'Code Kraker',
+    icon: '🕵️',
+    kind: 'spelen',
+    component: CodeKrakerModule,
+  },
 ]
 
 export function getModule(id: string): ModuleDef | undefined {

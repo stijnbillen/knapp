@@ -1,0 +1,22 @@
+[
+  {
+    "id": "dieren",
+    "label": "🐾 Dieren",
+    "woorden": ["KAT", "HOND", "PAARD", "KOE", "VIS", "VOGEL", "BEER", "LEEUW", "OLIFANT", "GIRAF", "TIJGER", "ZEBRA", "UIL", "KIP", "EEND", "KONIJN", "MUIS", "AAP"]
+  },
+  {
+    "id": "eten",
+    "label": "🍎 Eten",
+    "woorden": ["APPEL", "BANAAN", "BROOD", "MELK", "KAAS", "TAART", "KOEKJE", "RIJST", "SOEP", "FRUIT", "SNOEP", "WATER", "PASTA", "SLA", "PEER"]
+  },
+  {
+    "id": "school",
+    "label": "🎒 School",
+    "woorden": ["SCHOOL", "BOEK", "POTLOOD", "GOM", "LINIAAL", "TAS", "SCHRIFT", "STIFT", "KLAS", "JUF"]
+  },
+  {
+    "id": "natuur",
+    "label": "🌳 Natuur",
+    "woorden": ["BOOM", "BLOEM", "ZON", "MAAN", "STER", "WOLK", "REGEN", "SNEEUW", "WIND", "RIVIER", "BERG", "ZEE", "STRAND", "BOS"]
+  }
+]

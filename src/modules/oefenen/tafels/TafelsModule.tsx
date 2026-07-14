@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import type { ModuleProps } from '../../../core/registry'
 import { recordAnswer } from '../../../core/progress'
 import { playClick, playCorrect, playWrong } from '../../../core/audio'
@@ -75,6 +75,14 @@ export function TafelsModule({ profile, onExit }: ModuleProps) {
     setBuffer('')
     setFeedback(null)
   }
+
+  // Bij een juist antwoord meteen door naar de volgende som, geen extra klik nodig.
+  useEffect(() => {
+    if (feedback !== 'good') return
+    const timer = setTimeout(next, 700)
+    return () => clearTimeout(timer)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [feedback])
 
   if (phase === 'settings') {
     return (

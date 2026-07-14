@@ -15,6 +15,7 @@ import { AftrekkenModule } from '../modules/oefenen/aftrekken/AftrekkenModule'
 import { BegrijpendLezenModule } from '../modules/oefenen/begrijpendlezen/BegrijpendLezenModule'
 import { MetenWegenModule } from '../modules/oefenen/metenwegen/MetenWegenModule'
 import { GetallenlijnModule } from '../modules/oefenen/getallenlijn/GetallenlijnModule'
+import { LandenModule } from '../modules/oefenen/landen/LandenModule'
 import { BubbelsModule } from '../modules/spelen/bubbels/BubbelsModule'
 import { PongModule } from '../modules/spelen/pong/PongModule'
 import { OthelloModule } from '../modules/spelen/othello/OthelloModule'
@@ -164,6 +165,14 @@ export const MODULES: ModuleDef[] = [
     kind: 'oefenen',
     block: '9',
     component: GetallenlijnModule,
+  },
+  {
+    id: 'landen',
+    title: 'Landen',
+    icon: '🌍',
+    kind: 'oefenen',
+    block: '9',
+    component: LandenModule,
   },
   { id: 'bubbels', title: 'Bubbels', icon: '🫧', kind: 'spelen', component: BubbelsModule },
   { id: 'pong', title: 'Pong', icon: '🏓', kind: 'spelen', component: PongModule },

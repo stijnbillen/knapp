@@ -204,7 +204,7 @@ export function SliderPuzzelModule({ profile, onExit }: ModuleProps) {
             display: 'grid',
             gridTemplateColumns: `repeat(${cols}, 1fr)`,
             gridTemplateRows: `repeat(${rows}, 1fr)`,
-            gap: 2,
+            gap: 0,
             borderRadius: 12,
             boxShadow: 'var(--shadow)',
             overflow: 'hidden',
@@ -213,7 +213,8 @@ export function SliderPuzzelModule({ profile, onExit }: ModuleProps) {
           }}
         >
           {bord.map((stukIndex, pos) => {
-            if (stukIndex === null) return <div key={pos} />
+            if (stukIndex === null)
+              return <div key={pos} style={{ boxShadow: '0 0 0 3px var(--accent) inset' }} />
             const origRow = Math.floor(stukIndex / cols)
             const origCol = stukIndex % cols
             return (
@@ -225,8 +226,8 @@ export function SliderPuzzelModule({ profile, onExit }: ModuleProps) {
                 style={{
                   padding: 0,
                   border: 'none',
-                  borderRadius: 2,
-                  boxShadow: '0 0 0 1px rgba(0,0,0,0.15) inset',
+                  borderRadius: 0,
+                  boxShadow: '0 0 0 3px rgba(0,0,0,0.45) inset',
                   backgroundImage: `url(${afbeelding.src})`,
                   backgroundSize: `${cols * 100}% ${rows * 100}%`,
                   backgroundPosition: `${cols === 1 ? 0 : (origCol / (cols - 1)) * 100}% ${rows === 1 ? 0 : (origRow / (rows - 1)) * 100}%`,

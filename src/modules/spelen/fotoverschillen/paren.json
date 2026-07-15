@@ -12,6 +12,16 @@
     ]
   },
   {
+    "id": "04",
+    "diffs": [
+      { "x": 83.1, "y": 82.0, "r": 6, "note": "voetbal tussen de twee jongens verdwenen" },
+      { "x": 86.8, "y": 23.8, "r": 9, "note": "boom rechtsboven op de achtergrond verdwenen" },
+      { "x": 9.0, "y": 82.0, "r": 9, "note": "meisje met springtouw linksonder verdwenen (schaduwplek blijft over)" },
+      { "x": 57.1, "y": 43.8, "r": 5, "note": "rond venster/patrijspoort op de rode glijbaan-tunnel verdwenen" },
+      { "x": 17.6, "y": 60.0, "r": 6, "note": "ladder aan de linkertoren verdwenen" }
+    ]
+  },
+  {
     "id": "03",
     "diffs": [
       { "x": 17.1, "y": 11.4, "r": 6, "note": "stapel boeken op bovenste boekenplank verdwenen" },
@@ -19,6 +29,17 @@
       { "x": 52.2, "y": 56.0, "r": 7, "note": "haarkleur leerling van geel/blond naar zwart" },
       { "x": 70.4, "y": 54.6, "r": 7, "note": "wereldbol naast leerling verdwenen" },
       { "x": 81.1, "y": 23.7, "r": 6, "note": "klok: rand van blauw/turkoois naar roze/rood" }
+    ]
+  },
+  {
+    "id": "05",
+    "diffs": [
+      { "x": 48.8, "y": 73.2, "r": 6, "note": "linkervin van de raket van rood naar paars/magenta" },
+      { "x": 11.6, "y": 73.5, "r": 9, "note": "wolkenpluim voor de turkooizen geringde planeet verdwenen" },
+      { "x": 8.0, "y": 13.0, "r": 8, "note": "kleine oranje planeet linksboven verdwenen" },
+      { "x": 64.8, "y": 18.2, "r": 5, "note": "gouden ster/sparkle bij de blauwe planeet verdwenen" },
+      { "x": 48.0, "y": 58.0, "r": 6, "note": "witte lijn op de rode raket-punt verdwenen" },
+      { "x": 82.0, "y": 85.0, "r": 6, "note": "donkerrode krater op de rode planeet verdwenen" }
     ]
   },
   {
@@ -32,6 +53,18 @@
     ]
   },
   {
+    "id": "06",
+    "diffs": [
+      { "x": 10.8, "y": 78.4, "r": 8, "note": "tractor van rood naar blauw" },
+      { "x": 25.2, "y": 24.0, "r": 6, "note": "kruisvormig dakraam op het woonhuis verdwenen" },
+      { "x": 66.3, "y": 85.8, "r": 7, "note": "schuurdeur (kruispatroon) verdwenen, nu donker/leeg" },
+      { "x": 53.1, "y": 90.2, "r": 6, "note": "groenten (wortels, biet, paprika) uit de krat verdwenen" },
+      { "x": 44.8, "y": 54.7, "r": 5, "note": "windwijzer/pijl op het windrad verdwenen" },
+      { "x": 84.4, "y": 44.4, "r": 8, "note": "wiek van de molen anders gedraaid en van kleur veranderd (oranje naar bruin)" },
+      { "x": 7.4, "y": 45.6, "r": 9, "note": "boom aan de linkerkant van de afbeelding verdwenen" }
+    ]
+  },
+  {
     "id": "01",
     "diffs": [
       { "x": 47.0, "y": 5.0, "r": 6, "note": "vogels verdwenen" },
@@ -39,6 +72,17 @@
       { "x": 80.5, "y": 77.8, "r": 6, "note": "rots verdwenen" },
       { "x": 83.0, "y": 66.0, "r": 7, "note": "struik naast tent verdwenen" },
       { "x": 14.8, "y": 9.6, "r": 10, "note": "kruin van linkerboom volledig verdwenen" }
+    ]
+  },
+  {
+    "id": "07",
+    "diffs": [
+      { "x": 74.0, "y": 15.1, "r": 9, "note": "boom bovenaan is groter / heeft een extra tak die tot bij het dak reikt" },
+      { "x": 71.9, "y": 37.8, "r": 6, "note": "struik toegevoegd naast de trap van het huis" },
+      { "x": 54.3, "y": 92.6, "r": 4, "note": "extra kras/modderveegje bij de voorpoot van het varken" },
+      { "x": 3.0, "y": 29.0, "r": 6, "note": "strepen op het raam verdwenen" },
+      { "x": 25.0, "y": 34.0, "r": 6, "note": "extra wolkje toegevoegd" },
+      { "x": 2.0, "y": 79.0, "r": 5, "note": "extra appel in de mand toegevoegd" }
     ]
   },
   {
@@ -55,6 +99,18 @@
     ]
   },
   {
+    "id": "10",
+    "diffs": [
+      { "x": 46.1, "y": 52.4, "r": 5, "note": "oogstuk van de telescoop van oranje naar blauw verkleurd" },
+      { "x": 13.1, "y": 54.3, "r": 6, "note": "vlam achter de raket is verdwenen" },
+      { "x": 87.8, "y": 8.1, "r": 6, "note": "ufo rechtsboven is verdwenen" },
+      { "x": 41.5, "y": 80.6, "r": 4, "note": "klein wit steentje bij het gras is verdwenen" },
+      { "x": 42.1, "y": 21.2, "r": 5, "note": "sprankelbolletje in het staartje van de komeet is verdwenen" },
+      { "x": 9.9, "y": 13.2, "r": 8, "note": "paarse vlek op de paarse planeet linksboven is verdwenen" },
+      { "x": 90.9, "y": 60.3, "r": 8, "note": "schaduw op de berg rechts is verdwenen" }
+    ]
+  },
+  {
     "id": "08",
     "diffs": [
       { "x": 82.0, "y": 11.2, "r": 8, "note": "clownvis rechtsboven is verdwenen" },
@@ -64,6 +120,18 @@
       { "x": 52.0, "y": 66.4, "r": 6, "note": "donkere grotopening in de rots is verdwenen" },
       { "x": 69.8, "y": 90.9, "r": 7, "note": "roze zeester onderaan is verdwenen" },
       { "x": 37.6, "y": 92.5, "r": 7, "note": "rode krab linksonder is verdwenen" }
+    ]
+  },
+  {
+    "id": "11",
+    "diffs": [
+      { "x": 47.1, "y": 62.4, "r": 9, "note": "middelste dinosaurus van turquoise naar donkerblauw verkleurd" },
+      { "x": 77.8, "y": 59.5, "r": 9, "note": "kleine jonge dinosaurus rechts is verdwenen" },
+      { "x": 82.8, "y": 89.3, "r": 6, "note": "stekelige plant rechtsonder is verdwenen" },
+      { "x": 34.4, "y": 8.5, "r": 8, "note": "wolk bovenaan is verdwenen" },
+      { "x": 10.0, "y": 20.0, "r": 10, "note": "bomen aan de linkerkant zijn verdwenen" },
+      { "x": 8.0, "y": 80.0, "r": 7, "note": "dinosaurus in het water kijkt de andere kant op" },
+      { "x": 65.0, "y": 35.0, "r": 8, "note": "vlekken op de rug van de grote dinosaurus zijn verdwenen" }
     ]
   },
   {
@@ -81,11 +149,62 @@
     ]
   },
   {
+    "id": "12",
+    "diffs": [
+      { "x": 50.3, "y": 32.4, "r": 6, "note": "grijze pot boven het kampvuur is verdwenen" },
+      { "x": 75.9, "y": 54.4, "r": 6, "note": "gitaar van geel naar roze verkleurd" },
+      { "x": 85.0, "y": 57.4, "r": 5, "note": "lantaarn naast de klapstoel is verdwenen" },
+      { "x": 43.7, "y": 51.5, "r": 5, "note": "bijl die in het houtblok stak is verdwenen" },
+      { "x": 25.6, "y": 73.5, "r": 6, "note": "plantje voor de grote boomstam is verdwenen" },
+      { "x": 14.9, "y": 8.8, "r": 9, "note": "lichte tekening/glans in de boomkruin linksboven is verdwenen" },
+      { "x": 15.7, "y": 45.6, "r": 7, "note": "deur op de gele tent is verdwenen" },
+      { "x": 95.0, "y": 42.6, "r": 6, "note": "reservewiel op de camper is verdwenen" }
+    ]
+  },
+  {
     "id": "02",
     "diffs": [
       { "x": 87.6, "y": 72.2, "r": 9, "note": "eenhoorn/pegasus verdwenen van de wolk" },
       { "x": 23.0, "y": 20.0, "r": 9, "note": "regenboog: kleurband anders (rode band breder, geel/oranje band weg)" },
       { "x": 50.0, "y": 45.0, "r": 8, "note": "drie ronde raampjes onder de centrale toren verdwenen" }
+    ]
+  },
+  {
+    "id": "15",
+    "diffs": [
+      { "x": 7.0, "y": 91.1, "r": 6, "note": "emmertje met schepje en hark linksonder is verdwenen" },
+      { "x": 80.6, "y": 85.0, "r": 4, "note": "turquoise streep op de donkere koffer is verdwenen" },
+      { "x": 38.5, "y": 46.2, "r": 4, "note": "een van de twee haarstrikjes van het meisje is verdwenen" },
+      { "x": 6.9, "y": 14.5, "r": 5, "note": "extra vogeltje toegevoegd linksboven (3 vogels i.p.v. 2)" },
+      { "x": 14.4, "y": 50.0, "r": 6, "note": "vlag op het bootje links wijst nu de andere kant op" }
+    ]
+  },
+  {
+    "id": "16",
+    "diffs": [
+      { "x": 42.4, "y": 8.6, "r": 8, "note": "hoed van de papa-sneeuwpop veranderd van bolhoed naar hoge hoed" },
+      { "x": 12.3, "y": 41.8, "r": 5, "note": "muts van de dochter-sneeuwpop heeft nu een pompon bovenop" },
+      { "x": 61.4, "y": 7.6, "r": 5, "note": "strikje bovenop de muts van de mama-sneeuwpop is verdwenen" },
+      { "x": 68.9, "y": 78.4, "r": 5, "note": "hondje heeft nu een belletje/label aan de halsband" },
+      { "x": 90.9, "y": 74.5, "r": 6, "note": "boomstronk rechtsonder heeft nu een sneeuwlaagje op de kop" },
+      { "x": 17.0, "y": 57.0, "r": 7, "note": "sjaal van de dochter zit aan de andere kant" },
+      { "x": 48.0, "y": 85.0, "r": 6, "note": "staart van de kat is ingekort" },
+      { "x": 80.0, "y": 80.0, "r": 6, "note": "staart van de hond is anders" },
+      { "x": 20.0, "y": 35.0, "r": 8, "note": "strepen aan weerszijden van de huisdeur zijn anders" },
+      { "x": 91.6, "y": 13.2, "r": 6, "note": "dennenboomspits tussen de 2 grote dennenbomen is verdwenen" }
+    ]
+  },
+  {
+    "id": "18",
+    "diffs": [
+      { "x": 4.1, "y": 11.6, "r": 5, "note": "bij toegevoegd" },
+      { "x": 31.0, "y": 6.4, "r": 7, "note": "hoed van groen naar blauw veranderd" },
+      { "x": 33.7, "y": 18.0, "r": 5, "note": "knipoog toegevoegd" },
+      { "x": 31.0, "y": 38.6, "r": 6, "note": "bloem in het zakje toegevoegd" },
+      { "x": 45.5, "y": 64.3, "r": 8, "note": "maiskolf toegevoegd" },
+      { "x": 67.5, "y": 16.7, "r": 6, "note": "haan op het dak kijkt nu de andere kant op" },
+      { "x": 95.7, "y": 6.4, "r": 7, "note": "zon met stralen toegevoegd" },
+      { "x": 95.0, "y": 91.3, "r": 7, "note": "pompoen toegevoegd" }
     ]
   }
 ]

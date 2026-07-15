@@ -4,6 +4,7 @@ import { TellenModule } from '../modules/oefenen/tellen/TellenModule'
 import { OptellenModule } from '../modules/oefenen/optellen/OptellenModule'
 import { KijkGoedModule } from '../modules/oefenen/kijkgoed/KijkGoedModule'
 import { KleurenVolgordeModule } from '../modules/oefenen/kleurenvolgorde/KleurenVolgordeModule'
+import { IcoonPatroonModule } from '../modules/oefenen/icoonpatroon/IcoonPatroonModule'
 import { PlaatjesSudokuModule } from '../modules/oefenen/plaatjessudoku/PlaatjesSudokuModule'
 import { LettersModule } from '../modules/oefenen/letters/LettersModule'
 import { DoolhofModule } from '../modules/oefenen/doolhof/DoolhofModule'
@@ -99,6 +100,14 @@ export const MODULES: ModuleDef[] = [
     kind: 'oefenen',
     block: '5',
     component: KleurenVolgordeModule,
+  },
+  {
+    id: 'icoonpatroon',
+    title: 'Icoontjes in een patroon',
+    icon: '🧠',
+    kind: 'oefenen',
+    block: '5',
+    component: IcoonPatroonModule,
   },
   {
     id: 'plaatjessudoku',

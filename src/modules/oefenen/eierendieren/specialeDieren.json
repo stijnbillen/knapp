@@ -1,0 +1,37 @@
+[
+  {
+    "id": "vogelbekdier",
+    "emoji": "🦫",
+    "nl": "het vogelbekdier",
+    "fr": "l'ornithorynque",
+    "uitleg": "Het vogelbekdier is een zoogdier — net als jij! — maar het legt tóch eitjes. Heel bijzonder!"
+  },
+  {
+    "id": "mierenegel",
+    "emoji": "🦔",
+    "nl": "de mierenegel",
+    "fr": "l'échidné",
+    "uitleg": "Net als het vogelbekdier legt ook de mierenegel eitjes, hoewel het een zoogdier is."
+  },
+  {
+    "id": "haai",
+    "emoji": "🦈",
+    "nl": "de haai",
+    "fr": "le requin",
+    "uitleg": "Sommige haaien leggen eitjes, andere krijgen levende babyhaaien. Het verschilt per soort haai!"
+  },
+  {
+    "id": "adder",
+    "emoji": "🐍",
+    "nl": "de adder",
+    "fr": "la vipère",
+    "uitleg": "De meeste slangen leggen eitjes, maar de adder draagt haar jongen in haar buik en krijgt levende baby's!"
+  },
+  {
+    "id": "zeepaardje",
+    "emoji": "🐠",
+    "nl": "het zeepaardje",
+    "fr": "l'hippocampe",
+    "uitleg": "Bij het zeepaardje is het de PAPA die de eitjes draagt in een buideltje, niet de mama!"
+  }
+]

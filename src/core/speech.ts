@@ -11,6 +11,7 @@ const VOICE_VOORKEUR: Record<string, string[]> = {
   nl: ['nl-be', 'nl-nl'],
   en: ['en-gb', 'en-us'],
   es: ['es-es', 'es-419', 'es-mx', 'es-us'],
+  fr: ['fr-fr', 'fr-be'],
 }
 
 const cachedVoices: Record<string, SpeechSynthesisVoice | null | undefined> = {}

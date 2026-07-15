@@ -5,6 +5,7 @@ import { OptellenModule } from '../modules/oefenen/optellen/OptellenModule'
 import { KijkGoedModule } from '../modules/oefenen/kijkgoed/KijkGoedModule'
 import { KleurenVolgordeModule } from '../modules/oefenen/kleurenvolgorde/KleurenVolgordeModule'
 import { IcoonPatroonModule } from '../modules/oefenen/icoonpatroon/IcoonPatroonModule'
+import { EierenDierenModule } from '../modules/oefenen/eierendieren/EierenDierenModule'
 import { PlaatjesSudokuModule } from '../modules/oefenen/plaatjessudoku/PlaatjesSudokuModule'
 import { LettersModule } from '../modules/oefenen/letters/LettersModule'
 import { DoolhofModule } from '../modules/oefenen/doolhof/DoolhofModule'
@@ -109,6 +110,14 @@ export const MODULES: ModuleDef[] = [
     kind: 'oefenen',
     block: '5',
     component: IcoonPatroonModule,
+  },
+  {
+    id: 'eierendieren',
+    title: 'Legt dit dier een ei?',
+    icon: '🥚',
+    kind: 'oefenen',
+    block: '5',
+    component: EierenDierenModule,
   },
   {
     id: 'plaatjessudoku',

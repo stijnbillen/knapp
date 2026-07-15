@@ -37,7 +37,7 @@ export default defineConfig({
         // Alles vooraf cachen zodat de app na installatie 100% offline werkt.
         // De woordenlijsten (JSON) zitten mee in de JS-bundel; er zijn geen
         // externe URL's of CDN's.
-        globPatterns: ['**/*.{js,css,html,svg,png,ico,json,woff2}'],
+        globPatterns: ['**/*.{js,css,html,svg,png,jpg,ico,json,woff2}'],
       },
     }),
   ],

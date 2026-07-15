@@ -1,0 +1,919 @@
+[
+  {
+    "dier": "kip",
+    "slot": "adult",
+    "license": "CC BY-SA 4.0",
+    "author": "SimonWaldherr (own work)",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Rooster_and_Hen_08.jpg"
+  },
+  {
+    "dier": "kip",
+    "slot": "ei",
+    "license": "CC BY-SA 4.0",
+    "author": "GualdimG (own work)",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Hatching_of_chicken_eggs_01.jpg"
+  },
+  {
+    "dier": "kip",
+    "slot": "baby",
+    "license": "CC BY 2.0",
+    "author": "Alex Ford from Raleigh, NC, USA",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Newborn_baby_chicken.jpg"
+  },
+  {
+    "dier": "eend",
+    "slot": "adult",
+    "license": "CC BY 3.0",
+    "author": "Mbdortmund (own work) — Wilde eend / mallard, gebruikt als generieke eend",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Duisburg_10401IMG_0401.JPG"
+  },
+  {
+    "dier": "eend",
+    "slot": "ei",
+    "license": "CC BY-SA 4.0",
+    "author": "Petritap (own work)",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Anas_platyrhynchos_nest_with_eggs.jpg"
+  },
+  {
+    "dier": "eend",
+    "slot": "baby",
+    "license": "CC BY-SA 4.0",
+    "author": "Paul Danese (own work)",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:20250718_mallard_duckling_wethersfield_cove_PD200055.jpg"
+  },
+  {
+    "dier": "zwaan",
+    "slot": "adult",
+    "license": "CC BY-SA 3.0",
+    "author": "Marek Szczepanek (own work) — Knobbelzwaan / mute swan, gebruikt als generieke zwaan",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Cygnus_olor_2_(Marek_Szczepanek).jpg"
+  },
+  {
+    "dier": "zwaan",
+    "slot": "ei",
+    "license": "CC BY 2.5",
+    "author": "Roberto Zanon",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Cygnus_olor_eggs.jpg"
+  },
+  {
+    "dier": "zwaan",
+    "slot": "baby",
+    "license": "CC BY-SA 4.0",
+    "author": "Charles J. Sharp (Sharp Photography, sharpphotography.co.uk)",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Mute_swan_(Cygnus_olor)_cygnet_Denmark.jpg"
+  },
+  {
+    "dier": "uil",
+    "slot": "adult",
+    "license": "CC BY-SA 4.0",
+    "author": "Bouke ten Cate (own work) — Ruigpootuil, gebruikt als generieke uil",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Tengmalm%27s_owl_(Aegolius_funereus).jpg"
+  },
+  {
+    "dier": "uil",
+    "slot": "ei",
+    "license": "CC BY-SA 4.0",
+    "author": "Rixifin (own work) — bosuil-ei",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Strix_aluco_Egg_From_Kerava,_Finland.jpg"
+  },
+  {
+    "dier": "uil",
+    "slot": "baby",
+    "license": "Public domain",
+    "author": "NPS (US National Park Service, NPGallery)",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Baby_owls_are_called_owlets._These_great_horned_owlets_are_perched_in_a_tree_waiting_for_mom_to_bring_back_a_snack._(01ab8a44-155d-4519-3e06-ff1be10b103f).jpg"
+  },
+  {
+    "dier": "mus",
+    "slot": "adult",
+    "license": "CC BY-SA 4.0",
+    "author": "JrPol (own work)",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Huismus,_man.jpg"
+  },
+  {
+    "dier": "mus",
+    "slot": "baby",
+    "license": "Public domain",
+    "author": "User:Rex (own work)",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:House_sparrow_chick.jpg"
+  },
+  {
+    "dier": "vink",
+    "slot": "adult",
+    "license": "CC BY-SA 2.5",
+    "author": "MichaelMaggs, bewerkt door Arad",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Fringilla_coelebs_chaffinch_male_edit2.jpg"
+  },
+  {
+    "dier": "vink",
+    "slot": "ei",
+    "license": "CC BY-SA 4.0",
+    "author": "Trachemys (own work)",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Nest_of_Chaffinch2.jpg"
+  },
+  {
+    "dier": "vink",
+    "slot": "baby",
+    "license": "Public domain",
+    "author": "Karduelis",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Bayağı_ispinoz_yavru.jpg"
+  },
+  {
+    "dier": "roodborstje",
+    "slot": "adult",
+    "license": "CC BY-SA 3.0",
+    "author": "Rasbak (own work)",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Erithacus_rubecula,_Roodborstje.jpg"
+  },
+  {
+    "dier": "roodborstje",
+    "slot": "ei",
+    "license": "CC BY-SA 3.0",
+    "author": "Notafly (own work)",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Erithacus_rubecula_eggs.JPG"
+  },
+  {
+    "dier": "roodborstje",
+    "slot": "baby",
+    "license": "CC BY-SA 4.0",
+    "author": "Charles J. Sharp (Sharp Photography, sharpphotography.co.uk)",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:European_robin_(Erithacus_rubecula)_juvenile.jpg"
+  },
+  {
+    "dier": "ooievaar",
+    "slot": "adult",
+    "license": "CC BY-SA 4.0",
+    "author": "Soloneying (own work)",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Ringed_white_stork.jpg"
+  },
+  {
+    "dier": "ooievaar",
+    "slot": "baby",
+    "license": "CC BY-SA 4.0",
+    "author": "Voltteri (own work)",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:White_stork_and_youngs_in_nest_in_Croatia.jpg"
+  },
+  {
+    "dier": "papegaai",
+    "slot": "adult",
+    "license": "CC BY-SA 3.0",
+    "author": "Hans Hillewaert (own work) — blauwgele ara, gebruikt als generieke papegaai",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Ara_ararauna_(Costa_Rica).jpg"
+  },
+  {
+    "dier": "papegaai",
+    "slot": "ei",
+    "license": "Public domain",
+    "author": "U.S. Fish and Wildlife Service Southeast Region — eieren van Puerto Ricaanse papegaai (kweekprogramma)",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Parrot_eggs_(6926688095).jpg"
+  },
+  {
+    "dier": "papegaai",
+    "slot": "baby",
+    "license": "CC BY-SA 2.0",
+    "author": "Kolin Toney — Afrikaanse grijze roodstaart-kuiken, gebruikt als generieke papegaai",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Psittacus_erithacus_erithacus_-chick-6a.jpg"
+  },
+  {
+    "dier": "pinguin",
+    "slot": "adult",
+    "license": "CC BY 2.0",
+    "author": "Ian Duffy from UK, via Snowmanradio",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Aptenodytes_forsteri_-Snow_Hill_Island,_Antarctica_-adults_and_juvenile-8.jpg"
+  },
+  {
+    "dier": "pinguin",
+    "slot": "ei",
+    "license": "CC BY-SA 3.0",
+    "author": "John Cummings (own work)",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Emperor_penguin_egg,_Treasures_Exhibition,_Natural_History_Museum_11.jpg"
+  },
+  {
+    "dier": "pinguin",
+    "slot": "baby",
+    "license": "CC BY 2.5",
+    "author": "Onbekend (geen machineleesbare auteur vermeld op Commons)",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:EmperorPenguinChick.jpg"
+  },
+  {
+    "dier": "kikker",
+    "slot": "adult",
+    "license": "CC BY-SA 2.5",
+    "author": "Richard Bartz, Munich (own work)",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:European_Common_Frog_Rana_temporaria.jpg"
+  },
+  {
+    "dier": "kikker",
+    "slot": "ei",
+    "license": "CC BY-SA 3.0",
+    "author": "Bewerking door B kimmel, origineel door Mnolf — kikkerdril",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Rana_temporaria_eggs_1.JPG"
+  },
+  {
+    "dier": "kikker",
+    "slot": "baby",
+    "license": "CC BY-SA 3.0",
+    "author": "Mariomassone (own work) — kikkervisjes",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Rana_temporaria_tadpoles_eating_1.jpg"
+  },
+  {
+    "dier": "schildpad",
+    "slot": "adult",
+    "license": "CC BY-SA 3.0",
+    "author": "Brocken Inaglory, bewerkt door Keta",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Hawaii_turtle_2.JPG"
+  },
+  {
+    "dier": "schildpad",
+    "slot": "ei",
+    "license": "CC BY-SA 4.0",
+    "author": "Kenmayer (own work)",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Eastern_Painted_Turtle_laying_eggs.jpg"
+  },
+  {
+    "dier": "schildpad",
+    "slot": "baby",
+    "license": "Public domain",
+    "author": "U.S. Fish and Wildlife Service Northeast Region",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Hatchling_painted_turtle_(7176705571).jpg"
+  },
+  {
+    "dier": "krokodil",
+    "slot": "adult",
+    "license": "Public domain",
+    "author": "St. Augustine Alligator Farm (via Molly Ebersold) / FHWA",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:SaltwaterCrocodile(%27Maximo%27).jpg"
+  },
+  {
+    "dier": "krokodil",
+    "slot": "baby",
+    "license": "CC BY 2.0",
+    "author": "shankar s. from Dubai, United Arab Emirates",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Crocodile_hatch-lings_(9163273287).jpg"
+  },
+  {
+    "dier": "hagedis",
+    "slot": "adult",
+    "license": "CC BY-SA 3.0",
+    "author": "Hans Hillewaert (own work) — groene basilisk, gebruikt als generieke hagedis",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Basiliscus_plumifrons_(Ca%C3%B1o_Negra)_mirror.jpg"
+  },
+  {
+    "dier": "hagedis",
+    "slot": "ei",
+    "license": "CC0",
+    "author": "Jidanni (own work)",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Lizard_with_eggs_01.jpg"
+  },
+  {
+    "dier": "hagedis",
+    "slot": "baby",
+    "license": "CC BY-SA 2.0",
+    "author": "Javier Ábalos from Valencia, España — kuikentje van een blafgekko",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Baby_barking_gecko_in_Goegap_Nature_Reserve_(Namakwaland;_South_Africa)_(15287083221).jpg"
+  },
+  {
+    "dier": "slang",
+    "slot": "adult",
+    "license": "CC BY 2.5",
+    "author": "Humberto",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Humbertserpiente.jpg"
+  },
+  {
+    "dier": "slang",
+    "slot": "ei",
+    "license": "CC BY-SA 2.5",
+    "author": "Dawson (originally uploaded to English Wikipedia)",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Corn_Snake_eggs.jpg"
+  },
+  {
+    "dier": "vlinder",
+    "slot": "adult",
+    "license": "CC BY-SA 4.0",
+    "author": "Charles J. Sharp",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Le_Vulcain_(Vanessa_atalanta)_red_admiral.jpg"
+  },
+  {
+    "dier": "vlinder",
+    "slot": "ei",
+    "license": "CC0",
+    "author": "Shocksingularity",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Monarch_butterfly_egg_on_a_leaf.jpg"
+  },
+  {
+    "dier": "vlinder",
+    "slot": "baby",
+    "license": "CC BY-SA 4.0",
+    "author": "Ivar Leidus",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Papilio_machaon_caterpillar_(top_view)_-_Keila.jpg"
+  },
+  {
+    "dier": "bij",
+    "slot": "adult",
+    "license": "CC BY-SA 2.5",
+    "author": "Richard Bartz, Munich (Makro Freak) & Beemaster Hubert Seibring, Munich",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Apis_mellifera_carnica_worker_hive_entrance_3.jpg"
+  },
+  {
+    "dier": "bij",
+    "slot": "ei",
+    "license": "CC BY-SA 4.0",
+    "author": "Piscisgate",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Honeybee_worker_eggs_12.jpg"
+  },
+  {
+    "dier": "bij",
+    "slot": "baby",
+    "license": "CC BY-SA 4.0",
+    "author": "Benlisquare",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Italian_honeybee_eggs_and_larvae.jpg"
+  },
+  {
+    "dier": "mier",
+    "slot": "adult",
+    "license": "CC BY 4.0",
+    "author": "Retro Lenses",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Portrait_of_an_ant,_profile_view.jpg"
+  },
+  {
+    "dier": "mier",
+    "slot": "ei",
+    "license": "CC0",
+    "author": "Insects Unlocked",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Minor_worker_with_egg_(Pheidole_floridana)_(41319137145).jpg"
+  },
+  {
+    "dier": "mier",
+    "slot": "baby",
+    "license": "CC BY-SA 4.0",
+    "author": "Daniel Schwen",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:CH_Ant_larva_pupa.jpg"
+  },
+  {
+    "dier": "lieveheersbeestje",
+    "slot": "adult",
+    "license": "Public domain",
+    "author": "Jon Sullivan (PD-PDphoto.org)",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Ladybird.jpg"
+  },
+  {
+    "dier": "lieveheersbeestje",
+    "slot": "ei",
+    "license": "CC BY-SA 2.0",
+    "author": "Gilles San Martin (Namur, Belgium)",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Coccinella_septempunctata_ova.jpg"
+  },
+  {
+    "dier": "lieveheersbeestje",
+    "slot": "baby",
+    "license": "CC BY-SA 3.0",
+    "author": "Alvesgaspar",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Ladybird_May_2008-1.jpg"
+  },
+  {
+    "dier": "spin",
+    "slot": "adult",
+    "license": "CC BY-SA 4.0",
+    "author": "Ivar Leidus",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Araneus_diadematus_-_Keila.jpg"
+  },
+  {
+    "dier": "spin",
+    "slot": "ei",
+    "license": "CC BY-SA 4.0",
+    "author": "Ryan Hodnett",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Common_House_Spider_(Parasteatoda_tepidariorum)_with_Egg_Sac_-_Guelph,_Ontario_2014-07-20.jpg"
+  },
+  {
+    "dier": "spin",
+    "slot": "baby",
+    "license": "CC BY-SA 2.0",
+    "author": "marsupium photography",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Ball_of_spiderlings_(19211910991).jpg"
+  },
+  {
+    "dier": "slak",
+    "slot": "adult",
+    "license": "CC BY-SA 3.0",
+    "author": "Jürgen Schoner",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Grapevinesnail_01.jpg"
+  },
+  {
+    "dier": "slak",
+    "slot": "ei",
+    "license": "CC BY-SA 4.0",
+    "author": "Basile Morin",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Golden_apple_snail_eggs.jpg"
+  },
+  {
+    "dier": "slak",
+    "slot": "baby",
+    "license": "CC BY-SA 4.0",
+    "author": "JaneyDay",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Baby_Snail_by_Janis_Harbour_North_Wessex_Downs.jpg"
+  },
+  {
+    "dier": "goudvis",
+    "slot": "adult",
+    "license": "CC BY 2.0",
+    "author": "James St. John",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Carassius_auratus_auratus_(goldfish)_1.jpg"
+  },
+  {
+    "dier": "zalm",
+    "slot": "adult",
+    "license": "Public domain",
+    "author": "Timothy Knepp (U.S. Fish and Wildlife Service)",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Salmo_salar.jpg"
+  },
+  {
+    "dier": "zalm",
+    "slot": "ei",
+    "license": "CC BY-SA 3.0",
+    "author": "Puschinka",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Lachskaviar,_Salmon_roe,_Red_caviar,_%D0%9A%D1%80%D0%B0%D1%81%D0%BD%D0%B0%D1%8F_%D0%B8%D0%BA%D1%80%D0%B0_002.JPG"
+  },
+  {
+    "dier": "zalm",
+    "slot": "baby",
+    "license": "Public domain",
+    "author": "Peter Steenstra (Green Lake National Fish Hatchery, USFWS)",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Atlantic_salmon_parr.jpg"
+  },
+  {
+    "dier": "tonijn",
+    "slot": "adult",
+    "license": "CC BY 4.0",
+    "author": "Hugues Evano (IFREMER)",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Thon_germon_(Thunnus_alalunga)_(Ifremer_00764-87615).jpg"
+  },
+  {
+    "dier": "haring",
+    "slot": "adult",
+    "license": "CC0",
+    "author": "Andy Li",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Herring_-_Royal_Fish,_Markthal_Rotterdam_2024-12-02.jpg"
+  },
+  {
+    "dier": "haring",
+    "slot": "ei",
+    "license": "CC BY 2.0",
+    "author": "Greg Schechter (San Francisco, USA)",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Herring_Roe_-_Flickr_-_GregTheBusker.jpg"
+  },
+  {
+    "dier": "kabeljauw",
+    "slot": "adult",
+    "license": "CC BY-SA 2.5",
+    "author": "Hans-Petter Fjeld",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Gadus_morhua_Cod-2b-Atlanterhavsparken-Norway.JPG"
+  },
+  {
+    "dier": "kabeljauw",
+    "slot": "ei",
+    "license": "CC BY-SA 4.0",
+    "author": "Wolfmann",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Fiskebryggen,_Mathallen,_Fishmarket,_Bergen,_Norway_2018-03-18._Cod_roe_(torskerogn)_and_Norwegian_delicacy_%22cod%27s_tongues%22_(torsketunger)_displayed_for_sale_at_Fjellsk%C3%A5l_sea_food_store.jpg"
+  },
+  {
+    "dier": "forel",
+    "slot": "adult",
+    "license": "Public domain",
+    "author": "Sam Stukel / USFWS Mountain Prairie",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Brown_Trout_(Salmo_trutta).jpg"
+  },
+  {
+    "dier": "forel",
+    "slot": "ei",
+    "license": "Public domain",
+    "author": "Rebekah Ewing / USFWS",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Erwin_NFH_rainbow_trout_eggs_Jensorters_18_September_2024.png"
+  },
+  {
+    "dier": "forel",
+    "slot": "baby",
+    "license": "Public domain",
+    "author": "USFWS Mountain Prairie",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Rainbow_Trout_Fry_(51309174658).jpg"
+  },
+  {
+    "dier": "karper",
+    "slot": "adult",
+    "license": "CC BY-SA 3.0",
+    "author": "George Chernilevsky",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Cyprinus_carpio_2008_G1_(cropped).jpg"
+  },
+  {
+    "dier": "karper",
+    "slot": "ei",
+    "license": "CC BY-SA 4.0",
+    "author": "Pete unseth",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Carp_roe_caviar.png"
+  },
+  {
+    "dier": "snoek",
+    "slot": "adult",
+    "license": "CC BY-SA 3.0",
+    "author": "Georg Mittenecker",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Esox_hdm.JPG"
+  },
+  {
+    "dier": "snoek",
+    "slot": "ei",
+    "license": "Public domain",
+    "author": "USFWS Mountain-Prairie",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Northern_Pike_Egg_(7441919980).jpg"
+  },
+  {
+    "dier": "snoek",
+    "slot": "baby",
+    "license": "CC BY-SA 4.0",
+    "author": "Andreas Eichler",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:2016.07.20.-06-Westensee_Felde--Hecht-Jungtier.jpg"
+  },
+  {
+    "dier": "meerval",
+    "slot": "adult",
+    "license": "CC BY-SA 3.0",
+    "author": "Lucas van der Geest (foto geschonken, geplaatst door Haplochromis)",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:EuropeseMeervalLucasVanDerGeest.jpg"
+  },
+  {
+    "dier": "paling",
+    "slot": "adult",
+    "license": "CC BY-SA 3.0",
+    "author": "GerardM",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Anguilla_anguilla.jpg"
+  },
+  {
+    "dier": "paling",
+    "slot": "baby",
+    "license": "CC BY 4.0",
+    "author": "etrusko25",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Anguilla_anguilla_glass_eel.jpg"
+  },
+  {
+    "dier": "koe",
+    "slot": "adult",
+    "license": "Public domain",
+    "author": "Keith Weller / USDA",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Cow_female_black_white.jpg"
+  },
+  {
+    "dier": "koe",
+    "slot": "baby",
+    "license": "CC BY-SA 4.0",
+    "author": "Sheshu Kumar B",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Young_calf_with_her_mother_cow.jpg"
+  },
+  {
+    "dier": "hond",
+    "slot": "adult",
+    "license": "CC BY 2.0",
+    "author": "M. Rehemtulla",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Huskiesatrest.jpg"
+  },
+  {
+    "dier": "hond",
+    "slot": "baby",
+    "license": "CC BY-SA 4.0",
+    "author": "Mapep",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Dog_puppy.jpg"
+  },
+  {
+    "dier": "kat",
+    "slot": "adult",
+    "license": "Public domain",
+    "author": "George Chernilevsky",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Domestic_cat_2011_G02.jpg"
+  },
+  {
+    "dier": "kat",
+    "slot": "baby",
+    "license": "CC BY-SA 3.0",
+    "author": "LonMcGregor",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Young_Kitten.JPG"
+  },
+  {
+    "dier": "olifant",
+    "slot": "adult",
+    "license": "CC BY 2.0",
+    "author": "Vince Smith (London, UK)",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:African_Elephant_(3075415215).jpg"
+  },
+  {
+    "dier": "olifant",
+    "slot": "baby",
+    "license": "CC0",
+    "author": "Benoit Vicart",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Baby_elephant_playing_fake_charge.jpg"
+  },
+  {
+    "dier": "paard",
+    "slot": "adult",
+    "license": "CC0",
+    "author": "Seth Zeigler, Nokota Horse Conservancy, Linton, North Dakota",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Nokota_Horse_Stud_Band.jpg"
+  },
+  {
+    "dier": "paard",
+    "slot": "baby",
+    "license": "CC BY-SA 2.0",
+    "author": "Enoch Leung (Canada)",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Young_foal_(28128168308).jpg"
+  },
+  {
+    "dier": "konijn",
+    "slot": "adult",
+    "license": "CC BY-SA 3.0",
+    "author": "JJ Harrison (jjharrison.com.au)",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Oryctolagus_cuniculus_Tasmania_2.jpg"
+  },
+  {
+    "dier": "konijn",
+    "slot": "baby",
+    "license": "CC0",
+    "author": "Stephen Rahn",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Rabbit_-_nest_of_rabbit_kits.jpg"
+  },
+  {
+    "dier": "dolfijn",
+    "slot": "adult",
+    "license": "Public domain",
+    "author": "NASA",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Tursiops_truncatus_01-cropped.jpg"
+  },
+  {
+    "dier": "dolfijn",
+    "slot": "baby",
+    "license": "Public domain",
+    "author": "Altairisfar",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Perdido_Bay_Dolphin_Baby.jpg"
+  },
+  {
+    "dier": "leeuw",
+    "slot": "adult",
+    "license": "CC BY-SA 4.0",
+    "author": "Byrdyak",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Lion_male.jpg"
+  },
+  {
+    "dier": "leeuw",
+    "slot": "baby",
+    "license": "CC BY-SA 4.0",
+    "author": "Charles J. Sharp (Sharp Photography)",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Kalahari_lion_(Panthera_leo)_male_cub_4_months.jpg"
+  },
+  {
+    "dier": "tijger",
+    "slot": "adult",
+    "license": "CC BY-SA 4.0",
+    "author": "Charles J. Sharp (Sharp Photography)",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Walking_tiger_female.jpg"
+  },
+  {
+    "dier": "tijger",
+    "slot": "baby",
+    "license": "CC BY-SA 3.0",
+    "author": "Rohit Varma",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Tiger_Cub_(7490609).jpeg"
+  },
+  {
+    "dier": "aap",
+    "slot": "adult",
+    "license": "CC BY-SA 4.0",
+    "author": "ChloeCrease",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Capuchin_Monkey.jpg"
+  },
+  {
+    "dier": "aap",
+    "slot": "baby",
+    "license": "CC BY-SA 4.0",
+    "author": "Ashutosh4584",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Monkey_infant.jpg"
+  },
+  {
+    "dier": "wolf",
+    "slot": "adult",
+    "license": "CC BY-SA 4.0",
+    "author": "Clement Bardot",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Loup_gris_(Canis_lupus_).jpg"
+  },
+  {
+    "dier": "wolf",
+    "slot": "baby",
+    "license": "Public domain",
+    "author": "Onbekend (auteur niet vermeld)",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Canis_lupus_pup_closeup.jpg"
+  },
+  {
+    "dier": "vos",
+    "slot": "adult",
+    "license": "CC BY-SA 2.0",
+    "author": "Airwolfhound from Hertfordshire, UK",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Fox_-_British_Wildlife_Centre_(17429406401).jpg"
+  },
+  {
+    "dier": "vos",
+    "slot": "baby",
+    "license": "CC BY 4.0",
+    "author": "cazalegg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Fox_Cub_-_Dumfries_%26_Galloway.jpg"
+  },
+  {
+    "dier": "beer",
+    "slot": "adult",
+    "license": "Public domain",
+    "author": "John and Karen Hollingworth, U.S. Fish and Wildlife Service",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Kodiak_Brown_Bear.jpg"
+  },
+  {
+    "dier": "beer",
+    "slot": "baby",
+    "license": "CC BY-SA 4.0",
+    "author": "Charles J. Sharp, Sharp Photography (sharpphotography.co.uk)",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Eurasian_brown_bear_(Ursus_arctos_arctos)_cub_14_months.jpg"
+  },
+  {
+    "dier": "giraffe",
+    "slot": "adult",
+    "license": "CC BY-SA 4.0",
+    "author": "Hans Hillewaert",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Giraffa_camelopardalis_angolensis.jpg"
+  },
+  {
+    "dier": "giraffe",
+    "slot": "baby",
+    "license": "CC0",
+    "author": "Awantura",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Giraffe_Calf.jpg"
+  },
+  {
+    "dier": "zebra",
+    "slot": "adult",
+    "license": "CC BY-SA 4.0",
+    "author": "Warren Garst (1922-2016), photographer; Colorado State University Libraries via DPLA / Plains to Peaks Collective",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Plains_zebra_standing_close_up_-_DPLA_-_5a17abfc936af2a7cad34115b462e9a3.jpg"
+  },
+  {
+    "dier": "zebra",
+    "slot": "baby",
+    "license": "CC BY-SA 4.0",
+    "author": "Charles J. Sharp, Sharp Photography (sharpphotography.co.uk)",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Plains_zebra_(Equus_quagga)_foal_suckling_Maputo.jpg"
+  },
+  {
+    "dier": "kangoeroe",
+    "slot": "adult",
+    "license": "CC BY-SA 4.0",
+    "author": "Warren Garst (1922-2016), photographer; Colorado State University Libraries via DPLA / Plains to Peaks Collective",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Red_kangaroo_standing_in_grass_close_up_-_DPLA_-_f60fe2817f703fb036a2f33ab1026cfd.jpg"
+  },
+  {
+    "dier": "kangoeroe",
+    "slot": "baby",
+    "license": "CC BY-SA 3.0",
+    "author": "Geoff Shaw",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Joey_in_pouch.jpg"
+  },
+  {
+    "dier": "muis",
+    "slot": "adult",
+    "license": "Public domain",
+    "author": "Unknown author (via NIH / NIGMS archived research page on model organisms)",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:House_mouse.jpg"
+  },
+  {
+    "dier": "varken",
+    "slot": "adult",
+    "license": "CC BY-SA 3.0",
+    "author": "京浜にけ (Kyouhamanike) at Japanese Wikipedia",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Saitama_Domestic_Pigs_In_Pasture_1.jpg"
+  },
+  {
+    "dier": "varken",
+    "slot": "baby",
+    "license": "CC0",
+    "author": "Stevenndori289",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Piglet_Suckling.jpg"
+  },
+  {
+    "dier": "geit",
+    "slot": "adult",
+    "license": "CC BY-SA 3.0",
+    "author": "Eadepoeltegroen (Dutch Wikipedia user)",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Nederlandse_Landgeit_geiten.jpg"
+  },
+  {
+    "dier": "geit",
+    "slot": "baby",
+    "license": "CC BY-SA 3.0",
+    "author": "Béria L. Rodríguez",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Baby_Goat_in_Margarita_Island,_Venezuela.jpg"
+  },
+  {
+    "dier": "schaap",
+    "slot": "adult",
+    "license": "CC BY-SA 3.0",
+    "author": "Uberprutser",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Sheep_on_old_sea_dike.jpg"
+  },
+  {
+    "dier": "schaap",
+    "slot": "baby",
+    "license": "CC BY-SA 3.0",
+    "author": "Caroline Ford",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Mudchute_farm_baby_lamb_2.jpg"
+  },
+  {
+    "dier": "walvis",
+    "slot": "adult",
+    "license": "CC BY 2.0",
+    "author": "Christopher Michel",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Humpback_Whales_-_Flickr_-_Christopher.Michel_(43).jpg"
+  },
+  {
+    "dier": "walvis",
+    "slot": "baby",
+    "license": "CC BY-SA 2.0",
+    "author": "Gabriel Barathieu",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Mother_and_baby_sperm_whale.jpg"
+  },
+  {
+    "dier": "otter",
+    "slot": "adult",
+    "license": "CC BY-SA 3.0",
+    "author": "Dmitry Azovtsev (daphoto.info)",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:LutraCanadensis_fullres.jpg"
+  },
+  {
+    "dier": "otter",
+    "slot": "baby",
+    "license": "CC BY 2.0",
+    "author": "Mike Baird, Morro Bay, USA",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Mother_sea_otter_with_rare_twin_baby_pups_(9137174915).jpg"
+  },
+  {
+    "dier": "eekhoorn",
+    "slot": "adult",
+    "license": "Public domain",
+    "author": "Toivo Toivanen & Tiina Toppila",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Kurre5.jpg"
+  },
+  {
+    "dier": "eekhoorn",
+    "slot": "baby",
+    "license": "CC BY-SA 4.0",
+    "author": "Warren Garst (1922-2016), photographer; Colorado State University Libraries via DPLA / Plains to Peaks Collective",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Baby_red_squirrel_sitting_in_tree_close_up_-_DPLA_-_ba30010f812ac2b460fe0e1269a3e52a.jpg"
+  },
+  {
+    "dier": "mens",
+    "slot": "adult",
+    "license": "CC BY-SA 4.0",
+    "author": "Basile Morin",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Young_mother_smiling_while_holding_her_baby_in_Laos.jpg"
+  },
+  {
+    "dier": "mens",
+    "slot": "baby",
+    "license": "CC BY 4.0",
+    "author": "Tudor Washington Collins (1898-1970), photographer",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Portrait_of_a_smiling_baby_seated_in_the_grass_(AM_76305-1).jpg"
+  },
+  {
+    "dier": "vogelbekdier",
+    "slot": "adult",
+    "license": "CC BY-SA 4.0",
+    "author": "Charles J. Sharp, Sharp Photography (sharpphotography.co.uk)",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Duck-billed_platypus_(Ornithorhynchus_anatinus)_Scottsdale.jpg"
+  },
+  {
+    "dier": "mierenegel",
+    "slot": "adult",
+    "license": "CC BY-SA 4.0",
+    "author": "SuperJew",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Short-beaked_echidna_Healesville_Sanctuary.jpg"
+  },
+  {
+    "dier": "haai",
+    "slot": "adult",
+    "license": "CC BY-SA 2.0",
+    "author": "Bernard DUPONT from FRANCE",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Great_White_Shark_(Carcharodon_carcharias)_(32872284396).jpg"
+  },
+  {
+    "dier": "adder",
+    "slot": "adult",
+    "license": "CC BY 3.0",
+    "author": "Benny Trapp",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Benny_Trapp_Vipera_berus.jpg"
+  },
+  {
+    "dier": "zeepaardje",
+    "slot": "adult",
+    "license": "Public domain",
+    "author": "NOAA (no individually credited photographer in file metadata)",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Hippocampus.jpg"
+  }
+]

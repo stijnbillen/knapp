@@ -11,7 +11,10 @@
     "draagtijd": "de eitjes broeden 21 dagen uit",
     "aantalJongen": "ongeveer 1 ei per dag",
     "frequentie": "bijna elke dag, het hele jaar door",
-    "leeftijd": "Wordt meestal 5 tot 8 jaar oud."
+    "leeftijd": "Wordt meestal 5 tot 8 jaar oud.",
+    "foto": "/knapp/dieren/kip-adult.jpg",
+    "fotoEi": "/knapp/dieren/kip-ei.jpg",
+    "fotoBaby": "/knapp/dieren/kip-baby.jpg"
   },
   {
     "id": "eend",
@@ -25,7 +28,10 @@
     "draagtijd": "de eitjes broeden ongeveer 28 dagen uit",
     "aantalJongen": "8 tot 12 eitjes per legsel",
     "frequentie": "1 keer per jaar, in de lente",
-    "leeftijd": "Wordt meestal 5 tot 10 jaar oud."
+    "leeftijd": "Wordt meestal 5 tot 10 jaar oud.",
+    "foto": "/knapp/dieren/eend-adult.jpg",
+    "fotoEi": "/knapp/dieren/eend-ei.jpg",
+    "fotoBaby": "/knapp/dieren/eend-baby.jpg"
   },
   {
     "id": "zwaan",
@@ -39,7 +45,10 @@
     "draagtijd": "de eitjes broeden 35 tot 36 dagen uit",
     "aantalJongen": "4 tot 8 eitjes per legsel",
     "frequentie": "1 keer per jaar, in de lente",
-    "leeftijd": "Kan wel 20 jaar oud worden."
+    "leeftijd": "Kan wel 20 jaar oud worden.",
+    "foto": "/knapp/dieren/zwaan-adult.jpg",
+    "fotoEi": "/knapp/dieren/zwaan-ei.jpg",
+    "fotoBaby": "/knapp/dieren/zwaan-baby.jpg"
   },
   {
     "id": "uil",
@@ -53,7 +62,10 @@
     "draagtijd": "de eitjes broeden ongeveer 30 dagen uit",
     "aantalJongen": "2 tot 6 eitjes per legsel",
     "frequentie": "1 keer per jaar, in de lente",
-    "leeftijd": "Wordt meestal ongeveer 10 jaar oud."
+    "leeftijd": "Wordt meestal ongeveer 10 jaar oud.",
+    "foto": "/knapp/dieren/uil-adult.jpg",
+    "fotoEi": "/knapp/dieren/uil-ei.jpg",
+    "fotoBaby": "/knapp/dieren/uil-baby.jpg"
   },
   {
     "id": "mus",
@@ -67,7 +79,9 @@
     "draagtijd": "de eitjes broeden 12 tot 14 dagen uit",
     "aantalJongen": "3 tot 5 eitjes per legsel",
     "frequentie": "2 tot 3 keer per jaar",
-    "leeftijd": "Wordt meestal ongeveer 3 jaar oud."
+    "leeftijd": "Wordt meestal ongeveer 3 jaar oud.",
+    "foto": "/knapp/dieren/mus-adult.jpg",
+    "fotoBaby": "/knapp/dieren/mus-baby.jpg"
   },
   {
     "id": "vink",
@@ -81,7 +95,10 @@
     "draagtijd": "de eitjes broeden ongeveer 13 dagen uit",
     "aantalJongen": "4 tot 5 eitjes per legsel",
     "frequentie": "1 tot 2 keer per jaar",
-    "leeftijd": "Wordt meestal 2 tot 3 jaar oud."
+    "leeftijd": "Wordt meestal 2 tot 3 jaar oud.",
+    "foto": "/knapp/dieren/vink-adult.jpg",
+    "fotoEi": "/knapp/dieren/vink-ei.jpg",
+    "fotoBaby": "/knapp/dieren/vink-baby.jpg"
   },
   {
     "id": "roodborstje",
@@ -95,7 +112,10 @@
     "draagtijd": "de eitjes broeden 13 tot 14 dagen uit",
     "aantalJongen": "4 tot 6 eitjes per legsel",
     "frequentie": "2 tot 3 keer per jaar",
-    "leeftijd": "Wordt meestal ongeveer 2 jaar oud."
+    "leeftijd": "Wordt meestal ongeveer 2 jaar oud.",
+    "foto": "/knapp/dieren/roodborstje-adult.jpg",
+    "fotoEi": "/knapp/dieren/roodborstje-ei.jpg",
+    "fotoBaby": "/knapp/dieren/roodborstje-baby.jpg"
   },
   {
     "id": "ooievaar",
@@ -109,7 +129,9 @@
     "draagtijd": "de eitjes broeden ongeveer 33 dagen uit",
     "aantalJongen": "3 tot 5 eitjes per legsel",
     "frequentie": "1 keer per jaar, in de lente",
-    "leeftijd": "Wordt meestal ongeveer 20 jaar oud."
+    "leeftijd": "Wordt meestal ongeveer 20 jaar oud.",
+    "foto": "/knapp/dieren/ooievaar-adult.jpg",
+    "fotoBaby": "/knapp/dieren/ooievaar-baby.jpg"
   },
   {
     "id": "papegaai",
@@ -123,7 +145,10 @@
     "draagtijd": "de eitjes broeden 24 tot 28 dagen uit",
     "aantalJongen": "2 tot 4 eitjes per legsel",
     "frequentie": "1 keer per jaar",
-    "leeftijd": "Kan wel 50 jaar oud worden."
+    "leeftijd": "Kan wel 50 jaar oud worden.",
+    "foto": "/knapp/dieren/papegaai-adult.jpg",
+    "fotoEi": "/knapp/dieren/papegaai-ei.jpg",
+    "fotoBaby": "/knapp/dieren/papegaai-baby.jpg"
   },
   {
     "id": "pinguin",
@@ -137,7 +162,10 @@
     "draagtijd": "de eitjes broeden 30 tot 65 dagen uit, afhankelijk van de soort",
     "aantalJongen": "meestal 1 tot 2 eitjes",
     "frequentie": "1 keer per jaar",
-    "leeftijd": "Wordt meestal 15 tot 20 jaar oud."
+    "leeftijd": "Wordt meestal 15 tot 20 jaar oud.",
+    "foto": "/knapp/dieren/pinguin-adult.jpg",
+    "fotoEi": "/knapp/dieren/pinguin-ei.jpg",
+    "fotoBaby": "/knapp/dieren/pinguin-baby.jpg"
   },
   {
     "id": "kikker",
@@ -151,7 +179,10 @@
     "draagtijd": "de kikkervisjes kruipen na 2 tot 3 weken uit het kikkerdril",
     "aantalJongen": "honderden tot duizenden eitjes tegelijk",
     "frequentie": "1 keer per jaar, in de lente",
-    "leeftijd": "Wordt meestal 5 tot 10 jaar oud."
+    "leeftijd": "Wordt meestal 5 tot 10 jaar oud.",
+    "foto": "/knapp/dieren/kikker-adult.jpg",
+    "fotoEi": "/knapp/dieren/kikker-ei.jpg",
+    "fotoBaby": "/knapp/dieren/kikker-baby.jpg"
   },
   {
     "id": "schildpad",
@@ -165,7 +196,10 @@
     "draagtijd": "de eitjes broeden 60 tot 90 dagen uit",
     "aantalJongen": "ongeveer 10 tot 30 eitjes",
     "frequentie": "1 keer per jaar",
-    "leeftijd": "Kan wel meer dan 100 jaar oud worden!"
+    "leeftijd": "Kan wel meer dan 100 jaar oud worden!",
+    "foto": "/knapp/dieren/schildpad-adult.jpg",
+    "fotoEi": "/knapp/dieren/schildpad-ei.jpg",
+    "fotoBaby": "/knapp/dieren/schildpad-baby.jpg"
   },
   {
     "id": "krokodil",
@@ -179,7 +213,9 @@
     "draagtijd": "de eitjes broeden 80 tot 90 dagen uit",
     "aantalJongen": "20 tot 60 eitjes per legsel",
     "frequentie": "1 keer per jaar",
-    "leeftijd": "Wordt meestal 50 tot 70 jaar oud."
+    "leeftijd": "Wordt meestal 50 tot 70 jaar oud.",
+    "foto": "/knapp/dieren/krokodil-adult.jpg",
+    "fotoBaby": "/knapp/dieren/krokodil-baby.jpg"
   },
   {
     "id": "hagedis",
@@ -193,7 +229,10 @@
     "draagtijd": "de eitjes broeden 4 tot 10 weken uit",
     "aantalJongen": "2 tot 20 eitjes, afhankelijk van de soort",
     "frequentie": "1 tot 2 keer per jaar",
-    "leeftijd": "Wordt meestal 5 tot 10 jaar oud."
+    "leeftijd": "Wordt meestal 5 tot 10 jaar oud.",
+    "foto": "/knapp/dieren/hagedis-adult.jpg",
+    "fotoEi": "/knapp/dieren/hagedis-ei.jpg",
+    "fotoBaby": "/knapp/dieren/hagedis-baby.jpg"
   },
   {
     "id": "slang",
@@ -207,7 +246,9 @@
     "draagtijd": "de eitjes broeden ongeveer 2 maanden uit",
     "aantalJongen": "6 tot 30 eitjes per legsel",
     "frequentie": "meestal 1 keer per jaar",
-    "leeftijd": "Wordt meestal 10 tot 20 jaar oud."
+    "leeftijd": "Wordt meestal 10 tot 20 jaar oud.",
+    "foto": "/knapp/dieren/slang-adult.jpg",
+    "fotoEi": "/knapp/dieren/slang-ei.jpg"
   },
   {
     "id": "vlinder",
@@ -221,7 +262,10 @@
     "draagtijd": "de rups kruipt na 1 tot 2 weken uit het eitje",
     "aantalJongen": "tientallen tot honderden eitjes",
     "frequentie": "meerdere keren per jaar",
-    "leeftijd": "De vlinder zelf leeft vaak maar enkele weken."
+    "leeftijd": "De vlinder zelf leeft vaak maar enkele weken.",
+    "foto": "/knapp/dieren/vlinder-adult.jpg",
+    "fotoEi": "/knapp/dieren/vlinder-ei.jpg",
+    "fotoBaby": "/knapp/dieren/vlinder-baby.jpg"
   },
   {
     "id": "bij",
@@ -235,7 +279,10 @@
     "draagtijd": "de larve kruipt al na ongeveer 3 dagen uit het eitje",
     "aantalJongen": "de koningin legt wel tot 2000 eitjes per dag!",
     "frequentie": "bijna elke dag",
-    "leeftijd": "De werkbij leeft enkele weken, de koningin enkele jaren."
+    "leeftijd": "De werkbij leeft enkele weken, de koningin enkele jaren.",
+    "foto": "/knapp/dieren/bij-adult.jpg",
+    "fotoEi": "/knapp/dieren/bij-ei.jpg",
+    "fotoBaby": "/knapp/dieren/bij-baby.jpg"
   },
   {
     "id": "mier",
@@ -249,7 +296,10 @@
     "draagtijd": "de larve kruipt na 2 tot 4 weken uit het eitje",
     "aantalJongen": "de koningin legt duizenden eitjes",
     "frequentie": "bijna continu",
-    "leeftijd": "De werkmier leeft enkele maanden, de koningin soms wel 20 jaar."
+    "leeftijd": "De werkmier leeft enkele maanden, de koningin soms wel 20 jaar.",
+    "foto": "/knapp/dieren/mier-adult.jpg",
+    "fotoEi": "/knapp/dieren/mier-ei.jpg",
+    "fotoBaby": "/knapp/dieren/mier-baby.jpg"
   },
   {
     "id": "lieveheersbeestje",
@@ -263,7 +313,10 @@
     "draagtijd": "de larve kruipt na 4 tot 7 dagen uit het eitje",
     "aantalJongen": "tientallen tot honderden eitjes",
     "frequentie": "meerdere keren per jaar",
-    "leeftijd": "Wordt meestal ongeveer 1 jaar oud."
+    "leeftijd": "Wordt meestal ongeveer 1 jaar oud.",
+    "foto": "/knapp/dieren/lieveheersbeestje-adult.jpg",
+    "fotoEi": "/knapp/dieren/lieveheersbeestje-ei.jpg",
+    "fotoBaby": "/knapp/dieren/lieveheersbeestje-baby.jpg"
   },
   {
     "id": "spin",
@@ -277,7 +330,10 @@
     "draagtijd": "de eitjes komen na 2 tot 3 weken uit in een cocon",
     "aantalJongen": "tientallen tot honderden eitjes per cocon",
     "frequentie": "1 tot 2 keer per jaar",
-    "leeftijd": "Wordt meestal 1 tot 2 jaar oud."
+    "leeftijd": "Wordt meestal 1 tot 2 jaar oud.",
+    "foto": "/knapp/dieren/spin-adult.jpg",
+    "fotoEi": "/knapp/dieren/spin-ei.jpg",
+    "fotoBaby": "/knapp/dieren/spin-baby.jpg"
   },
   {
     "id": "slak",
@@ -291,7 +347,10 @@
     "draagtijd": "de eitjes komen na 2 tot 4 weken uit",
     "aantalJongen": "tientallen eitjes per keer",
     "frequentie": "meerdere keren per jaar",
-    "leeftijd": "Wordt meestal 2 tot 5 jaar oud."
+    "leeftijd": "Wordt meestal 2 tot 5 jaar oud.",
+    "foto": "/knapp/dieren/slak-adult.jpg",
+    "fotoEi": "/knapp/dieren/slak-ei.jpg",
+    "fotoBaby": "/knapp/dieren/slak-baby.jpg"
   },
   {
     "id": "goudvis",
@@ -305,7 +364,8 @@
     "draagtijd": "de eitjes komen na 4 tot 7 dagen uit",
     "aantalJongen": "honderden tot duizenden eitjes",
     "frequentie": "1 keer per jaar, in de lente of zomer",
-    "leeftijd": "Wordt meestal 10 tot 15 jaar oud, soms veel ouder."
+    "leeftijd": "Wordt meestal 10 tot 15 jaar oud, soms veel ouder.",
+    "foto": "/knapp/dieren/goudvis-adult.jpg"
   },
   {
     "id": "zalm",
@@ -319,7 +379,10 @@
     "draagtijd": "de eitjes broeden 3 tot 4 maanden uit",
     "aantalJongen": "duizenden eitjes",
     "frequentie": "vaak maar 1 keer in zijn leven",
-    "leeftijd": "Wordt meestal 3 tot 8 jaar oud."
+    "leeftijd": "Wordt meestal 3 tot 8 jaar oud.",
+    "foto": "/knapp/dieren/zalm-adult.jpg",
+    "fotoEi": "/knapp/dieren/zalm-ei.jpg",
+    "fotoBaby": "/knapp/dieren/zalm-baby.jpg"
   },
   {
     "id": "tonijn",
@@ -333,7 +396,8 @@
     "draagtijd": "de eitjes komen al na 2 dagen uit",
     "aantalJongen": "miljoenen eitjes per keer!",
     "frequentie": "1 keer per jaar",
-    "leeftijd": "Wordt meestal 15 tot 30 jaar oud."
+    "leeftijd": "Wordt meestal 15 tot 30 jaar oud.",
+    "foto": "/knapp/dieren/tonijn-adult.jpg"
   },
   {
     "id": "haring",
@@ -347,7 +411,9 @@
     "draagtijd": "de eitjes komen na 1 tot 3 weken uit",
     "aantalJongen": "tienduizenden eitjes",
     "frequentie": "1 keer per jaar",
-    "leeftijd": "Wordt meestal 10 tot 15 jaar oud."
+    "leeftijd": "Wordt meestal 10 tot 15 jaar oud.",
+    "foto": "/knapp/dieren/haring-adult.jpg",
+    "fotoEi": "/knapp/dieren/haring-ei.jpg"
   },
   {
     "id": "kabeljauw",
@@ -361,7 +427,9 @@
     "draagtijd": "de eitjes komen na 2 tot 3 weken uit",
     "aantalJongen": "miljoenen eitjes per keer",
     "frequentie": "1 keer per jaar",
-    "leeftijd": "Wordt meestal 20 tot 25 jaar oud."
+    "leeftijd": "Wordt meestal 20 tot 25 jaar oud.",
+    "foto": "/knapp/dieren/kabeljauw-adult.jpg",
+    "fotoEi": "/knapp/dieren/kabeljauw-ei.jpg"
   },
   {
     "id": "forel",
@@ -375,7 +443,10 @@
     "draagtijd": "de eitjes broeden 1 tot 2 maanden uit in koud water",
     "aantalJongen": "honderden tot duizenden eitjes",
     "frequentie": "1 keer per jaar",
-    "leeftijd": "Wordt meestal 4 tot 6 jaar oud."
+    "leeftijd": "Wordt meestal 4 tot 6 jaar oud.",
+    "foto": "/knapp/dieren/forel-adult.jpg",
+    "fotoEi": "/knapp/dieren/forel-ei.jpg",
+    "fotoBaby": "/knapp/dieren/forel-baby.jpg"
   },
   {
     "id": "karper",
@@ -389,7 +460,9 @@
     "draagtijd": "de eitjes komen na 3 tot 8 dagen uit",
     "aantalJongen": "honderdduizenden eitjes",
     "frequentie": "1 keer per jaar",
-    "leeftijd": "Kan wel tientallen jaren oud worden."
+    "leeftijd": "Kan wel tientallen jaren oud worden.",
+    "foto": "/knapp/dieren/karper-adult.jpg",
+    "fotoEi": "/knapp/dieren/karper-ei.jpg"
   },
   {
     "id": "snoek",
@@ -403,7 +476,10 @@
     "draagtijd": "de eitjes komen na ongeveer 2 weken uit",
     "aantalJongen": "tienduizenden eitjes",
     "frequentie": "1 keer per jaar",
-    "leeftijd": "Wordt meestal 10 tot 15 jaar oud."
+    "leeftijd": "Wordt meestal 10 tot 15 jaar oud.",
+    "foto": "/knapp/dieren/snoek-adult.jpg",
+    "fotoEi": "/knapp/dieren/snoek-ei.jpg",
+    "fotoBaby": "/knapp/dieren/snoek-baby.jpg"
   },
   {
     "id": "meerval",
@@ -417,7 +493,8 @@
     "draagtijd": "de eitjes komen na ongeveer 1 week uit",
     "aantalJongen": "duizenden eitjes",
     "frequentie": "1 keer per jaar",
-    "leeftijd": "Kan tientallen jaren oud worden."
+    "leeftijd": "Kan tientallen jaren oud worden.",
+    "foto": "/knapp/dieren/meerval-adult.jpg"
   },
   {
     "id": "paling",
@@ -431,7 +508,9 @@
     "draagtijd": "onbekend hoe lang precies — het gebeurt ver weg in de Sargassozee",
     "aantalJongen": "miljoenen eitjes",
     "frequentie": "maar 1 keer in haar hele leven, en daarna sterft ze",
-    "leeftijd": "Wordt 20 tot 50 jaar oud, voor die ene grote ei-reis."
+    "leeftijd": "Wordt 20 tot 50 jaar oud, voor die ene grote ei-reis.",
+    "foto": "/knapp/dieren/paling-adult.jpg",
+    "fotoBaby": "/knapp/dieren/paling-baby.jpg"
   },
   {
     "id": "koe",
@@ -445,7 +524,9 @@
     "draagtijd": "de draagtijd is ongeveer 9 maanden",
     "aantalJongen": "meestal 1 kalf per keer",
     "frequentie": "meestal 1 keer per jaar",
-    "leeftijd": "Wordt meestal 15 tot 20 jaar oud."
+    "leeftijd": "Wordt meestal 15 tot 20 jaar oud.",
+    "foto": "/knapp/dieren/koe-adult.jpg",
+    "fotoBaby": "/knapp/dieren/koe-baby.jpg"
   },
   {
     "id": "hond",
@@ -459,7 +540,9 @@
     "draagtijd": "de draagtijd is ongeveer 2 maanden (63 dagen)",
     "aantalJongen": "gemiddeld 4 tot 6 puppy's per nest",
     "frequentie": "kan 1 tot 2 keer per jaar",
-    "leeftijd": "Wordt meestal 10 tot 13 jaar oud."
+    "leeftijd": "Wordt meestal 10 tot 13 jaar oud.",
+    "foto": "/knapp/dieren/hond-adult.jpg",
+    "fotoBaby": "/knapp/dieren/hond-baby.jpg"
   },
   {
     "id": "kat",
@@ -473,7 +556,9 @@
     "draagtijd": "de draagtijd is ongeveer 2 maanden (63 tot 65 dagen)",
     "aantalJongen": "gemiddeld 3 tot 5 kittens per nest",
     "frequentie": "kan 2 tot 3 keer per jaar",
-    "leeftijd": "Wordt meestal 12 tot 15 jaar oud."
+    "leeftijd": "Wordt meestal 12 tot 15 jaar oud.",
+    "foto": "/knapp/dieren/kat-adult.jpg",
+    "fotoBaby": "/knapp/dieren/kat-baby.jpg"
   },
   {
     "id": "olifant",
@@ -487,7 +572,9 @@
     "draagtijd": "de draagtijd is ongeveer 22 maanden — de langste van alle dieren!",
     "aantalJongen": "meestal 1 kalfje",
     "frequentie": "1 keer per 4 tot 5 jaar",
-    "leeftijd": "Wordt meestal 60 tot 70 jaar oud."
+    "leeftijd": "Wordt meestal 60 tot 70 jaar oud.",
+    "foto": "/knapp/dieren/olifant-adult.jpg",
+    "fotoBaby": "/knapp/dieren/olifant-baby.jpg"
   },
   {
     "id": "paard",
@@ -501,7 +588,9 @@
     "draagtijd": "de draagtijd is ongeveer 11 maanden",
     "aantalJongen": "meestal 1 veulen",
     "frequentie": "meestal 1 keer per jaar",
-    "leeftijd": "Wordt meestal 25 tot 30 jaar oud."
+    "leeftijd": "Wordt meestal 25 tot 30 jaar oud.",
+    "foto": "/knapp/dieren/paard-adult.jpg",
+    "fotoBaby": "/knapp/dieren/paard-baby.jpg"
   },
   {
     "id": "konijn",
@@ -515,7 +604,9 @@
     "draagtijd": "de draagtijd is maar ongeveer 1 maand (31 dagen)",
     "aantalJongen": "gemiddeld 4 tot 8 jongen per nest",
     "frequentie": "kan wel 4 tot 6 keer per jaar!",
-    "leeftijd": "Wordt meestal 8 tot 10 jaar oud."
+    "leeftijd": "Wordt meestal 8 tot 10 jaar oud.",
+    "foto": "/knapp/dieren/konijn-adult.jpg",
+    "fotoBaby": "/knapp/dieren/konijn-baby.jpg"
   },
   {
     "id": "dolfijn",
@@ -529,7 +620,9 @@
     "draagtijd": "de draagtijd is ongeveer 11 tot 12 maanden",
     "aantalJongen": "meestal 1 kalfje",
     "frequentie": "1 keer per 2 tot 3 jaar",
-    "leeftijd": "Wordt meestal 40 tot 50 jaar oud."
+    "leeftijd": "Wordt meestal 40 tot 50 jaar oud.",
+    "foto": "/knapp/dieren/dolfijn-adult.jpg",
+    "fotoBaby": "/knapp/dieren/dolfijn-baby.jpg"
   },
   {
     "id": "leeuw",
@@ -543,7 +636,9 @@
     "draagtijd": "de draagtijd is ongeveer 3,5 maand (110 dagen)",
     "aantalJongen": "gemiddeld 2 tot 4 welpen",
     "frequentie": "1 keer per 2 jaar",
-    "leeftijd": "Wordt meestal 12 tot 15 jaar oud."
+    "leeftijd": "Wordt meestal 12 tot 15 jaar oud.",
+    "foto": "/knapp/dieren/leeuw-adult.jpg",
+    "fotoBaby": "/knapp/dieren/leeuw-baby.jpg"
   },
   {
     "id": "tijger",
@@ -557,7 +652,9 @@
     "draagtijd": "de draagtijd is ongeveer 3,5 maand",
     "aantalJongen": "gemiddeld 2 tot 4 welpen",
     "frequentie": "1 keer per 2 jaar",
-    "leeftijd": "Wordt meestal 15 tot 20 jaar oud."
+    "leeftijd": "Wordt meestal 15 tot 20 jaar oud.",
+    "foto": "/knapp/dieren/tijger-adult.jpg",
+    "fotoBaby": "/knapp/dieren/tijger-baby.jpg"
   },
   {
     "id": "aap",
@@ -571,7 +668,9 @@
     "draagtijd": "de draagtijd is 5 tot 9 maanden, afhankelijk van de soort",
     "aantalJongen": "meestal 1 jong",
     "frequentie": "1 keer per 1 tot 2 jaar",
-    "leeftijd": "Wordt 15 tot 40 jaar oud, afhankelijk van de soort."
+    "leeftijd": "Wordt 15 tot 40 jaar oud, afhankelijk van de soort.",
+    "foto": "/knapp/dieren/aap-adult.jpg",
+    "fotoBaby": "/knapp/dieren/aap-baby.jpg"
   },
   {
     "id": "wolf",
@@ -585,7 +684,9 @@
     "draagtijd": "de draagtijd is ongeveer 2 maanden (63 dagen)",
     "aantalJongen": "gemiddeld 4 tot 6 welpen",
     "frequentie": "1 keer per jaar",
-    "leeftijd": "Wordt meestal 8 tot 13 jaar oud."
+    "leeftijd": "Wordt meestal 8 tot 13 jaar oud.",
+    "foto": "/knapp/dieren/wolf-adult.jpg",
+    "fotoBaby": "/knapp/dieren/wolf-baby.jpg"
   },
   {
     "id": "vos",
@@ -599,7 +700,9 @@
     "draagtijd": "de draagtijd is ongeveer 52 dagen",
     "aantalJongen": "gemiddeld 4 tot 6 jongen",
     "frequentie": "1 keer per jaar",
-    "leeftijd": "Wordt meestal 3 tot 5 jaar oud in het wild."
+    "leeftijd": "Wordt meestal 3 tot 5 jaar oud in het wild.",
+    "foto": "/knapp/dieren/vos-adult.jpg",
+    "fotoBaby": "/knapp/dieren/vos-baby.jpg"
   },
   {
     "id": "beer",
@@ -613,7 +716,9 @@
     "draagtijd": "de draagtijd is 6 tot 9 maanden",
     "aantalJongen": "meestal 1 tot 3 welpen",
     "frequentie": "1 keer per 2 jaar",
-    "leeftijd": "Wordt meestal 20 tot 25 jaar oud."
+    "leeftijd": "Wordt meestal 20 tot 25 jaar oud.",
+    "foto": "/knapp/dieren/beer-adult.jpg",
+    "fotoBaby": "/knapp/dieren/beer-baby.jpg"
   },
   {
     "id": "giraffe",
@@ -627,7 +732,9 @@
     "draagtijd": "de draagtijd is ongeveer 15 maanden",
     "aantalJongen": "meestal 1 kalfje",
     "frequentie": "1 keer per 1,5 tot 2 jaar",
-    "leeftijd": "Wordt meestal ongeveer 25 jaar oud."
+    "leeftijd": "Wordt meestal ongeveer 25 jaar oud.",
+    "foto": "/knapp/dieren/giraffe-adult.jpg",
+    "fotoBaby": "/knapp/dieren/giraffe-baby.jpg"
   },
   {
     "id": "zebra",
@@ -641,7 +748,9 @@
     "draagtijd": "de draagtijd is ongeveer 12 maanden",
     "aantalJongen": "meestal 1 veulen",
     "frequentie": "meestal 1 keer per jaar",
-    "leeftijd": "Wordt meestal 20 tot 25 jaar oud."
+    "leeftijd": "Wordt meestal 20 tot 25 jaar oud.",
+    "foto": "/knapp/dieren/zebra-adult.jpg",
+    "fotoBaby": "/knapp/dieren/zebra-baby.jpg"
   },
   {
     "id": "kangoeroe",
@@ -655,7 +764,9 @@
     "draagtijd": "de draagtijd is maar ongeveer 1 maand — daarna kruipt het jong verder in de buidel",
     "aantalJongen": "meestal 1 jong",
     "frequentie": "kan vaak jongen krijgen",
-    "leeftijd": "Wordt meestal 6 tot 8 jaar oud."
+    "leeftijd": "Wordt meestal 6 tot 8 jaar oud.",
+    "foto": "/knapp/dieren/kangoeroe-adult.jpg",
+    "fotoBaby": "/knapp/dieren/kangoeroe-baby.jpg"
   },
   {
     "id": "muis",
@@ -669,7 +780,8 @@
     "draagtijd": "de draagtijd is maar ongeveer 3 weken",
     "aantalJongen": "gemiddeld 6 tot 8 jongen per nest",
     "frequentie": "kan wel 5 tot 10 keer per jaar!",
-    "leeftijd": "Wordt meestal 1 tot 2 jaar oud."
+    "leeftijd": "Wordt meestal 1 tot 2 jaar oud.",
+    "foto": "/knapp/dieren/muis-adult.jpg"
   },
   {
     "id": "varken",
@@ -683,7 +795,9 @@
     "draagtijd": "de draagtijd is ongeveer 114 dagen (3 maanden, 3 weken, 3 dagen)",
     "aantalJongen": "gemiddeld 8 tot 12 biggen per nest",
     "frequentie": "kan 2 keer per jaar",
-    "leeftijd": "Wordt meestal 10 tot 15 jaar oud."
+    "leeftijd": "Wordt meestal 10 tot 15 jaar oud.",
+    "foto": "/knapp/dieren/varken-adult.jpg",
+    "fotoBaby": "/knapp/dieren/varken-baby.jpg"
   },
   {
     "id": "geit",
@@ -697,7 +811,9 @@
     "draagtijd": "de draagtijd is ongeveer 5 maanden (150 dagen)",
     "aantalJongen": "meestal 1 tot 2 jongen",
     "frequentie": "1 keer per jaar",
-    "leeftijd": "Wordt meestal 15 tot 18 jaar oud."
+    "leeftijd": "Wordt meestal 15 tot 18 jaar oud.",
+    "foto": "/knapp/dieren/geit-adult.jpg",
+    "fotoBaby": "/knapp/dieren/geit-baby.jpg"
   },
   {
     "id": "schaap",
@@ -711,7 +827,9 @@
     "draagtijd": "de draagtijd is ongeveer 5 maanden (147 dagen)",
     "aantalJongen": "meestal 1 tot 2 lammetjes",
     "frequentie": "1 keer per jaar",
-    "leeftijd": "Wordt meestal 10 tot 12 jaar oud."
+    "leeftijd": "Wordt meestal 10 tot 12 jaar oud.",
+    "foto": "/knapp/dieren/schaap-adult.jpg",
+    "fotoBaby": "/knapp/dieren/schaap-baby.jpg"
   },
   {
     "id": "walvis",
@@ -725,7 +843,9 @@
     "draagtijd": "de draagtijd is 10 tot 18 maanden, afhankelijk van de soort",
     "aantalJongen": "meestal 1 kalf",
     "frequentie": "1 keer per 2 tot 3 jaar",
-    "leeftijd": "Kan tientallen tot meer dan 100 jaar oud worden!"
+    "leeftijd": "Kan tientallen tot meer dan 100 jaar oud worden!",
+    "foto": "/knapp/dieren/walvis-adult.jpg",
+    "fotoBaby": "/knapp/dieren/walvis-baby.jpg"
   },
   {
     "id": "otter",
@@ -739,7 +859,9 @@
     "draagtijd": "de draagtijd is ongeveer 2 maanden (60 tot 63 dagen)",
     "aantalJongen": "gemiddeld 2 tot 3 jongen",
     "frequentie": "1 keer per jaar",
-    "leeftijd": "Wordt meestal 10 tot 15 jaar oud."
+    "leeftijd": "Wordt meestal 10 tot 15 jaar oud.",
+    "foto": "/knapp/dieren/otter-adult.jpg",
+    "fotoBaby": "/knapp/dieren/otter-baby.jpg"
   },
   {
     "id": "eekhoorn",
@@ -753,7 +875,9 @@
     "draagtijd": "de draagtijd is ongeveer 6 weken",
     "aantalJongen": "gemiddeld 3 tot 4 jongen",
     "frequentie": "kan 2 keer per jaar",
-    "leeftijd": "Wordt meestal 5 tot 6 jaar oud."
+    "leeftijd": "Wordt meestal 5 tot 6 jaar oud.",
+    "foto": "/knapp/dieren/eekhoorn-adult.jpg",
+    "fotoBaby": "/knapp/dieren/eekhoorn-baby.jpg"
   },
   {
     "id": "mens",
@@ -767,6 +891,8 @@
     "draagtijd": "de draagtijd is ongeveer 9 maanden (40 weken)",
     "aantalJongen": "meestal 1 kindje (soms een tweeling of drieling)",
     "frequentie": "geen vaste periode — het hele jaar door",
-    "leeftijd": "Kan wel 80 tot 90 jaar of ouder worden."
+    "leeftijd": "Kan wel 80 tot 90 jaar of ouder worden.",
+    "foto": "/knapp/dieren/mens-adult.jpg",
+    "fotoBaby": "/knapp/dieren/mens-baby.jpg"
   }
 ]

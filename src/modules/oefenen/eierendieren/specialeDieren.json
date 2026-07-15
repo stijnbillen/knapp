@@ -5,7 +5,11 @@
     "nl": "het vogelbekdier",
     "fr": "l'ornithorynque",
     "uitleg": "Het vogelbekdier is een zoogdier — net als jij! — maar het legt tóch eitjes. Heel bijzonder!",
-    "draagtijd": "de eitjes broeden ongeveer 10 dagen uit", "aantalJongen": "meestal 1 tot 3 eitjes", "frequentie": "1 keer per jaar", "leeftijd": "Kan wel 20 jaar oud worden."
+    "draagtijd": "de eitjes broeden ongeveer 10 dagen uit",
+    "aantalJongen": "meestal 1 tot 3 eitjes",
+    "frequentie": "1 keer per jaar",
+    "leeftijd": "Kan wel 20 jaar oud worden.",
+    "foto": "/knapp/dieren-speciaal/vogelbekdier-adult.jpg"
   },
   {
     "id": "mierenegel",
@@ -13,7 +17,11 @@
     "nl": "de mierenegel",
     "fr": "l'échidné",
     "uitleg": "Net als het vogelbekdier legt ook de mierenegel eitjes, hoewel het een zoogdier is.",
-    "draagtijd": "het eitje broedt ongeveer 10 dagen uit, in een buideltje op de buik", "aantalJongen": "meestal maar 1 ei", "frequentie": "1 keer per jaar", "leeftijd": "Kan wel 40 tot 50 jaar oud worden — heel verrassend!"
+    "draagtijd": "het eitje broedt ongeveer 10 dagen uit, in een buideltje op de buik",
+    "aantalJongen": "meestal maar 1 ei",
+    "frequentie": "1 keer per jaar",
+    "leeftijd": "Kan wel 40 tot 50 jaar oud worden — heel verrassend!",
+    "foto": "/knapp/dieren-speciaal/mierenegel-adult.jpg"
   },
   {
     "id": "haai",
@@ -21,7 +29,11 @@
     "nl": "de haai",
     "fr": "le requin",
     "uitleg": "Sommige haaien leggen eitjes, andere krijgen levende babyhaaien. Het verschilt per soort haai!",
-    "draagtijd": "hangt sterk af van de soort", "aantalJongen": "van een paar tot meer dan 100 jongen tegelijk, afhankelijk van de soort", "frequentie": "meestal 1 keer per 1 à 2 jaar", "leeftijd": "Sommige soorten worden wel 70 tot 100 jaar oud."
+    "draagtijd": "hangt sterk af van de soort",
+    "aantalJongen": "van een paar tot meer dan 100 jongen tegelijk, afhankelijk van de soort",
+    "frequentie": "meestal 1 keer per 1 à 2 jaar",
+    "leeftijd": "Sommige soorten worden wel 70 tot 100 jaar oud.",
+    "foto": "/knapp/dieren-speciaal/haai-adult.jpg"
   },
   {
     "id": "adder",
@@ -29,7 +41,11 @@
     "nl": "de adder",
     "fr": "la vipère",
     "uitleg": "De meeste slangen leggen eitjes, maar de adder draagt haar jongen in haar buik en krijgt levende baby's!",
-    "draagtijd": "de draagtijd is ongeveer 3 tot 4 maanden", "aantalJongen": "gemiddeld 5 tot 20 levende jongen tegelijk", "frequentie": "1 keer per jaar, of soms om de paar jaar", "leeftijd": "Wordt meestal 10 tot 15 jaar oud."
+    "draagtijd": "de draagtijd is ongeveer 3 tot 4 maanden",
+    "aantalJongen": "gemiddeld 5 tot 20 levende jongen tegelijk",
+    "frequentie": "1 keer per jaar, of soms om de paar jaar",
+    "leeftijd": "Wordt meestal 10 tot 15 jaar oud.",
+    "foto": "/knapp/dieren-speciaal/adder-adult.jpg"
   },
   {
     "id": "zeepaardje",
@@ -37,6 +53,10 @@
     "nl": "het zeepaardje",
     "fr": "l'hippocampe",
     "uitleg": "Bij het zeepaardje is het de PAPA die de eitjes draagt in een buideltje, niet de mama!",
-    "draagtijd": "de papa draagt de eitjes ongeveer 2 tot 4 weken in zijn buideltje", "aantalJongen": "honderden tot duizenden eitjes tegelijk", "frequentie": "kan meerdere keren per jaar", "leeftijd": "Wordt meestal 1 tot 5 jaar oud."
+    "draagtijd": "de papa draagt de eitjes ongeveer 2 tot 4 weken in zijn buideltje",
+    "aantalJongen": "honderden tot duizenden eitjes tegelijk",
+    "frequentie": "kan meerdere keren per jaar",
+    "leeftijd": "Wordt meestal 1 tot 5 jaar oud.",
+    "foto": "/knapp/dieren-speciaal/zeepaardje-adult.jpg"
   }
 ]

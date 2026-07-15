@@ -11,6 +11,7 @@ import { BigButton } from '../../../ui/BigButton'
 import { ReadAloudButton } from '../../../ui/ReadAloudButton'
 import DIEREN_JSON from './dieren.json'
 import SPECIALE_JSON from './specialeDieren.json'
+import CREDITS_JSON from './fotoCredits.json'
 
 const MODULE_ID = 'eierendieren'
 
@@ -27,6 +28,9 @@ interface Dier {
   aantalJongen: string
   frequentie: string
   leeftijd: string
+  foto?: string
+  fotoEi?: string
+  fotoBaby?: string
 }
 
 interface SpeciaalDier {
@@ -39,6 +43,15 @@ interface SpeciaalDier {
   aantalJongen: string
   frequentie: string
   leeftijd: string
+  foto?: string
+}
+
+interface Credit {
+  dier: string
+  slot: string
+  license: string
+  author: string
+  sourcePage: string
 }
 
 function weetjesPanel(d: { draagtijd: string; aantalJongen: string; frequentie: string; leeftijd: string }) {
@@ -66,8 +79,9 @@ function weetjesPanel(d: { draagtijd: string; aantalJongen: string; frequentie: 
 
 const dieren = DIEREN_JSON as Dier[]
 const specialeDieren = SPECIALE_JSON as SpeciaalDier[]
+const credits = CREDITS_JSON as Credit[]
 
-type Phase = 'start' | 'spelen' | 'speciaal'
+type Phase = 'start' | 'spelen' | 'speciaal' | 'credits'
 
 function randomItem<T>(list: T[]): T {
   return list[Math.floor(Math.random() * list.length)]
@@ -78,7 +92,27 @@ function newDier(prevId: string | null): Dier {
   return randomItem(keuze)
 }
 
-function taalkaart(emoji: string, nl: string, fr: string) {
+/** Foto's zijn best-effort gevonden; niet elk dier/ei/baby heeft er een. Val terug op emoji. */
+function beeld(foto: string | undefined, emoji: string, size: number) {
+  if (foto) {
+    return (
+      <img
+        src={foto}
+        alt=""
+        style={{
+          width: size,
+          height: size,
+          objectFit: 'cover',
+          borderRadius: 14,
+          boxShadow: 'var(--shadow)',
+        }}
+      />
+    )
+  }
+  return <div style={{ fontSize: size * 0.55 }}>{emoji}</div>
+}
+
+function taalkaart(foto: string | undefined, emoji: string, nl: string, fr: string) {
   return (
     <div
       style={{
@@ -90,7 +124,7 @@ function taalkaart(emoji: string, nl: string, fr: string) {
         minWidth: 140,
       }}
     >
-      <div style={{ fontSize: '3rem' }}>{emoji}</div>
+      <div style={{ display: 'flex', justifyContent: 'center' }}>{beeld(foto, emoji, 84)}</div>
       <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 6, marginTop: 4 }}>
         <span style={{ fontWeight: 700 }}>{nl}</span>
         <ReadAloudButton text={nl} lang="nl" />
@@ -154,6 +188,42 @@ export function EierenDierenModule({ profile, onExit }: ModuleProps) {
           <BigButton variant="ghost" onClick={() => setPhase('speciaal')}>
             ✨ Speciale dieren
           </BigButton>
+          <BigButton variant="ghost" onClick={() => setPhase('credits')} style={{ fontSize: '0.85rem' }}>
+            📷 Foto's &amp; bronvermelding
+          </BigButton>
+        </div>
+      </div>
+    )
+  }
+
+  if (phase === 'credits') {
+    return (
+      <div className="screen">
+        <BackHeader title="Foto's & bronvermelding" onBack={() => setPhase('start')} />
+        <p style={{ textAlign: 'center', color: 'var(--text-soft)', margin: '0 0 12px' }}>
+          Alle foto's komen van Wikimedia Commons, vrij te gebruiken onder de vermelde licentie.
+        </p>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 6, fontSize: '0.85rem' }}>
+          {credits.map((c, i) => (
+            <div
+              key={i}
+              style={{
+                background: 'var(--surface)',
+                borderRadius: 10,
+                padding: '6px 10px',
+                display: 'flex',
+                justifyContent: 'space-between',
+                gap: 8,
+              }}
+            >
+              <span>
+                <strong>{c.dier}</strong> ({c.slot}) — {c.author}
+              </span>
+              <a href={c.sourcePage} target="_blank" rel="noreferrer" style={{ whiteSpace: 'nowrap' }}>
+                {c.license}
+              </a>
+            </div>
+          ))}
         </div>
       </div>
     )
@@ -175,7 +245,7 @@ export function EierenDierenModule({ profile, onExit }: ModuleProps) {
                 textAlign: 'center',
               }}
             >
-              <div style={{ fontSize: '3.5rem' }}>{d.emoji}</div>
+              <div style={{ display: 'flex', justifyContent: 'center' }}>{beeld(d.foto, d.emoji, 110)}</div>
               <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 8, marginTop: 4 }}>
                 <span style={{ fontWeight: 700, fontSize: '1.1rem' }}>{d.nl}</span>
                 <ReadAloudButton text={d.nl} lang="nl" />
@@ -208,7 +278,9 @@ export function EierenDierenModule({ profile, onExit }: ModuleProps) {
         }
       />
 
-      <div style={{ textAlign: 'center', fontSize: '6rem', margin: '8px 0' }}>{dier.emoji}</div>
+      <div style={{ display: 'flex', justifyContent: 'center', margin: '8px 0' }}>
+        {beeld(dier.foto, dier.emoji, 220)}
+      </div>
 
       <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 8 }}>
         <span style={{ fontWeight: 700, fontSize: '1.3rem' }}>{dier.nl}</span>
@@ -255,9 +327,9 @@ export function EierenDierenModule({ profile, onExit }: ModuleProps) {
 
           <div style={{ display: 'flex', justifyContent: 'center', gap: 12, flexWrap: 'wrap', marginTop: 16 }}>
             {dier.legtEi
-              ? taalkaart('🥚', 'het ei', "l'œuf")
-              : taalkaart('🤰', 'in de buik', 'dans le ventre')}
-            {taalkaart(dier.babyEmoji, dier.babyNl, dier.babyFr)}
+              ? taalkaart(dier.fotoEi, '🥚', 'het ei', "l'œuf")
+              : taalkaart(undefined, '🤰', 'in de buik', 'dans le ventre')}
+            {taalkaart(dier.fotoBaby, dier.babyEmoji, dier.babyNl, dier.babyFr)}
           </div>
 
           {weetjesPanel(dier)}

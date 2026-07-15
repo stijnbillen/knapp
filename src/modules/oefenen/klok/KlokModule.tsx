@@ -168,7 +168,7 @@ export function KlokModule({ profile, onExit }: ModuleProps) {
   const [starTrigger, setStarTrigger] = useState(0)
 
   function handleResult(isCorrect: boolean) {
-    const progress = recordAnswer(profile.id, MODULE_ID, isCorrect, {
+    const progress = recordAnswer(profile, MODULE_ID, isCorrect, {
       maxLevel: MAX_LEVEL,
       streakToLevelUp: 4,
     })

@@ -104,7 +104,7 @@ export function LettersModule({ profile, onExit }: ModuleProps) {
       setFound(nextFound)
       if (nextFound.size === round.targetCount * rows.length) {
         // Alle doelletters gevonden (in beide rijen): ronde geslaagd
-        const progress = recordAnswer(profile.id, MODULE_ID, true, {
+        const progress = recordAnswer(profile, MODULE_ID, true, {
           maxLevel: MAX_LEVEL,
           streakToLevelUp: 5,
         })

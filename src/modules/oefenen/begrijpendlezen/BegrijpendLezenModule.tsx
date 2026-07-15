@@ -66,7 +66,7 @@ export function BegrijpendLezenModule({ profile, onExit }: ModuleProps) {
   function kiesOptie(index: number) {
     if (feedback || !tekst) return
     const juist = index === tekst.vragen[vraagIndex].antwoord
-    recordAnswer(profile.id, MODULE_ID, juist)
+    recordAnswer(profile, MODULE_ID, juist)
     if (juist) {
       playCorrect()
       setStarTrigger((n) => n + 1)

@@ -187,7 +187,7 @@ export function EierenDierenModule({ profile, onExit }: ModuleProps) {
   function kies(legtEi: boolean) {
     if (feedback) return
     const isCorrect = legtEi === dier.legtEi
-    recordAnswer(profile.id, MODULE_ID, isCorrect)
+    recordAnswer(profile, MODULE_ID, isCorrect)
     if (isCorrect) {
       playCorrect()
       setStarTrigger((n) => n + 1)

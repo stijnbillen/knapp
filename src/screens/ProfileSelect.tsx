@@ -1,43 +1,44 @@
 import { useState } from 'react'
 import type { Profile } from '../core/profiles'
-import {
-  accentColor,
-  createProfile,
-  deleteProfile,
-  loadProfiles,
-  updateProfile,
-} from '../core/profiles'
-import { ProfileEditor } from './ProfileEditor'
+import { accentColor, loadProfiles } from '../core/profiles'
+import { AdminGate } from './AdminGate'
+import { AdminPanel } from './AdminPanel'
+import { ProfilePinGate } from './ProfilePinGate'
 
 interface ProfileSelectProps {
   onSelect: (profile: Profile) => void
 }
 
+type Stage = { name: 'grid' } | { name: 'admin-gate' } | { name: 'admin-panel' } | { name: 'pin'; profile: Profile }
+
 export function ProfileSelect({ onSelect }: ProfileSelectProps) {
   const [profiles, setProfiles] = useState<Profile[]>(loadProfiles)
-  const [editing, setEditing] = useState<Profile | 'new' | null>(null)
+  const [stage, setStage] = useState<Stage>({ name: 'grid' })
 
-  if (editing) {
-    const existing = editing === 'new' ? undefined : editing
+  if (stage.name === 'admin-gate') {
     return (
-      <ProfileEditor
-        profile={existing}
-        onSave={(data) => {
-          if (existing) updateProfile({ ...data, id: existing.id })
-          else createProfile(data)
+      <AdminGate onSuccess={() => setStage({ name: 'admin-panel' })} onCancel={() => setStage({ name: 'grid' })} />
+    )
+  }
+
+  if (stage.name === 'admin-panel') {
+    return (
+      <AdminPanel
+        onExit={() => {
           setProfiles(loadProfiles())
-          setEditing(null)
+          setStage({ name: 'grid' })
         }}
-        onDelete={
-          existing
-            ? () => {
-                deleteProfile(existing.id)
-                setProfiles(loadProfiles())
-                setEditing(null)
-              }
-            : undefined
-        }
-        onCancel={() => setEditing(null)}
+      />
+    )
+  }
+
+  if (stage.name === 'pin') {
+    const { profile } = stage
+    return (
+      <ProfilePinGate
+        profile={profile}
+        onSuccess={() => onSelect(profile)}
+        onCancel={() => setStage({ name: 'grid' })}
       />
     )
   }
@@ -45,39 +46,37 @@ export function ProfileSelect({ onSelect }: ProfileSelectProps) {
   return (
     <div className="screen">
       <h1 className="screen-title">Wie speelt er? 👋</h1>
+      {profiles.length === 0 && (
+        <p style={{ textAlign: 'center', color: 'var(--text-soft)' }}>
+          Nog geen profielen — vraag een volwassene om er een te maken via Beheerder.
+        </p>
+      )}
       <div className="card-grid">
         {profiles.map((profile) => (
-          <div key={profile.id} style={{ position: 'relative' }}>
-            <button
-              className="card card--accent-border"
-              style={{ '--card-accent': accentColor(profile), width: '100%' } as React.CSSProperties}
-              onClick={() => onSelect(profile)}
-            >
-              <span className="card__emoji">{profile.avatar}</span>
-              <span className="card__label">{profile.name}</span>
-            </button>
-            <button
-              onClick={() => setEditing(profile)}
-              aria-label={`Profiel ${profile.name} bewerken`}
-              style={{
-                position: 'absolute',
-                top: 4,
-                right: 4,
-                minWidth: 'var(--tap)',
-                minHeight: 'var(--tap)',
-                fontSize: '1.1rem',
-                opacity: 0.6,
-              }}
-            >
-              ✏️
-            </button>
-          </div>
+          <button
+            key={profile.id}
+            className="card card--accent-border"
+            style={{ '--card-accent': accentColor(profile), width: '100%' } as React.CSSProperties}
+            onClick={() =>
+              profile.pinCode ? setStage({ name: 'pin', profile }) : onSelect(profile)
+            }
+          >
+            <span className="card__emoji">{profile.avatar}</span>
+            <span className="card__label">{profile.name}</span>
+          </button>
         ))}
-        <button className="card" onClick={() => setEditing('new')}>
-          <span className="card__emoji">➕</span>
-          <span className="card__label">Nieuw profiel</span>
-        </button>
       </div>
+      <button
+        onClick={() => setStage({ name: 'admin-gate' })}
+        style={{
+          marginTop: 24,
+          alignSelf: 'center',
+          opacity: 0.6,
+          fontSize: '0.9rem',
+        }}
+      >
+        ⚙️ Beheerder
+      </button>
     </div>
   )
 }

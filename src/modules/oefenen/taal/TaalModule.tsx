@@ -71,7 +71,7 @@ export function TaalModule({ profile, onExit, moduleId, lang, title, taalNaam, w
   function kiesOptie(doel: string) {
     if (feedback) return
     const isCorrect = doel === round.entry.doel
-    recordAnswer(profile.id, moduleId, isCorrect)
+    recordAnswer(profile, moduleId, isCorrect)
     if (isCorrect) {
       playCorrect()
       setStarTrigger((n) => n + 1)

@@ -107,7 +107,7 @@ export function IcoonPatroonModule({ profile, onExit }: ModuleProps) {
   }, [phase])
 
   function finish(missCount: number) {
-    recordAnswer(profile.id, MODULE_ID, missCount === 0)
+    recordAnswer(profile, MODULE_ID, missCount === 0)
     playCorrect()
     if (missCount === 0) setStarTrigger((n) => n + 1)
     setPhase('klaar')

@@ -51,7 +51,7 @@ export function DicteeModule({ profile, onExit }: ModuleProps) {
   function check() {
     if (feedback || !typed.trim()) return
     const isCorrect = typed.trim().toLowerCase() === entry.woord
-    recordAnswer(profile.id, MODULE_ID, isCorrect)
+    recordAnswer(profile, MODULE_ID, isCorrect)
     if (isCorrect) {
       playCorrect()
       setStarTrigger((n) => n + 1)

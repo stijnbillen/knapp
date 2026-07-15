@@ -27,7 +27,13 @@ export default function App() {
 
   let content: React.ReactNode
   if (view.name === 'settings') {
-    content = <Settings onBack={() => setView({ name: 'home' })} />
+    content = (
+      <Settings
+        profile={profile}
+        onBack={() => setView({ name: 'home' })}
+        onProfileUpdated={(p) => setProfile(p)}
+      />
+    )
   } else if (view.name === 'module') {
     const mod = getModule(view.moduleId)
     if (mod) {

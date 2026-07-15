@@ -58,7 +58,7 @@ export function TafelsModule({ profile, onExit }: ModuleProps) {
   function confirm() {
     if (feedback || !problem || buffer.length === 0) return
     const isCorrect = parseInt(buffer, 10) === problem.answer
-    recordAnswer(profile.id, MODULE_ID, isCorrect)
+    recordAnswer(profile, MODULE_ID, isCorrect)
     if (isCorrect) {
       playCorrect()
       setStarTrigger((n) => n + 1)

@@ -99,7 +99,7 @@ export function KleurenVolgordeModule({ profile, onExit }: ModuleProps) {
   }, [phase, sequence, speed])
 
   function finish(finalReached: number) {
-    recordAnswer(profile.id, MODULE_ID, finalReached >= count)
+    recordAnswer(profile, MODULE_ID, finalReached >= count)
     if (finalReached >= count) {
       playCorrect()
       setStarTrigger((n) => n + 1)

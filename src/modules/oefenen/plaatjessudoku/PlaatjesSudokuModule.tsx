@@ -64,7 +64,7 @@ export function PlaatjesSudokuModule({ profile, onExit }: ModuleProps) {
     setGrid(next)
 
     if (value !== 0 && next.every((r) => r.every((v) => v !== 0)) && findConflicts(next, conf).size === 0) {
-      recordAnswer(profile.id, MODULE_ID, true)
+      recordAnswer(profile, MODULE_ID, true)
       playStar()
       setStarTrigger((n) => n + 1)
       setWon(true)

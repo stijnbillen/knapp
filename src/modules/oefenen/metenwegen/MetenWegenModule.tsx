@@ -156,7 +156,7 @@ export function MetenWegenModule({ profile, onExit }: ModuleProps) {
   function confirm() {
     if (feedback || buffer.length === 0) return
     const isCorrect = parseInt(buffer, 10) === round.waarde
-    const progress = recordAnswer(profile.id, MODULE_ID, isCorrect, { maxLevel: MAX_LEVEL, streakToLevelUp: 5 })
+    const progress = recordAnswer(profile, MODULE_ID, isCorrect, { maxLevel: MAX_LEVEL, streakToLevelUp: 5 })
     if (isCorrect) {
       playCorrect()
       setStarTrigger((n) => n + 1)

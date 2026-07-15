@@ -1,35 +1,35 @@
 import { useState } from 'react'
-import type { BlockId, Profile } from '../core/profiles'
-import { ALL_BLOCKS, AVATARS, COLOR_PALETTE } from '../core/profiles'
+import type { Profile } from '../core/profiles'
+import { AVATARS, COLOR_PALETTE } from '../core/profiles'
 import { BigButton } from '../ui/BigButton'
 import { BackHeader } from '../ui/BackHeader'
 
 interface ProfileEditorProps {
   /** Bestaand profiel bewerken, of undefined voor een nieuw profiel. */
   profile?: Profile
-  onSave: (data: Omit<Profile, 'id'>) => void
+  /** Beheerdersmodus: toont ook pincode-veld en verwijderknop. */
+  adminMode?: boolean
+  onSave: (data: { name: string; avatar: string; color: string; pinCode?: string }) => void
   onDelete?: () => void
   onCancel: () => void
 }
 
-export function ProfileEditor({ profile, onSave, onDelete, onCancel }: ProfileEditorProps) {
+export function ProfileEditor({ profile, adminMode, onSave, onDelete, onCancel }: ProfileEditorProps) {
   const [name, setName] = useState(profile?.name ?? '')
   const [avatar, setAvatar] = useState(profile?.avatar ?? AVATARS[0])
   const [color, setColor] = useState(profile?.color ?? 'blauw')
-  const [blocks, setBlocks] = useState<BlockId[]>(profile?.blocks ?? [])
-  const [games, setGames] = useState(profile?.games ?? true)
+  const [pinCode, setPinCode] = useState(profile?.pinCode ?? '')
   const [confirmDelete, setConfirmDelete] = useState(false)
-
-  function toggleBlock(id: BlockId) {
-    setBlocks((current) =>
-      current.includes(id) ? current.filter((b) => b !== id) : [...current, id],
-    )
-  }
 
   function save() {
     const trimmed = name.trim()
     if (!trimmed) return
-    onSave({ name: trimmed, avatar, color, blocks, games })
+    onSave({
+      name: trimmed,
+      avatar,
+      color,
+      ...(adminMode ? { pinCode: pinCode.trim() || undefined } : {}),
+    })
   }
 
   return (
@@ -79,25 +79,26 @@ export function ProfileEditor({ profile, onSave, onDelete, onCancel }: ProfileEd
         </div>
       </div>
 
-      <div className="form-field">
-        <label>Oefenblokken</label>
-        {ALL_BLOCKS.map((block) => (
-          <button key={block.id} className="toggle-row" onClick={() => toggleBlock(block.id)}>
-            <span>Oefeningen {block.label}</span>
-            <span className={`switch ${blocks.includes(block.id) ? 'switch--on' : ''}`} />
-          </button>
-        ))}
-        <button className="toggle-row" onClick={() => setGames((v) => !v)}>
-          <span>Spelletjes</span>
-          <span className={`switch ${games ? 'switch--on' : ''}`} />
-        </button>
-      </div>
+      {adminMode && (
+        <div className="form-field">
+          <label htmlFor="profile-pin">Pincode (optioneel)</label>
+          <input
+            id="profile-pin"
+            type="text"
+            value={pinCode}
+            maxLength={12}
+            onChange={(e) => setPinCode(e.target.value)}
+            placeholder="Leeg = instant instappen"
+          />
+        </div>
+      )}
 
       <BigButton variant="accent" onClick={save} disabled={!name.trim()}>
         💾 Bewaren
       </BigButton>
 
-      {onDelete &&
+      {adminMode &&
+        onDelete &&
         (confirmDelete ? (
           <div className="feedback-panel feedback-panel--bad">
             <div>

@@ -73,7 +73,7 @@ export function TellenModule({ profile, onExit }: ModuleProps) {
   const [starTrigger, setStarTrigger] = useState(0)
 
   function handleResult(isCorrect: boolean) {
-    const progress = recordAnswer(profile.id, MODULE_ID, isCorrect, { maxLevel: MAX_LEVEL })
+    const progress = recordAnswer(profile, MODULE_ID, isCorrect, { maxLevel: MAX_LEVEL })
     if (isCorrect) {
       playCorrect()
       setStarTrigger((n) => n + 1)

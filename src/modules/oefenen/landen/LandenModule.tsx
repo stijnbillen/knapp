@@ -141,7 +141,7 @@ export function LandenModule({ profile, onExit }: ModuleProps) {
   }
 
   function handleResult(isCorrect: boolean) {
-    recordAnswer(profile.id, MODULE_ID, isCorrect)
+    recordAnswer(profile, MODULE_ID, isCorrect)
     if (isCorrect) {
       playCorrect()
       setStarTrigger((n) => n + 1)

@@ -1,10 +1,14 @@
+import { useState } from 'react'
 import type { Profile } from '../core/profiles'
-import { ALL_BLOCKS } from '../core/profiles'
+import { getModuleAccess } from '../core/profiles'
 import type { ModuleDef } from '../core/registry'
-import { exercisesForBlock, games } from '../core/registry'
+import { modulesForProfile } from '../core/registry'
+import { spendStars } from '../core/progress'
+import { startPlaytimeGrant } from '../core/playtime'
 import { AvatarBadge } from '../ui/AvatarBadge'
-import { StarCount } from '../ui/StarCount'
+import { StarCount, useStars } from '../ui/StarCount'
 import { BigButton } from '../ui/BigButton'
+import { ConfirmSpendDialog } from '../ui/ConfirmSpendDialog'
 
 interface HomeMenuProps {
   profile: Profile
@@ -13,13 +17,22 @@ interface HomeMenuProps {
   onOpenSettings: () => void
 }
 
-function ModuleCards({ modules, onOpen }: { modules: ModuleDef[]; onOpen: (id: string) => void }) {
+function ModuleCards({
+  modules,
+  onOpen,
+  renderBadge,
+}: {
+  modules: ModuleDef[]
+  onOpen: (id: string) => void
+  renderBadge?: (mod: ModuleDef) => React.ReactNode
+}) {
   return (
     <div className="card-grid">
       {modules.map((mod) => (
         <button key={mod.id} className="card" onClick={() => onOpen(mod.id)}>
           <span className="card__emoji">{mod.icon}</span>
           <span className="card__label">{mod.title}</span>
+          {renderBadge?.(mod)}
         </button>
       ))}
     </div>
@@ -27,7 +40,30 @@ function ModuleCards({ modules, onOpen }: { modules: ModuleDef[]; onOpen: (id: s
 }
 
 export function HomeMenu({ profile, onOpenModule, onSwitchProfile, onOpenSettings }: HomeMenuProps) {
-  const gameList = games()
+  const { gratis, verdienSterren, gebruikSterren } = modulesForProfile(profile)
+  const balance = useStars(profile.id)
+  const [pendingSpend, setPendingSpend] = useState<ModuleDef | null>(null)
+
+  function openCostedModule(mod: ModuleDef) {
+    setPendingSpend(mod)
+  }
+
+  function confirmSpend() {
+    if (!pendingSpend) return
+    const access = getModuleAccess(profile, pendingSpend.id)
+    const cost = access.costStars ?? 0
+    if (spendStars(profile.id, cost)) {
+      startPlaytimeGrant({
+        profileId: profile.id,
+        moduleId: pendingSpend.id,
+        minutes: access.costMinutes ?? 0,
+        startedAt: Date.now(),
+      })
+      const moduleId = pendingSpend.id
+      setPendingSpend(null)
+      onOpenModule(moduleId)
+    }
+  }
 
   return (
     <div className="screen">
@@ -47,22 +83,50 @@ export function HomeMenu({ profile, onOpenModule, onSwitchProfile, onOpenSetting
         </BigButton>
       </header>
 
-      {ALL_BLOCKS.map((block) => {
-        const mods = exercisesForBlock(profile, block.id)
-        if (mods.length === 0) return null
-        return (
-          <section className="menu-section" key={block.id}>
-            <h2>✏️ Oefenen {block.label}</h2>
-            <ModuleCards modules={mods} onOpen={onOpenModule} />
-          </section>
-        )
-      })}
-
-      {profile.games && (
+      {gratis.length > 0 && (
         <section className="menu-section">
-          <h2>🎮 Spelen</h2>
-          <ModuleCards modules={gameList} onOpen={onOpenModule} />
+          <h2>🆓 Gratis</h2>
+          <ModuleCards modules={gratis} onOpen={onOpenModule} />
         </section>
+      )}
+
+      {verdienSterren.length > 0 && (
+        <section className="menu-section">
+          <h2>⭐ Verdien sterren</h2>
+          <ModuleCards modules={verdienSterren} onOpen={onOpenModule} />
+        </section>
+      )}
+
+      {gebruikSterren.length > 0 && (
+        <section className="menu-section">
+          <h2>🎮 Gebruik sterren</h2>
+          <ModuleCards
+            modules={gebruikSterren}
+            onOpen={(id) => {
+              const mod = gebruikSterren.find((m) => m.id === id)
+              if (mod) openCostedModule(mod)
+            }}
+            renderBadge={(mod) => {
+              const access = getModuleAccess(profile, mod.id)
+              return (
+                <span style={{ fontSize: '0.75rem', color: 'var(--text-soft)' }}>
+                  {access.costStars}⭐→{access.costMinutes}min
+                </span>
+              )
+            }}
+          />
+        </section>
+      )}
+
+      {pendingSpend && (
+        <ConfirmSpendDialog
+          moduleTitle={pendingSpend.title}
+          costStars={getModuleAccess(profile, pendingSpend.id).costStars ?? 0}
+          costMinutes={getModuleAccess(profile, pendingSpend.id).costMinutes ?? 0}
+          balance={balance}
+          onConfirm={confirmSpend}
+          onCancel={() => setPendingSpend(null)}
+        />
       )}
     </div>
   )

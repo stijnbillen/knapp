@@ -62,7 +62,7 @@ export function SpellingModule({ profile, onExit }: ModuleProps) {
   function answer(value: string) {
     if (feedback) return
     const isCorrect = value.trim().toLowerCase() === round.entry.woord
-    recordAnswer(profile.id, MODULE_ID, isCorrect)
+    recordAnswer(profile, MODULE_ID, isCorrect)
     if (isCorrect) {
       playCorrect()
       setStarTrigger((n) => n + 1)

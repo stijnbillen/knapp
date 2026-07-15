@@ -61,7 +61,7 @@ export function OptellenModule({ profile, onExit }: ModuleProps) {
   function choose(value: number) {
     if (feedback) return
     const isCorrect = value === round.sum
-    const progress = recordAnswer(profile.id, MODULE_ID, isCorrect, {
+    const progress = recordAnswer(profile, MODULE_ID, isCorrect, {
       maxLevel: MAX_LEVEL,
       streakToLevelUp: 4,
     })

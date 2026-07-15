@@ -1,4 +1,6 @@
 import { store } from './storage'
+import type { Profile } from './profiles'
+import { getModuleAccess } from './profiles'
 
 export interface ModuleProgress {
   attempted: number
@@ -45,32 +47,43 @@ export function awardStar(profileId: string, amount = 1): void {
   emit()
 }
 
+/** Trekt sterren af; geeft false (geen wijziging) bij onvoldoende saldo. */
+export function spendStars(profileId: string, amount: number): boolean {
+  const progress = getProgress(profileId)
+  if (progress.stars < amount) return false
+  progress.stars -= amount
+  store.set(key(profileId), progress)
+  emit()
+  return true
+}
+
 export interface AnswerOptions {
   maxLevel?: number // hoogste niveau van de module
   streakToLevelUp?: number // aantal juiste op rij om een niveau te stijgen
-  star?: boolean // ster toekennen bij juist antwoord (standaard true)
 }
 
 /**
  * Registreert een antwoord: telt mee in de statistiek, kent een ster toe bij
- * juist, en verhoogt het niveau na een reeks juiste antwoorden. Een fout
+ * juist (enkel als de beheerder dit voor dit profiel/deze module heeft
+ * ingesteld), en verhoogt het niveau na een reeks juiste antwoorden. Een fout
  * antwoord verlaagt het niveau nooit — enkel de reeks begint opnieuw.
  */
 export function recordAnswer(
-  profileId: string,
+  profile: Profile,
   moduleId: string,
   isCorrect: boolean,
   options: AnswerOptions = {},
 ): ModuleProgress {
-  const { maxLevel = 1, streakToLevelUp = 5, star = true } = options
-  const progress = getProgress(profileId)
+  const { maxLevel = 1, streakToLevelUp = 5 } = options
+  const earnsStar = getModuleAccess(profile, moduleId).earnsStars === true
+  const progress = getProgress(profile.id)
   const mod = progress.modules[moduleId] ?? { ...emptyModule }
 
   mod.attempted += 1
   if (isCorrect) {
     mod.correct += 1
     mod.streak += 1
-    if (star) progress.stars += 1
+    if (earnsStar) progress.stars += 1
     if (mod.streak >= streakToLevelUp && mod.level < maxLevel) {
       mod.level += 1
       mod.streak = 0
@@ -80,7 +93,7 @@ export function recordAnswer(
   }
 
   progress.modules[moduleId] = mod
-  store.set(key(profileId), progress)
+  store.set(key(profile.id), progress)
   emit()
   return mod
 }

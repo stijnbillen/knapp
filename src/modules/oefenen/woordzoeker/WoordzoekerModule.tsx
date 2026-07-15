@@ -116,7 +116,7 @@ export function WoordzoekerModule({ profile, onExit }: ModuleProps) {
       const nextGevonden = new Set(gevonden).add(match.woord)
       setGevonden(nextGevonden)
       if (nextGevonden.size === puzzle.placements.length) {
-        recordAnswer(profile.id, MODULE_ID, true)
+        recordAnswer(profile, MODULE_ID, true)
         setStarTrigger((n) => n + 1)
         setKlaar(true)
       }

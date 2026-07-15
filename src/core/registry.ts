@@ -1,5 +1,6 @@
 import type { ComponentType } from 'react'
 import type { BlockId, Profile } from './profiles'
+import { getModuleAccess } from './profiles'
 import { TellenModule } from '../modules/oefenen/tellen/TellenModule'
 import { OptellenModule } from '../modules/oefenen/optellen/OptellenModule'
 import { KijkGoedModule } from '../modules/oefenen/kijkgoed/KijkGoedModule'
@@ -274,11 +275,23 @@ export function getModule(id: string): ModuleDef | undefined {
   return MODULES.find((m) => m.id === id)
 }
 
-/** Oefenmodules van één blok die zichtbaar zijn voor dit profiel. */
-export function exercisesForBlock(profile: Profile, block: BlockId): ModuleDef[] {
-  return MODULES.filter((m) => m.kind === 'oefenen' && m.block === block && profile.blocks.includes(block))
+export interface ModuleBuckets {
+  gratis: ModuleDef[]
+  verdienSterren: ModuleDef[]
+  gebruikSterren: ModuleDef[]
 }
 
-export function games(): ModuleDef[] {
-  return MODULES.filter((m) => m.kind === 'spelen')
+/** Verdeelt alle modules die voor dit profiel ingeschakeld zijn over de 3 secties. */
+export function modulesForProfile(profile: Profile): ModuleBuckets {
+  const buckets: ModuleBuckets = { gratis: [], verdienSterren: [], gebruikSterren: [] }
+  for (const mod of MODULES) {
+    const access = getModuleAccess(profile, mod.id)
+    if (!access.enabled) continue
+    if (mod.kind === 'oefenen') {
+      ;(access.earnsStars ? buckets.verdienSterren : buckets.gratis).push(mod)
+    } else {
+      ;(access.costStars && access.costStars > 0 ? buckets.gebruikSterren : buckets.gratis).push(mod)
+    }
+  }
+  return buckets
 }

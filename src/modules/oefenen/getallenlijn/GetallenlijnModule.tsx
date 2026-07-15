@@ -125,7 +125,7 @@ export function GetallenlijnModule({ profile, onExit }: ModuleProps) {
   }
 
   function handleResult(isCorrect: boolean) {
-    const progress = recordAnswer(profile.id, MODULE_ID, isCorrect, { maxLevel: MAX_LEVEL, streakToLevelUp: 5 })
+    const progress = recordAnswer(profile, MODULE_ID, isCorrect, { maxLevel: MAX_LEVEL, streakToLevelUp: 5 })
     if (isCorrect) {
       playCorrect()
       setStarTrigger((n) => n + 1)

@@ -58,12 +58,12 @@ export function DoolhofModule({ profile, onExit }: ModuleProps) {
   useEffect(() => {
     if (won || !maze) return
     if (pos.row === maze.size - 1 && pos.col === maze.size - 1) {
-      recordAnswer(profile.id, MODULE_ID, true)
+      recordAnswer(profile, MODULE_ID, true)
       playStar()
       setStarTrigger((n) => n + 1)
       setWon(true)
     }
-  }, [pos, maze, won, profile.id])
+  }, [pos, maze, won, profile])
 
   // Toetsenbord als extra op desktop
   useEffect(() => {

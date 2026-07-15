@@ -3,6 +3,7 @@ import type { BlockId, Profile } from './profiles'
 import { TellenModule } from '../modules/oefenen/tellen/TellenModule'
 import { OptellenModule } from '../modules/oefenen/optellen/OptellenModule'
 import { KijkGoedModule } from '../modules/oefenen/kijkgoed/KijkGoedModule'
+import { KleurenVolgordeModule } from '../modules/oefenen/kleurenvolgorde/KleurenVolgordeModule'
 import { PlaatjesSudokuModule } from '../modules/oefenen/plaatjessudoku/PlaatjesSudokuModule'
 import { LettersModule } from '../modules/oefenen/letters/LettersModule'
 import { DoolhofModule } from '../modules/oefenen/doolhof/DoolhofModule'
@@ -90,6 +91,14 @@ export const MODULES: ModuleDef[] = [
     kind: 'oefenen',
     block: '5',
     component: KijkGoedModule,
+  },
+  {
+    id: 'kleurenvolgorde',
+    title: 'Kleuren in volgorde',
+    icon: '🌈',
+    kind: 'oefenen',
+    block: '5',
+    component: KleurenVolgordeModule,
   },
   {
     id: 'plaatjessudoku',

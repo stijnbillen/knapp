@@ -66,3 +66,8 @@ export function playStar(): void {
 export function playClick(): void {
   tone({ freq: 600, duration: 0.05, type: 'square', volume: 0.05 })
 }
+
+/** Losse toon op gekozen frequentie (bv. één kleur/noot in een geheugenspel). */
+export function playTone(freq: number, duration = 0.3): void {
+  tone({ freq, duration })
+}

@@ -9,6 +9,7 @@ import { IcoonPatroonModule } from '../modules/oefenen/icoonpatroon/IcoonPatroon
 import { EierenDierenModule } from '../modules/oefenen/eierendieren/EierenDierenModule'
 import { PlaatjesSudokuModule } from '../modules/oefenen/plaatjessudoku/PlaatjesSudokuModule'
 import { PuzzelModule } from '../modules/oefenen/puzzel/PuzzelModule'
+import { SliderPuzzelModule } from '../modules/oefenen/sliderpuzzel/SliderPuzzelModule'
 import { LettersModule } from '../modules/oefenen/letters/LettersModule'
 import { DoolhofModule } from '../modules/oefenen/doolhof/DoolhofModule'
 import { SpellingModule } from '../modules/oefenen/spelling/SpellingModule'
@@ -136,6 +137,14 @@ export const MODULES: ModuleDef[] = [
     kind: 'oefenen',
     block: '5',
     component: PuzzelModule,
+  },
+  {
+    id: 'sliderpuzzel',
+    title: 'Schuifpuzzel',
+    icon: '🔢',
+    kind: 'oefenen',
+    block: '5',
+    component: SliderPuzzelModule,
   },
   {
     id: 'tafels',

@@ -273,6 +273,23 @@ export function PuzzelModule({ profile, onExit }: ModuleProps) {
         </div>
       )}
 
+      {afbeelding && phase === 'spelen' && (
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 4, margin: '4px 0 12px' }}>
+          <span style={{ fontSize: '0.8rem', color: 'var(--text-soft)' }}>Dit moet je bouwen:</span>
+          <img
+            src={afbeelding.src}
+            alt=""
+            style={{
+              width: 110,
+              height: 110,
+              objectFit: 'cover',
+              borderRadius: 10,
+              boxShadow: 'var(--shadow)',
+            }}
+          />
+        </div>
+      )}
+
       {phase === 'klaar' && (
         <div className="feedback-panel feedback-panel--good">
           <span className="feedback-panel__emoji">🧩</span>

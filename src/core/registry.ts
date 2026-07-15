@@ -25,6 +25,7 @@ import { OthelloModule } from '../modules/spelen/othello/OthelloModule'
 import { TetrisModule } from '../modules/spelen/tetris/TetrisModule'
 import { GalaxiaModule } from '../modules/spelen/galaxia/GalaxiaModule'
 import { VerschillenModule } from '../modules/spelen/verschillen/VerschillenModule'
+import { FotoVerschillenModule } from '../modules/spelen/fotoverschillen/FotoVerschillenModule'
 import { SudokuModule } from '../modules/spelen/sudoku/SudokuModule'
 import { MemoryModule } from '../modules/spelen/memory/MemoryModule'
 import { CodeKrakerModule } from '../modules/spelen/codekraker/CodeKrakerModule'
@@ -209,10 +210,17 @@ export const MODULES: ModuleDef[] = [
   { id: 'galaxia', title: 'Galaxia', icon: '🚀', kind: 'spelen', component: GalaxiaModule },
   {
     id: 'verschillen',
-    title: 'Verschillen',
+    title: 'Emoji Verschillen',
     icon: '🔍',
     kind: 'spelen',
     component: VerschillenModule,
+  },
+  {
+    id: 'fotoverschillen',
+    title: 'Foto Verschillen',
+    icon: '🖼️',
+    kind: 'spelen',
+    component: FotoVerschillenModule,
   },
   { id: 'sudoku', title: 'Sudoku', icon: '🧩', kind: 'spelen', component: SudokuModule },
   { id: 'memory', title: 'Memory', icon: '🎴', kind: 'spelen', component: MemoryModule },

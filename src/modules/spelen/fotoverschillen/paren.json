@@ -1,0 +1,91 @@
+[
+  {
+    "id": "09",
+    "diffs": [
+      { "x": 88.2, "y": 10.1, "r": 9, "note": "wolk rechtsboven is verdwenen" },
+      { "x": 22.6, "y": 50.9, "r": 7, "note": "jongen die aan de ringen hangt is verdwenen" },
+      { "x": 54.1, "y": 43.6, "r": 7, "note": "een van de twee hangende banden is verdwenen" },
+      { "x": 73.4, "y": 68.8, "r": 7, "note": "meisje op de glijbaan is verdwenen" },
+      { "x": 16.2, "y": 92.2, "r": 5, "note": "voet van de wip van lichtblauw naar donkerblauw verkleurd" },
+      { "x": 58.0, "y": 86.1, "r": 5, "note": "shirt van rennende jongen van groen naar blauw verkleurd" },
+      { "x": 90.4, "y": 68.9, "r": 8, "note": "gekleurde klimgrepen op de klimwand zijn verdwenen" }
+    ]
+  },
+  {
+    "id": "03",
+    "diffs": [
+      { "x": 17.1, "y": 11.4, "r": 6, "note": "stapel boeken op bovenste boekenplank verdwenen" },
+      { "x": 63.7, "y": 29.5, "r": 7, "note": "trui juf van roze naar blauw" },
+      { "x": 52.2, "y": 56.0, "r": 7, "note": "haarkleur leerling van geel/blond naar zwart" },
+      { "x": 70.4, "y": 54.6, "r": 7, "note": "wereldbol naast leerling verdwenen" },
+      { "x": 81.1, "y": 23.7, "r": 6, "note": "klok: rand van blauw/turkoois naar roze/rood" }
+    ]
+  },
+  {
+    "id": "14",
+    "diffs": [
+      { "x": 34.0, "y": 14.2, "r": 5, "note": "paars vlaggetje uiterst links boven de tent is verdwenen" },
+      { "x": 71.4, "y": 46.8, "r": 4, "note": "een sterretje op de gele festoenrand van de tent is verdwenen" },
+      { "x": 88.9, "y": 56.2, "r": 5, "note": "pet van de jongen rechts van groen/blauw naar helemaal blauw veranderd" },
+      { "x": 11.5, "y": 61.0, "r": 5, "note": "haar van het meisje links van donkerrood naar oranje/rood verkleurd" },
+      { "x": 62.6, "y": 80.9, "r": 6, "note": "shirt van het meisje rechts van donkerrood naar lichtroze verkleurd" }
+    ]
+  },
+  {
+    "id": "01",
+    "diffs": [
+      { "x": 47.0, "y": 5.0, "r": 6, "note": "vogels verdwenen" },
+      { "x": 48.0, "y": 51.5, "r": 7, "note": "linker tentbaan van paars naar oranje" },
+      { "x": 80.5, "y": 77.8, "r": 6, "note": "rots verdwenen" },
+      { "x": 83.0, "y": 66.0, "r": 7, "note": "struik naast tent verdwenen" },
+      { "x": 14.8, "y": 9.6, "r": 10, "note": "kruin van linkerboom volledig verdwenen" }
+    ]
+  },
+  {
+    "id": "17",
+    "diffs": [
+      { "x": 30.1, "y": 70.1, "r": 7, "note": "groene overall" },
+      { "x": 75.3, "y": 75.2, "r": 6, "note": "kikker bij vijver" },
+      { "x": 59.7, "y": 36.5, "r": 5, "note": "object op heuvel" },
+      { "x": 48.2, "y": 39.9, "r": 5, "note": "wit konijntje in de verte" },
+      { "x": 66.1, "y": 59.0, "r": 5, "note": "bloem bij konijn" },
+      { "x": 20.5, "y": 74.1, "r": 5, "note": "mand met eieren" },
+      { "x": 52.1, "y": 82.9, "r": 5, "note": "vlek op pad" },
+      { "x": 49.4, "y": 94.0, "r": 5, "note": "vlek onderaan pad" }
+    ]
+  },
+  {
+    "id": "08",
+    "diffs": [
+      { "x": 82.0, "y": 11.2, "r": 8, "note": "clownvis rechtsboven is verdwenen" },
+      { "x": 89.8, "y": 64.6, "r": 9, "note": "roze/rode koraaltak rechts is verdwenen" },
+      { "x": 8.3, "y": 40.0, "r": 7, "note": "zeeanemoon van roze/paars naar blauw verkleurd" },
+      { "x": 59.8, "y": 59.6, "r": 6, "note": "waterplant voor de geel-blauwe vis is verdwenen" },
+      { "x": 52.0, "y": 66.4, "r": 6, "note": "donkere grotopening in de rots is verdwenen" },
+      { "x": 69.8, "y": 90.9, "r": 7, "note": "roze zeester onderaan is verdwenen" },
+      { "x": 37.6, "y": 92.5, "r": 7, "note": "rode krab linksonder is verdwenen" }
+    ]
+  },
+  {
+    "id": "13",
+    "diffs": [
+      { "x": 8.3, "y": 63.4, "r": 7, "note": "olijfgroene rots naast de octopus is verdwenen" },
+      { "x": 30.6, "y": 64.9, "r": 5, "note": "octopus heeft een tweede oog verloren (nu maar 1 oog)" },
+      { "x": 26.8, "y": 24.8, "r": 6, "note": "vin van de schildpad van bruin naar paars verkleurd" },
+      { "x": 47.4, "y": 25.1, "r": 6, "note": "middelste zeepaardje van turquoise naar geel/paars/roze verkleurd" },
+      { "x": 41.7, "y": 62.5, "r": 6, "note": "groen zeewierplantje bij de achtergrond is verdwenen" },
+      { "x": 64.2, "y": 11.5, "r": 6, "note": "kleine paarse kwal (links van de groep) is verdwenen" },
+      { "x": 41.7, "y": 89.7, "r": 6, "note": "paars schelpje op het zand naast de krab is verdwenen" },
+      { "x": 93.0, "y": 49.0, "r": 8, "note": "slakje op de rots rechts is verdwenen en de rots is van paars naar roze/magenta verkleurd" },
+      { "x": 66.9, "y": 74.2, "r": 7, "note": "een van de drie roze visjes (het grootste, middelste) is verdwenen" }
+    ]
+  },
+  {
+    "id": "02",
+    "diffs": [
+      { "x": 87.6, "y": 72.2, "r": 9, "note": "eenhoorn/pegasus verdwenen van de wolk" },
+      { "x": 23.0, "y": 20.0, "r": 9, "note": "regenboog: kleurband anders (rode band breder, geel/oranje band weg)" },
+      { "x": 50.0, "y": 45.0, "r": 8, "note": "drie ronde raampjes onder de centrale toren verdwenen" }
+    ]
+  }
+]

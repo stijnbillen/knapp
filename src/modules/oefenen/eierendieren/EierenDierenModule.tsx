@@ -87,9 +87,12 @@ function randomItem<T>(list: T[]): T {
   return list[Math.floor(Math.random() * list.length)]
 }
 
-function newDier(prevId: string | null): Dier {
-  const keuze = dieren.length > 1 ? dieren.filter((d) => d.id !== prevId) : dieren
-  return randomItem(keuze)
+/** Een dier moet minstens een kwart van de volledige set wachten voor het opnieuw mag verschijnen. */
+const HERHAAL_WACHTTIJD = Math.ceil(dieren.length / 4)
+
+function newDier(recentIds: string[]): Dier {
+  const keuze = dieren.filter((d) => !recentIds.includes(d.id))
+  return randomItem(keuze.length > 0 ? keuze : dieren)
 }
 
 /** Foto's zijn best-effort gevonden; niet elk dier/ei/baby heeft er een. Val terug op emoji. */
@@ -145,7 +148,8 @@ function taalkaart(
 
 export function EierenDierenModule({ profile, onExit }: ModuleProps) {
   const [phase, setPhase] = useState<Phase>('start')
-  const [dier, setDier] = useState<Dier>(() => newDier(null))
+  const [dier, setDier] = useState<Dier>(() => newDier([]))
+  const [recentIds, setRecentIds] = useState<string[]>(() => [dier.id])
   const [feedback, setFeedback] = useState<'good' | 'bad' | null>(null)
   const [starTrigger, setStarTrigger] = useState(0)
   const [zoomFoto, setZoomFoto] = useState<string | null>(null)
@@ -179,7 +183,9 @@ export function EierenDierenModule({ profile, onExit }: ModuleProps) {
   }, [dier, phase])
 
   function start() {
-    setDier(newDier(null))
+    const d = newDier(recentIds)
+    setDier(d)
+    setRecentIds((prev) => [...prev, d.id].slice(-HERHAAL_WACHTTIJD))
     setFeedback(null)
     setPhase('spelen')
   }
@@ -198,7 +204,9 @@ export function EierenDierenModule({ profile, onExit }: ModuleProps) {
   }
 
   function volgende() {
-    setDier(newDier(dier.id))
+    const d = newDier(recentIds)
+    setDier(d)
+    setRecentIds((prev) => [...prev, d.id].slice(-HERHAAL_WACHTTIJD))
     setFeedback(null)
   }
 

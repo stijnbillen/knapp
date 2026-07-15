@@ -23,6 +23,10 @@ interface Dier {
   babyEmoji: string
   babyNl: string
   babyFr: string
+  draagtijd: string
+  aantalJongen: string
+  frequentie: string
+  leeftijd: string
 }
 
 interface SpeciaalDier {
@@ -31,6 +35,33 @@ interface SpeciaalDier {
   nl: string
   fr: string
   uitleg: string
+  draagtijd: string
+  aantalJongen: string
+  frequentie: string
+  leeftijd: string
+}
+
+function weetjesPanel(d: { draagtijd: string; aantalJongen: string; frequentie: string; leeftijd: string }) {
+  return (
+    <div
+      style={{
+        background: 'var(--surface)',
+        borderRadius: 16,
+        boxShadow: 'var(--shadow)',
+        padding: '14px 16px',
+        maxWidth: 420,
+        margin: '12px auto 0',
+      }}
+    >
+      <p style={{ fontWeight: 700, margin: '0 0 8px' }}>🤓 Wist je dat...</p>
+      <ul style={{ margin: 0, paddingLeft: 20, color: 'var(--text-soft)' }}>
+        <li>{d.draagtijd}</li>
+        <li>{d.aantalJongen}</li>
+        <li>{d.frequentie}</li>
+        <li>{d.leeftijd}</li>
+      </ul>
+    </div>
+  )
 }
 
 const dieren = DIEREN_JSON as Dier[]
@@ -154,6 +185,7 @@ export function EierenDierenModule({ profile, onExit }: ModuleProps) {
                 <ReadAloudButton text={d.fr} lang="fr" />
               </div>
               <p style={{ marginTop: 10 }}>{d.uitleg}</p>
+              {weetjesPanel(d)}
             </div>
           ))}
         </div>
@@ -227,6 +259,8 @@ export function EierenDierenModule({ profile, onExit }: ModuleProps) {
               : taalkaart('🤰', 'in de buik', 'dans le ventre')}
             {taalkaart(dier.babyEmoji, dier.babyNl, dier.babyFr)}
           </div>
+
+          {weetjesPanel(dier)}
         </>
       )}
 

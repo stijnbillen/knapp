@@ -915,5 +915,467 @@
     "license": "Public domain",
     "author": "NOAA (no individually credited photographer in file metadata)",
     "sourcePage": "https://commons.wikimedia.org/wiki/File:Hippocampus.jpg"
+  },
+  {
+    "dier": "neushoorn",
+    "slot": "adult",
+    "license": "CC BY-SA 4.0",
+    "author": "Vauxford",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Adult_White_Rhinoceros_(Ceratotherium_simum_simum)_(CWPG).jpg"
+  },
+  {
+    "dier": "neushoorn",
+    "slot": "baby",
+    "license": "CC BY-SA 4.0",
+    "author": "Giles Laurent",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:075_White_rhinoceros_mother_and_her_newborn_baby_in_the_Kalahari_Desert_of_Namibia_Photo_by_Giles_Laurent.jpg"
+  },
+  {
+    "dier": "nijlpaard",
+    "slot": "adult",
+    "license": "CC BY-SA 4.0",
+    "author": "Bernard Gagnon",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Hippopotamus_in_the_Zambezi.jpg"
+  },
+  {
+    "dier": "nijlpaard",
+    "slot": "baby",
+    "license": "CC BY-SA 4.0",
+    "author": "Hans Hillewaert",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Hippopotamus_amphibius_(juvenile).jpg"
+  },
+  {
+    "dier": "luipaard",
+    "slot": "adult",
+    "license": "CC BY-SA 4.0",
+    "author": "Charles J. Sharp",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Leopard_(Panthera_pardus_pardus)_Kruger.jpg"
+  },
+  {
+    "dier": "luipaard",
+    "slot": "baby",
+    "license": "CC BY-SA 4.0",
+    "author": "Sumeet Moghe",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Leopard_cub.jpg"
+  },
+  {
+    "dier": "jachtluipaard",
+    "slot": "adult",
+    "license": "CC BY-SA 4.0",
+    "author": "Charles J. Sharp",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Cheetah_(Acinonyx_jubatus)_female_2.jpg"
+  },
+  {
+    "dier": "hyena",
+    "slot": "adult",
+    "license": "CC BY-SA 4.0",
+    "author": "Charles J. Sharp",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Spotted_hyena_(Crocuta_crocuta).jpg"
+  },
+  {
+    "dier": "das",
+    "slot": "adult",
+    "license": "CC BY-SA 4.0",
+    "author": "Charles J. Sharp",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:European_badger_(Meles_meles_taxus)_Drenthe.jpg"
+  },
+  {
+    "dier": "wasbeer",
+    "slot": "adult",
+    "license": "CC BY-SA 2.5",
+    "author": "Darkone",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Raccoon_(Procyon_lotor)_2.jpg"
+  },
+  {
+    "dier": "wasbeer",
+    "slot": "baby",
+    "license": "CC BY-SA 4.0",
+    "author": "Kate Cousino",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Baby_raccoons_at_Murphy's_Point_Provincial_Park.jpg"
+  },
+  {
+    "dier": "egel",
+    "slot": "adult",
+    "license": "CC BY-SA 3.0",
+    "author": "Hrald",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:West_European_Hedgehog_(Erinaceus_europaeus)1.jpg"
+  },
+  {
+    "dier": "lynx",
+    "slot": "adult",
+    "license": "Public domain",
+    "author": "David Castor",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Lynx_lynx-4.JPG"
+  },
+  {
+    "dier": "rendier",
+    "slot": "adult",
+    "license": "CC BY-SA 4.0",
+    "author": "Diego Delso",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Reno_(Rangifer_tarandus),_Honningsv%C3%A5g,_Noruega,_2019-09-03,_DD_35.jpg"
+  },
+  {
+    "dier": "rendier",
+    "slot": "baby",
+    "license": "CC BY-SA 2.0",
+    "author": "Walter Baxter",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:A_reindeer_calf_-_geograph.org.uk_-_3149880.jpg"
+  },
+  {
+    "dier": "jaguar",
+    "slot": "adult",
+    "license": "CC BY-SA 2.0",
+    "author": "Eric Kilby from Somerville, MA, USA",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Jaguar_Portrait_(16876156529).jpg"
+  },
+  {
+    "dier": "jaguar",
+    "slot": "baby",
+    "license": "CC BY-SA 3.0",
+    "author": "John Harrison at https://www.flickr.com/photos/15512543@N04/",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Jaguarpickingupcub08.jpg"
+  },
+  {
+    "dier": "poema",
+    "slot": "adult",
+    "license": "CC BY-SA 4.0",
+    "author": "Ötscher",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Puma-Portrait.jpg"
+  },
+  {
+    "dier": "poema",
+    "slot": "baby",
+    "license": "CC BY-SA 2.0",
+    "author": "Eric Kilby from Somerville, MA, USA",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Cougar_Kitten_Walking_Forward_(17995312770).jpg"
+  },
+  {
+    "dier": "tapir",
+    "slot": "adult",
+    "license": "CC BY-SA 4.0",
+    "author": "Charles J. Sharp",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:South_American_tapir_(Tapirus_terrestris).JPG"
+  },
+  {
+    "dier": "tapir",
+    "slot": "baby",
+    "license": "CC BY-SA 4.0",
+    "author": "Mslecuona",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Tapir_con_cr%C3%ADa.JPG"
+  },
+  {
+    "dier": "kameel",
+    "slot": "adult",
+    "license": "CC BY 4.0",
+    "author": "Vsatinet",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Bactrian_camel_in_the_zoo_02.jpg"
+  },
+  {
+    "dier": "kameel",
+    "slot": "baby",
+    "license": "Public domain",
+    "author": "Marmoset1000 at en.wikipedia",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Babybactrian.jpg"
+  },
+  {
+    "dier": "dromedaris",
+    "slot": "adult",
+    "license": "CC BY-SA 4.0",
+    "author": "Dosseman",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Palmyra_dromedary_0011b.jpg"
+  },
+  {
+    "dier": "dromedaris",
+    "slot": "baby",
+    "license": "CC BY-SA 4.0",
+    "author": "Stanislav Beloglazov",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:20150115_SB_Yemen_IMG_8130.jpg"
+  },
+  {
+    "dier": "alpaca",
+    "slot": "adult",
+    "license": "CC BY 2.0",
+    "author": "Bernd Thaller from Graz, Austria",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Alpaca_Portrait_(26631626457).jpg"
+  },
+  {
+    "dier": "alpaca",
+    "slot": "baby",
+    "license": "CC BY-SA 3.0",
+    "author": "Ché Lydia Xyang",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Newborn_alpaca_-_panoramio.jpg"
+  },
+  {
+    "dier": "eland",
+    "slot": "adult",
+    "license": "Public domain",
+    "author": "GlacierNPS",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Bull_Moose_(Alces_alces)_(29771391948).jpg"
+  },
+  {
+    "dier": "eland",
+    "slot": "baby",
+    "license": "Public domain",
+    "author": "GrandTetonNPS",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Moose_Calf_(27319871657).jpg"
+  },
+  {
+    "dier": "hert",
+    "slot": "adult",
+    "license": "CC BY-SA 3.0",
+    "author": "Lviatour",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Cervus_elaphus_Luc_Viatour_3.jpg"
+  },
+  {
+    "dier": "hert",
+    "slot": "baby",
+    "license": "CC BY-SA 2.0",
+    "author": "Sally",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Red_Deer_fawn_-_geograph.org.uk_-_2264681.jpg"
+  },
+  {
+    "dier": "ree",
+    "slot": "adult",
+    "license": "CC BY-SA 4.0",
+    "author": "Kahvilokki",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:20190727_Capreolus_capreolus_02.jpg"
+  },
+  {
+    "dier": "ree",
+    "slot": "baby",
+    "license": "CC BY-SA 2.0",
+    "author": "Andrew Curtis",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Roe_Deer_fawn,_Fawdon_Dean_-_geograph.org.uk_-_4980445.jpg"
+  },
+  {
+    "dier": "antilope",
+    "slot": "adult",
+    "license": "CC BY-SA 4.0",
+    "author": "A. J. T. Johnsingh, WWF-India and NCF",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Impala,_the_most_elegant_and_abundant_antelope_of_Africa_AJTJ.jpg"
+  },
+  {
+    "dier": "antilope",
+    "slot": "baby",
+    "license": "CC BY-SA 2.0",
+    "author": "Bernard DUPONT from FRANCE",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Day_73_Impala_(Aepyceros_melampus)_newborn_..._(53370246388).jpg"
+  },
+  {
+    "dier": "gazelle",
+    "slot": "adult",
+    "license": "CC BY-SA 4.0",
+    "author": "Diego Delso",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Gacela_de_Thomson_(Eudorcas_thomsonii),_parque_nacional_de_Amboseli,_Kenia,_2024-05-23,_DD_11.jpg"
+  },
+  {
+    "dier": "gazelle",
+    "slot": "baby",
+    "license": "CC BY 2.0",
+    "author": "Esin Üstün from Istanbul, Turkey",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Calf_was_born_five_minutes_ago_Thomson%27s_Gazelle_Masai_Mara_Kenya_(20601063455).jpg"
+  },
+  {
+    "dier": "buffel",
+    "slot": "adult",
+    "license": "CC BY-SA 4.0",
+    "author": "Charles J. Sharp",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:African_buffalo_(Syncerus_caffer)_male_with_Oxpecker.jpg"
+  },
+  {
+    "dier": "buffel",
+    "slot": "baby",
+    "license": "CC BY-SA 4.0",
+    "author": "Charles J. Sharp",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:African_buffalo_(Syncerus_caffer)_calf_2_weeks.jpg"
+  },
+  {
+    "dier": "yak",
+    "slot": "baby",
+    "license": "CC0",
+    "author": "Menelvegor",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Baby_Yak_(Bos_grunniens)_in_Ladakh.jpg",
+    "type": "foto"
+  },
+  {
+    "dier": "dodo",
+    "slot": "adult",
+    "license": "CC0",
+    "author": "Naturalis Biodiversity Center",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Naturalis_Biodiversity_Center_-_Raphus_cucculatus_-_Dodo_-_reconstructed_skeleton.jpg",
+    "type": "skelet"
+  },
+  {
+    "dier": "sabeltandtijger",
+    "slot": "adult",
+    "license": "CC0",
+    "author": "TheUltimateGrass",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Smilodon_fatalis_skeleton.jpg",
+    "type": "skelet"
+  },
+  {
+    "dier": "ankylosaurus",
+    "slot": "adult",
+    "license": "CC0",
+    "author": "Gary Todd from Xinzheng, China",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Ankylosaurus_Skeleton_(31556851166).jpg",
+    "type": "skelet"
+  },
+  {
+    "dier": "wild_zwijn",
+    "slot": "adult",
+    "license": "CC BY-SA 4.0",
+    "author": "Thomas Fuhrmann",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Bayerischer_Spessart_Naturpark,_Wildschwein_(Sus_scrofa).jpg",
+    "type": "foto"
+  },
+  {
+    "dier": "trex",
+    "slot": "adult",
+    "license": "CC BY-SA 3.0",
+    "author": "Robosorne",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Tyrannosaurus_rex_skeleton_(cast_of_specimen_MOR_555)_at_Cleveland_Museum_of_Natural_History.jpg",
+    "type": "skelet"
+  },
+  {
+    "dier": "stegosaurus",
+    "slot": "adult",
+    "license": "CC BY 4.0",
+    "author": "Vicpeters",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Stegosaurus_skeleton_at_American_Museum_of_Natural_History.jpg",
+    "type": "skelet"
+  },
+  {
+    "dier": "velociraptor",
+    "slot": "adult",
+    "license": "CC BY-SA 4.0",
+    "author": "Fred Wierum",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Velociraptor_Restoration.png",
+    "type": "paleoart"
+  },
+  {
+    "dier": "spinosaurus",
+    "slot": "adult",
+    "license": "CC BY 2.0",
+    "author": "Ryan Somma",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Spinosaurus_Skeleton_Cast_at_the_National_Geographic_Museum.jpg",
+    "type": "skelet"
+  },
+  {
+    "dier": "yak",
+    "slot": "adult",
+    "license": "CC BY-SA 4.0",
+    "author": "Ganesh Mohan T",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Domestic_Yak_2.jpg",
+    "type": "foto"
+  },
+  {
+    "dier": "wild_zwijn",
+    "slot": "baby",
+    "license": "CC BY-SA 2.0",
+    "author": "Rob Pedley",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Wild_boar_piglet_at_the_Guisachan_Wild_Boar_Project_-_geograph.org.uk_-_863664.jpg",
+    "type": "foto"
+  },
+  {
+    "dier": "diplodocus",
+    "slot": "adult",
+    "license": "CC BY-SA 4.0",
+    "author": "Dosseman",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Diplodocus_Carnegii_skeleton_(foreground)_in_Museum_für_Naturkunde_Berlin_0876.jpg",
+    "type": "skelet"
+  },
+  {
+    "dier": "triceratops",
+    "slot": "adult",
+    "license": "CC BY 4.0",
+    "author": "Source: Mr. Gareth Milner  Derivative: User:MathKnight",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Triceratops_Skeleton_-_National_Museum_of_Natural_History_(14611729991)a.jpg",
+    "type": "skelet"
+  },
+  {
+    "dier": "brachiosaurus",
+    "slot": "adult",
+    "license": "CC BY 3.0",
+    "author": "Matt Wedel",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Brachiosaurus_mount.jpg",
+    "type": "skelet"
+  },
+  {
+    "dier": "parasaurolophus",
+    "slot": "adult",
+    "license": "CC BY 2.0",
+    "author": "Lisa Andres",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Parasaurolophus_cyrtocristatus.jpg"
+  },
+  {
+    "dier": "pteranodon",
+    "slot": "adult",
+    "license": "CC BY-SA 2.0",
+    "author": "Mira Mechtley",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Pteranodon_longiceps_skeleton.jpg"
+  },
+  {
+    "dier": "quetzalcoatlus",
+    "slot": "adult",
+    "license": "CC BY 4.0",
+    "author": "Connor Ashbridge",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Quetzalcoatlus_northropi.png"
+  },
+  {
+    "dier": "mosasaurus",
+    "slot": "adult",
+    "license": "CC BY 2.0",
+    "author": "Rob Swystun",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:A_mosasaurus_skeleton_at_the_Canadian_Fossil_Discovery_Centre_in_Morden,_Manitoba,_Canada._(35999236410).jpg"
+  },
+  {
+    "dier": "ichthyosaurus",
+    "slot": "adult",
+    "license": "CC BY 4.0",
+    "author": "FunkMonk",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Ichthyosaurus_sp._fossils_in_Natural_History_Museum.jpg"
+  },
+  {
+    "dier": "plesiosaurus",
+    "slot": "adult",
+    "license": "CC BY-SA 4.0",
+    "author": "Michael Barera",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Milwaukee_Public_Museum_November_2022_170_(Plesiosaurus_cast_skeleton).jpg"
+  },
+  {
+    "dier": "wolharige_mammoet",
+    "slot": "adult",
+    "license": "CC BY-SA 4.0",
+    "author": "Zissoudisctrucker",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:FMNH_Woolly_Mammoth.jpg"
+  },
+  {
+    "dier": "wolharige_neushoorn",
+    "slot": "adult",
+    "license": "CC BY-SA 4.0",
+    "author": "JukoFF",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Skeleton_of_a_woolly_rhinoceros_(Coelodonta_antiquitatis)_in_the_Academgorodok_of_Novosibirsk.jpg"
+  },
+  {
+    "dier": "megalodon",
+    "slot": "adult",
+    "license": "CC BY 2.0",
+    "author": "James St. John",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Carcharodon_megalodon_fossil_shark_jaw_(reconstruction)_(late_Cenozoic)_1.jpg"
+  },
+  {
+    "dier": "reuzenalk",
+    "slot": "adult",
+    "license": "CC BY-SA 3.0",
+    "author": "Naturalis Biodiversity Center",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Naturalis_Biodiversity_Center_-_RMNH.AVES.110104_-_Pinguinus_impennis_(Linnaeus,_1758)_-_Great_Auk_-_specimen_-_lateral_view.jpeg"
+  },
+  {
+    "dier": "thylacine",
+    "slot": "adult",
+    "license": "Public domain",
+    "author": "Ben Sheppard",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Thylacine_at_Beaumaris_Zoo,_1936_(NS4371-1-1063).jpg"
   }
 ]

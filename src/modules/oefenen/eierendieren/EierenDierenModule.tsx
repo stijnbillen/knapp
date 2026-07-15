@@ -93,18 +93,20 @@ function newDier(prevId: string | null): Dier {
 }
 
 /** Foto's zijn best-effort gevonden; niet elk dier/ei/baby heeft er een. Val terug op emoji. */
-function beeld(foto: string | undefined, emoji: string, size: number) {
+function beeld(foto: string | undefined, emoji: string, size: number, onZoom?: (foto: string) => void) {
   if (foto) {
     return (
       <img
         src={foto}
         alt=""
+        onClick={onZoom ? () => onZoom(foto) : undefined}
         style={{
           width: size,
           height: size,
           objectFit: 'cover',
           borderRadius: 14,
           boxShadow: 'var(--shadow)',
+          cursor: onZoom ? 'zoom-in' : undefined,
         }}
       />
     )
@@ -112,7 +114,13 @@ function beeld(foto: string | undefined, emoji: string, size: number) {
   return <div style={{ fontSize: size * 0.55 }}>{emoji}</div>
 }
 
-function taalkaart(foto: string | undefined, emoji: string, nl: string, fr: string) {
+function taalkaart(
+  foto: string | undefined,
+  emoji: string,
+  nl: string,
+  fr: string,
+  onZoom?: (foto: string) => void,
+) {
   return (
     <div
       style={{
@@ -121,17 +129,15 @@ function taalkaart(foto: string | undefined, emoji: string, nl: string, fr: stri
         boxShadow: 'var(--shadow)',
         padding: 14,
         textAlign: 'center',
-        minWidth: 140,
+        minWidth: 160,
       }}
     >
-      <div style={{ display: 'flex', justifyContent: 'center' }}>{beeld(foto, emoji, 84)}</div>
+      <div style={{ display: 'flex', justifyContent: 'center' }}>{beeld(foto, emoji, 110, onZoom)}</div>
       <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 6, marginTop: 4 }}>
         <span style={{ fontWeight: 700 }}>{nl}</span>
-        <ReadAloudButton text={nl} lang="nl" />
       </div>
       <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 6 }}>
         <span style={{ color: 'var(--text-soft)', fontSize: '0.95rem' }}>{fr}</span>
-        <ReadAloudButton text={fr} lang="fr" />
       </div>
     </div>
   )
@@ -142,6 +148,29 @@ export function EierenDierenModule({ profile, onExit }: ModuleProps) {
   const [dier, setDier] = useState<Dier>(() => newDier(null))
   const [feedback, setFeedback] = useState<'good' | 'bad' | null>(null)
   const [starTrigger, setStarTrigger] = useState(0)
+  const [zoomFoto, setZoomFoto] = useState<string | null>(null)
+
+  const zoomOverlay = zoomFoto && (
+    <div
+      onClick={() => setZoomFoto(null)}
+      style={{
+        position: 'fixed',
+        inset: 0,
+        background: 'rgba(0,0,0,0.85)',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        zIndex: 1000,
+        cursor: 'zoom-out',
+      }}
+    >
+      <img
+        src={zoomFoto}
+        alt=""
+        style={{ maxWidth: '92vw', maxHeight: '92vh', borderRadius: 16, boxShadow: '0 8px 40px rgba(0,0,0,0.6)' }}
+      />
+    </div>
+  )
 
   // Bij elk nieuw dier meteen de Nederlandse naam voorlezen.
   useEffect(() => {
@@ -192,6 +221,7 @@ export function EierenDierenModule({ profile, onExit }: ModuleProps) {
             📷 Foto's &amp; bronvermelding
           </BigButton>
         </div>
+        {zoomOverlay}
       </div>
     )
   }
@@ -225,6 +255,7 @@ export function EierenDierenModule({ profile, onExit }: ModuleProps) {
             </div>
           ))}
         </div>
+        {zoomOverlay}
       </div>
     )
   }
@@ -245,7 +276,7 @@ export function EierenDierenModule({ profile, onExit }: ModuleProps) {
                 textAlign: 'center',
               }}
             >
-              <div style={{ display: 'flex', justifyContent: 'center' }}>{beeld(d.foto, d.emoji, 110)}</div>
+              <div style={{ display: 'flex', justifyContent: 'center' }}>{beeld(d.foto, d.emoji, 140, setZoomFoto)}</div>
               <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 8, marginTop: 4 }}>
                 <span style={{ fontWeight: 700, fontSize: '1.1rem' }}>{d.nl}</span>
                 <ReadAloudButton text={d.nl} lang="nl" />
@@ -259,6 +290,7 @@ export function EierenDierenModule({ profile, onExit }: ModuleProps) {
             </div>
           ))}
         </div>
+        {zoomOverlay}
       </div>
     )
   }
@@ -279,7 +311,7 @@ export function EierenDierenModule({ profile, onExit }: ModuleProps) {
       />
 
       <div style={{ display: 'flex', justifyContent: 'center', margin: '8px 0' }}>
-        {beeld(dier.foto, dier.emoji, 220)}
+        {beeld(dier.foto, dier.emoji, 260, setZoomFoto)}
       </div>
 
       <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 8 }}>
@@ -327,9 +359,9 @@ export function EierenDierenModule({ profile, onExit }: ModuleProps) {
 
           <div style={{ display: 'flex', justifyContent: 'center', gap: 12, flexWrap: 'wrap', marginTop: 16 }}>
             {dier.legtEi
-              ? taalkaart(dier.fotoEi, '🥚', 'het ei', "l'œuf")
+              ? taalkaart(dier.fotoEi, '🥚', 'het ei', "l'œuf", setZoomFoto)
               : taalkaart(undefined, '🤰', 'in de buik', 'dans le ventre')}
-            {taalkaart(dier.fotoBaby, dier.babyEmoji, dier.babyNl, dier.babyFr)}
+            {taalkaart(dier.fotoBaby, dier.babyEmoji, dier.babyNl, dier.babyFr, setZoomFoto)}
           </div>
 
           {weetjesPanel(dier)}
@@ -337,6 +369,7 @@ export function EierenDierenModule({ profile, onExit }: ModuleProps) {
       )}
 
       <StarBurst trigger={starTrigger} />
+      {zoomOverlay}
     </div>
   )
 }

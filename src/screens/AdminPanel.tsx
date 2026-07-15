@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import type { Profile } from '../core/profiles'
 import { accentColor, createProfile, deleteProfile, loadProfiles, updateProfile } from '../core/profiles'
+import type { ProfilePreset } from '../core/registry'
+import { PROFILE_PRESETS, defaultModuleAccess } from '../core/registry'
 import { awardStar, getProgress } from '../core/progress'
 import { setAdminCode } from '../core/admin'
 import { BackHeader } from '../ui/BackHeader'
@@ -15,11 +17,49 @@ interface AdminPanelProps {
 export function AdminPanel({ onExit }: AdminPanelProps) {
   const [profiles, setProfiles] = useState<Profile[]>(loadProfiles)
   const [editing, setEditing] = useState<Profile | 'new' | null>(null)
+  const [presetPicker, setPresetPicker] = useState(false)
+  const [pendingPreset, setPendingPreset] = useState<ProfilePreset | null>(null)
   const [matrixFor, setMatrixFor] = useState<Profile | null>(null)
   const [grantFor, setGrantFor] = useState<Profile | null>(null)
   const [grantAmount, setGrantAmount] = useState('10')
   const [newCode, setNewCode] = useState('')
   const [codeSaved, setCodeSaved] = useState(false)
+
+  if (presetPicker) {
+    return (
+      <div className="screen">
+        <BackHeader title="Nieuw profiel" onBack={() => setPresetPicker(false)} />
+        <p style={{ textAlign: 'center', color: 'var(--text-soft)' }}>Kies een startpunt voor dit profiel:</p>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 10, alignItems: 'center' }}>
+          {PROFILE_PRESETS.map((preset) => (
+            <BigButton
+              key={preset.id}
+              variant="accent"
+              style={{ minWidth: 240 }}
+              onClick={() => {
+                setPendingPreset(preset.id)
+                setPresetPicker(false)
+                setEditing('new')
+              }}
+            >
+              {preset.icon} {preset.label}
+            </BigButton>
+          ))}
+          <BigButton
+            variant="ghost"
+            style={{ minWidth: 240 }}
+            onClick={() => {
+              setPendingPreset(null)
+              setPresetPicker(false)
+              setEditing('new')
+            }}
+          >
+            Leeg (zelf instellen)
+          </BigButton>
+        </div>
+      </div>
+    )
+  }
 
   if (matrixFor) {
     return (
@@ -41,8 +81,15 @@ export function AdminPanel({ onExit }: AdminPanelProps) {
         profile={existing}
         adminMode
         onSave={(data) => {
-          if (existing) updateProfile({ ...existing, ...data })
-          else createProfile(data)
+          if (existing) {
+            updateProfile({ ...existing, ...data })
+          } else {
+            const created = createProfile(data)
+            if (pendingPreset) {
+              updateProfile({ ...created, moduleAccess: defaultModuleAccess(pendingPreset) })
+            }
+          }
+          setPendingPreset(null)
           setProfiles(loadProfiles())
           setEditing(null)
         }}
@@ -55,7 +102,10 @@ export function AdminPanel({ onExit }: AdminPanelProps) {
               }
             : undefined
         }
-        onCancel={() => setEditing(null)}
+        onCancel={() => {
+          setPendingPreset(null)
+          setEditing(null)
+        }}
       />
     )
   }
@@ -92,7 +142,7 @@ export function AdminPanel({ onExit }: AdminPanelProps) {
               </div>
             </div>
           ))}
-          <button className="card" onClick={() => setEditing('new')}>
+          <button className="card" onClick={() => setPresetPicker(true)}>
             <span className="card__emoji">➕</span>
             <span className="card__label">Nieuw profiel</span>
           </button>

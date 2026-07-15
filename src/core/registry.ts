@@ -1,5 +1,5 @@
 import type { ComponentType } from 'react'
-import type { BlockId, Profile } from './profiles'
+import type { BlockId, ModuleAccess, Profile } from './profiles'
 import { getModuleAccess } from './profiles'
 import { TellenModule } from '../modules/oefenen/tellen/TellenModule'
 import { OptellenModule } from '../modules/oefenen/optellen/OptellenModule'
@@ -294,4 +294,35 @@ export function modulesForProfile(profile: Profile): ModuleBuckets {
     }
   }
   return buckets
+}
+
+export type ProfilePreset = 'lagereschool' | 'kleuterklas'
+
+export const PROFILE_PRESETS: { id: ProfilePreset; label: string; icon: string }[] = [
+  { id: 'kleuterklas', label: 'Kind kleuterklas', icon: '🧸' },
+  { id: 'lagereschool', label: 'Kind lagere school', icon: '🎓' },
+]
+
+/**
+ * Standaard module-toegang voor een nieuw profiel op basis van een preset:
+ * - kleuterklas: enkel de kleuter-oefeningen (blok '5') verdienen sterren.
+ * - lagereschool: de lagereschool-oefeningen (blok '9') verdienen sterren,
+ *   kleuter-oefeningen blijven toegankelijk maar leveren geen sterren op.
+ * In beide gevallen kosten alle spelletjes 10 sterren voor 1 minuut.
+ */
+export function defaultModuleAccess(preset: ProfilePreset): Record<string, ModuleAccess> {
+  const access: Record<string, ModuleAccess> = {}
+  for (const mod of MODULES) {
+    if (mod.kind === 'oefenen') {
+      if (preset === 'lagereschool') {
+        if (mod.block === '9') access[mod.id] = { enabled: true, earnsStars: true }
+        else if (mod.block === '5') access[mod.id] = { enabled: true, earnsStars: false }
+      } else {
+        if (mod.block === '5') access[mod.id] = { enabled: true, earnsStars: true }
+      }
+    } else {
+      access[mod.id] = { enabled: true, costStars: 10, costMinutes: 1 }
+    }
+  }
+  return access
 }

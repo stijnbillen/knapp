@@ -3,7 +3,7 @@
   { "iso": "AD", "landNl": "Andorra", "landFr": "Andorre", "hoofdstadNl": "Andorra la Vella", "hoofdstadFr": "Andorre-la-Vieille", "continent": "Europa", "buurBelgie": false, "lat": 42.5, "lon": 1.5 },
   { "iso": "AT", "landNl": "Oostenrijk", "landFr": "Autriche", "hoofdstadNl": "Wenen", "hoofdstadFr": "Vienne", "continent": "Europa", "buurBelgie": false, "lat": 48.2, "lon": 16.4 },
   { "iso": "BY", "landNl": "Wit-Rusland", "landFr": "Biélorussie", "hoofdstadNl": "Minsk", "hoofdstadFr": "Minsk", "continent": "Europa", "buurBelgie": false, "lat": 53.9, "lon": 27.6 },
-  { "iso": "BE", "landNl": "België", "landFr": "Belgique", "hoofdstadNl": "Brussel", "hoofdstadFr": "Bruxelles", "continent": "Europa", "buurBelgie": false, "lat": 50.8, "lon": 4.4 },
+  { "iso": "BE", "landNl": "België", "landFr": "Belgique", "hoofdstadNl": "Brussel", "hoofdstadFr": "Bruxelles", "continent": "Europa", "buurBelgie": true, "lat": 50.8, "lon": 4.4 },
   { "iso": "BA", "landNl": "Bosnië en Herzegovina", "landFr": "Bosnie-Herzégovine", "hoofdstadNl": "Sarajevo", "hoofdstadFr": "Sarajevo", "continent": "Europa", "buurBelgie": false, "lat": 43.9, "lon": 18.4 },
   { "iso": "BG", "landNl": "Bulgarije", "landFr": "Bulgarie", "hoofdstadNl": "Sofia", "hoofdstadFr": "Sofia", "continent": "Europa", "buurBelgie": false, "lat": 42.7, "lon": 23.3 },
   { "iso": "HR", "landNl": "Kroatië", "landFr": "Croatie", "hoofdstadNl": "Zagreb", "hoofdstadFr": "Zagreb", "continent": "Europa", "buurBelgie": false, "lat": 45.8, "lon": 16.0 },
@@ -43,7 +43,7 @@
   { "iso": "SE", "landNl": "Zweden", "landFr": "Suède", "hoofdstadNl": "Stockholm", "hoofdstadFr": "Stockholm", "continent": "Europa", "buurBelgie": false, "lat": 59.3, "lon": 18.1 },
   { "iso": "CH", "landNl": "Zwitserland", "landFr": "Suisse", "hoofdstadNl": "Bern", "hoofdstadFr": "Berne", "continent": "Europa", "buurBelgie": false, "lat": 46.9, "lon": 7.4 },
   { "iso": "UA", "landNl": "Oekraïne", "landFr": "Ukraine", "hoofdstadNl": "Kiev", "hoofdstadFr": "Kiev", "continent": "Europa", "buurBelgie": false, "lat": 50.5, "lon": 30.5 },
-  { "iso": "GB", "landNl": "Verenigd Koninkrijk", "landFr": "Royaume-Uni", "hoofdstadNl": "Londen", "hoofdstadFr": "Londres", "continent": "Europa", "buurBelgie": false, "lat": 51.5, "lon": -0.1 },
+  { "iso": "GB", "landNl": "Verenigd Koninkrijk", "landFr": "Royaume-Uni", "hoofdstadNl": "Londen", "hoofdstadFr": "Londres", "continent": "Europa", "buurBelgie": true, "lat": 51.5, "lon": -0.1 },
   { "iso": "VA", "landNl": "Vaticaanstad", "landFr": "Vatican", "hoofdstadNl": "Vaticaanstad", "hoofdstadFr": "Cité du Vatican", "continent": "Europa", "buurBelgie": false, "lat": 41.9, "lon": 12.45 },
 
   { "iso": "DZ", "landNl": "Algerije", "landFr": "Algérie", "hoofdstadNl": "Algiers", "hoofdstadFr": "Alger", "continent": "Afrika", "buurBelgie": false, "lat": 36.8, "lon": 3.1 },

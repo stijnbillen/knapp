@@ -3884,5 +3884,61 @@
     "aantalJongen": "honderden jongen per keer",
     "frequentie": "1 keer per jaar",
     "leeftijd": "Kan wel 10 tot 15 jaar oud worden."
+  },
+  {
+    "id": "elektrischerog",
+    "emoji": "🐟",
+    "legtEi": false,
+    "nl": "de elektrische rog",
+    "fr": "la raie torpille",
+    "babyEmoji": "🐟",
+    "babyNl": "het jong",
+    "babyFr": "le bébé raie torpille",
+    "draagtijd": "de mama draagt haar jongen enkele maanden",
+    "aantalJongen": "meestal 5 tot 30 jongen per keer",
+    "frequentie": "1 keer per jaar",
+    "leeftijd": "Wordt meestal 10 tot 15 jaar oud."
+  },
+  {
+    "id": "reuzeninktvis",
+    "emoji": "🦑",
+    "legtEi": true,
+    "nl": "de reuzeninktvis",
+    "fr": "le calmar géant",
+    "babyEmoji": "🦑",
+    "babyNl": "het jong",
+    "babyFr": "le bébé calmar géant",
+    "draagtijd": "de eitjes broeden enkele maanden uit in de diepzee",
+    "aantalJongen": "tot wel 5 miljoen eitjes per legsel",
+    "frequentie": "meestal maar 1 keer in haar leven",
+    "leeftijd": "Wordt meestal 5 jaar oud."
+  },
+  {
+    "id": "vampierinktvis",
+    "emoji": "🦑",
+    "legtEi": true,
+    "nl": "de vampierinktvis",
+    "fr": "la pieuvre vampire",
+    "babyEmoji": "🦑",
+    "babyNl": "het jong",
+    "babyFr": "le bébé pieuvre vampire",
+    "draagtijd": "de eitjes broeden in de diepzee uit",
+    "aantalJongen": "enkele honderden eitjes per legsel",
+    "frequentie": "meerdere keren in haar leven",
+    "leeftijd": "Kan wel 10 jaar oud worden."
+  },
+  {
+    "id": "hoefijzerkrab",
+    "emoji": "🦀",
+    "legtEi": true,
+    "nl": "de hoefijzerkrab",
+    "fr": "le limule",
+    "babyEmoji": "🦀",
+    "babyNl": "het jong",
+    "babyFr": "le bébé limule",
+    "draagtijd": "de eitjes broeden enkele weken uit in het strandzand",
+    "aantalJongen": "duizenden eitjes per legsel",
+    "frequentie": "1 keer per jaar",
+    "leeftijd": "Kan wel 20 jaar oud worden."
   }
 ]

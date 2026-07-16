@@ -74,6 +74,7 @@ export function PuzzelModule({ profile, onExit }: ModuleProps) {
   const [puzzel, setPuzzel] = useState<PuzzelState | null>(null)
   const [slotOrder, setSlotOrder] = useState<number[]>([])
   const [selectedSlot, setSelectedSlot] = useState<number | null>(null)
+  const [samengevoegd, setSamengevoegd] = useState(false)
   const [starTrigger, setStarTrigger] = useState(0)
   const canvasRefs = useRef<(HTMLCanvasElement | null)[]>([])
 
@@ -90,6 +91,7 @@ export function PuzzelModule({ profile, onExit }: ModuleProps) {
       setPuzzel({ img, stukjes, pieceW, pieceH, margin, rows, cols })
       setSlotOrder(nieuweVolgorde(rows * cols))
       setSelectedSlot(null)
+      setSamengevoegd(false)
       setPhase('spelen')
     }
     img.src = afbeelding.src
@@ -111,6 +113,8 @@ export function PuzzelModule({ profile, onExit }: ModuleProps) {
       playCorrect()
       setStarTrigger((n) => n + 1)
       setPhase('klaar')
+      // Even de puzzelstukjes tonen, dan in elkaar laten schuiven tot de volledige foto.
+      setTimeout(() => setSamengevoegd(true), 500)
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [slotOrder, phase])
@@ -236,6 +240,7 @@ export function PuzzelModule({ profile, onExit }: ModuleProps) {
             width: 'min(92vw, 480px)',
             aspectRatio: `${puzzel.img.naturalWidth} / ${puzzel.img.naturalHeight}`,
             margin: '12px auto',
+            position: 'relative',
             display: 'grid',
             gridTemplateColumns: `repeat(${puzzel.cols}, 1fr)`,
             gridTemplateRows: `repeat(${puzzel.rows}, 1fr)`,
@@ -246,6 +251,23 @@ export function PuzzelModule({ profile, onExit }: ModuleProps) {
             padding: 4,
           }}
         >
+          {phase === 'klaar' && afbeelding && (
+            <img
+              src={afbeelding.src}
+              alt=""
+              style={{
+                position: 'absolute',
+                inset: 4,
+                width: 'calc(100% - 8px)',
+                height: 'calc(100% - 8px)',
+                objectFit: 'cover',
+                borderRadius: 8,
+                opacity: samengevoegd ? 1 : 0,
+                transition: 'opacity 0.7s ease',
+                pointerEvents: 'none',
+              }}
+            />
+          )}
           {Array.from({ length: puzzel.rows * puzzel.cols }, (_, slot) => (
             <button
               key={slot}

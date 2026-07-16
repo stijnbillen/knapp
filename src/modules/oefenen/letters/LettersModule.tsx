@@ -46,32 +46,14 @@ function newRound(level: number): Round {
 }
 
 /**
- * Hoe klinkt deze letter in dit woord? Medeklinkers houden hun letternaam.
- * Voor klinkers:
- * - Een dubbele-zelfde-letter (aa/ee/oo/uu) is duidelijk één lange klank:
- *   die lezen we samen voor. Een tweeklank van twee vérschillende letters
- *   (bv. "oe" in "boek") klinkt niet als de losse letter, dus die negeren
- *   we hier bewust — dan valt de functie terug op de regel hieronder.
- * - Gesloten lettergreep (klinker + medeklinker + einde woord of nóg een
- *   medeklinker, zoals "les", "kat", "appel") → korte klank: letter + de
- *   erop volgende medeklinker geeft de stem genoeg context (bv. "es", "at").
- * - Open lettergreep (klinker + medeklinker + klinker, zoals "ra-ket",
- *   "au-to") of klinker aan het (lettergreep)einde → lange klank: letter + h.
+ * Vaste klank per letter (26 in totaal), los van het woord waarin ze voorkomt.
+ * Nooit samengestelde klanken (letter + buurletter) — dat vormde soms per
+ * ongeluk een bestaand woord (bv. "i" in "vis" → "is"). Medeklinkers houden
+ * hun letternaam, klinkers krijgen een vaste "+h"-vorm zodat de stem de
+ * klinker apart uitspreekt in plaats van als losse letternaam.
  */
-function klankFor(letter: string, word: string): string {
+function klankFor(letter: string): string {
   if (!'aeiou'.includes(letter)) return letter
-
-  const idx = word.indexOf(letter)
-  const after = word.slice(idx, idx + 2)
-  const before = idx > 0 ? word.slice(idx - 1, idx + 1) : ''
-  const dubbel = letter + letter
-  if (after === dubbel) return after
-  if (before === dubbel) return before
-
-  const next = word[idx + 1]
-  const afterNext = word[idx + 2]
-  const geslotenLettergreep = next !== undefined && !'aeiou'.includes(next) && (afterNext === undefined || !'aeiou'.includes(afterNext))
-  if (geslotenLettergreep) return after
   return `${letter}h`
 }
 
@@ -83,7 +65,7 @@ export function LettersModule({ profile, onExit }: ModuleProps) {
   const [done, setDone] = useState(false)
   const [starTrigger, setStarTrigger] = useState(0)
 
-  const klank = klankFor(round.targetLetter, round.entry.word)
+  const klank = klankFor(round.targetLetter)
 
   // Enkel de klank van de letter voorlezen bij elke nieuwe ronde.
   useEffect(() => {

@@ -76,6 +76,7 @@ export function VerschillenModule({ profile, onExit }: ModuleProps) {
   const [shake, setShake] = useState(0)
   const [finalScore, setFinalScore] = useState(0)
   const [isRecord, setIsRecord] = useState(false)
+  const [klaar, setKlaar] = useState(false)
 
   const conf = DIFFICULTIES[difficulty]
 
@@ -84,11 +85,12 @@ export function VerschillenModule({ profile, onExit }: ModuleProps) {
     setScene(generateScene(DIFFICULTIES[index]))
     setFound(new Set())
     setMisses(0)
+    setKlaar(false)
     setPhase('playing')
   }
 
   function tapCell(index: number) {
-    if (!scene || phase !== 'playing') return
+    if (!scene || phase !== 'playing' || klaar) return
     if (found.has(index)) return
 
     if (scene.diffs.includes(index)) {
@@ -103,7 +105,9 @@ export function VerschillenModule({ profile, onExit }: ModuleProps) {
         setFinalScore(score)
         setIsRecord(submitScore(GAME_ID, profile, score))
         playStar()
-        setPhase('done')
+        setKlaar(true)
+        // Even de opgeloste platen tonen voor we naar het scorebord gaan.
+        setTimeout(() => setPhase('done'), 1400)
       }
     } else {
       playWrong()
@@ -191,6 +195,11 @@ export function VerschillenModule({ profile, onExit }: ModuleProps) {
           className={shake > 0 ? 'shake' : ''}
           style={{ display: 'flex', flexDirection: 'column', gap: 12, alignItems: 'center' }}
         >
+          {klaar && (
+            <p style={{ textAlign: 'center', fontSize: '1.2rem', fontWeight: 700, margin: 0 }}>
+              🎉 Alles gevonden!
+            </p>
+          )}
           {panel(scene.top, 'top')}
           {panel(scene.bottom, 'bottom')}
         </div>

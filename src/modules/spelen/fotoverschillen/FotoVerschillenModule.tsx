@@ -43,17 +43,19 @@ export function FotoVerschillenModule({ profile, onExit }: ModuleProps) {
   const [shake, setShake] = useState(0)
   const [finalScore, setFinalScore] = useState(0)
   const [isRecord, setIsRecord] = useState(false)
+  const [klaar, setKlaar] = useState(false)
 
   function start() {
     const keuze = PAREN[Math.floor(Math.random() * PAREN.length)]
     setPaar(keuze)
     setFound(new Set())
     setMisses(0)
+    setKlaar(false)
     setPhase('playing')
   }
 
   function tap(e: React.MouseEvent<HTMLDivElement>) {
-    if (!paar || phase !== 'playing') return
+    if (!paar || phase !== 'playing' || klaar) return
     const rect = e.currentTarget.getBoundingClientRect()
     const xPct = ((e.clientX - rect.left) / rect.width) * 100
     const yPct = ((e.clientY - rect.top) / rect.height) * 100
@@ -75,7 +77,9 @@ export function FotoVerschillenModule({ profile, onExit }: ModuleProps) {
         setFinalScore(score)
         setIsRecord(submitScore(GAME_ID, profile, score))
         playStar()
-        setPhase('done')
+        setKlaar(true)
+        // Even de opgeloste foto's tonen voor we naar het scorebord gaan.
+        setTimeout(() => setPhase('done'), 1400)
       }
     } else {
       playWrong()
@@ -158,6 +162,11 @@ export function FotoVerschillenModule({ profile, onExit }: ModuleProps) {
           className={shake > 0 ? 'shake' : ''}
           style={{ display: 'flex', flexDirection: 'column', gap: 12 }}
         >
+          {klaar && (
+            <p style={{ textAlign: 'center', fontSize: '1.2rem', fontWeight: 700, margin: 0 }}>
+              🎉 Alles gevonden!
+            </p>
+          )}
           {panel('a', 'a')}
           {panel('b', 'b')}
         </div>

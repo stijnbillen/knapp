@@ -86,7 +86,7 @@ export function PuzzelModule({ profile, onExit }: ModuleProps) {
       const stukjes = bouwStukjes(rows, cols, img.naturalWidth, img.naturalHeight, vorm, Date.now())
       const pieceW = img.naturalWidth / cols
       const pieceH = img.naturalHeight / rows
-      const margin = Math.min(pieceW, pieceH) * 0.25 + 4
+      const margin = Math.min(pieceW, pieceH) * 0.14 + 3
       setPuzzel({ img, stukjes, pieceW, pieceH, margin, rows, cols })
       setSlotOrder(nieuweVolgorde(rows * cols))
       setSelectedSlot(null)
@@ -239,7 +239,7 @@ export function PuzzelModule({ profile, onExit }: ModuleProps) {
             display: 'grid',
             gridTemplateColumns: `repeat(${puzzel.cols}, 1fr)`,
             gridTemplateRows: `repeat(${puzzel.rows}, 1fr)`,
-            gap: 2,
+            gap: 0,
             background: 'var(--surface)',
             borderRadius: 12,
             boxShadow: 'var(--shadow)',
@@ -255,11 +255,11 @@ export function PuzzelModule({ profile, onExit }: ModuleProps) {
               style={{
                 padding: 0,
                 background: 'transparent',
-                border: selectedSlot === slot ? '3px solid var(--accent)' : '1px solid transparent',
-                borderRadius: 4,
+                border: 'none',
                 overflow: 'visible',
                 minHeight: 0,
                 minWidth: 0,
+                filter: selectedSlot === slot ? 'drop-shadow(0 0 5px var(--accent))' : 'none',
               }}
             >
               <canvas

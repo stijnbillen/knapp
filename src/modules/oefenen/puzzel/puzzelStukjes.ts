@@ -93,7 +93,7 @@ export function bouwStukjes(
   const rng = mulberry32(seed)
   const pieceW = imgW / cols
   const pieceH = imgH / rows
-  const amp = vorm === 'vrije' ? Math.min(pieceW, pieceH) * 0.14 : Math.min(pieceW, pieceH) * 0.22
+  const amp = vorm === 'vrije' ? Math.min(pieceW, pieceH) * 0.09 : Math.min(pieceW, pieceH) * 0.13
 
   // rowEdges[r][c]: horizontale rand tussen stuk (r,c) en (r+1,c), canoniek links->rechts
   const rowEdges: Punt[][][] = []
